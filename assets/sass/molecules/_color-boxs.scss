@@ -1,0 +1,147 @@
+@charset "UTF-8";
+.colox-box{
+  box-sizing:border-box;
+  margin:0;
+  padding: 0;
+  display: inline-block;
+  margin-bottom:$grid-gutter-width;
+
+  height: 0;
+  width: 100%;
+  padding-bottom:58%;
+  @media only screen and (max-width: $screen-xs-max) {
+    height: auto;
+    padding: 0;
+  }
+  float:left;
+
+  background: #ebebeb;
+
+  position:relative;
+  overflow: hidden;
+
+  &.big-box{
+    padding-bottom: calc(116% + 30px);
+    @media only screen and (max-width: $screen-xs-max) {
+      padding: 0;
+    }
+  }
+
+
+  &:after{
+    content:"";
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparentize(#0078a1, 0), transparentize(#0078a1, 1));
+    bottom:0;
+
+    transform:translateY(-100%);
+    opacity: 0;
+    transition:transform 0.3s ease-in-out;
+    transition:opacity 0.4s ease-in-out;
+    z-index:9;
+    @media only screen and (max-width: $screen-xs-max) {
+      transform:translateY(0%);
+    }
+  }
+
+  .content{
+    display: block;
+    position: absolute;
+    @media only screen and (max-width: $screen-xs-max) {
+      position: relative;
+    }
+
+    bottom: 0;
+    box-sizing:border-box;
+    padding: 26px 30px;
+    width: 100%;
+
+    background: linear-gradient(transparentize($darkblue, 1), transparentize($darkblue, 0));
+
+    z-index:10;
+    time{
+      @media only screen and (max-width: $screen-xs-max) {
+        font-size: 13px;
+      }
+      font-size: 15px;
+      font-weight: 600;
+      color:$white;
+      line-height: 15px;
+      vertical-align: center;
+      display: inline-block;
+
+
+      i{
+        font-size:20px;
+        line-height: 15px;
+        display: inline-block;
+        top:4px;
+        position: relative;
+        margin-right:10px;
+
+      }
+    }
+    h4{
+      @media only screen and (max-width: $screen-xs-max) {
+        font-size: 18px;
+      }
+      font-size: 22px;
+      font-weight: 800;
+      color:$white;
+      line-height: 1.18;
+    }
+    p.excerp{
+      font-size: 20px;
+      @media only screen and (max-width: $screen-xs-max) {
+        font-size: 15px;
+      }
+      font-weight: 400;
+      color:$white;
+      line-height: 1.25;
+      letter-spacing: 0.01em;
+      display:none;
+      @media only screen and (max-width: $screen-xs-max) {
+        display:block !important;
+        height:auto !important;
+        visibility:visible !important;
+        padding:0 !important;
+        margin:0 !important;
+      }
+    }
+
+
+
+  }
+  &:hover{
+    &:after{
+      transform:translateY(0%);
+      opacity: 1;
+    }
+
+    p.excerp{
+    }
+  }
+
+}
+
+.focuspoint {
+  position: absolute; /*Any position but static should work*/
+  overflow: hidden;
+  top: 0;
+  bottom:0;
+  width: 100%;
+}
+.focuspoint img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 0;
+  display: block;
+  /* fill and maintain aspect ratio */
+  width: auto; height: auto;
+  min-width: 100%; min-height: 100%;
+  max-height: none; max-width: none;
+}

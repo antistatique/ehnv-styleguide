@@ -1,0 +1,14 @@
+---
+notes: |
+  ##### Usage : `{{> map }}`
+---
+<div class="map">
+	<div class="icons">
+		{{#each map_data.pin }}
+			<a style="top:{{this.top}}%;left:{{this.left}}%" data-toggle="tooltip" data-placement="{{this.position_tooltip}}" title="{{this.tooltip}}" href="#" class="pin">
+				<i class="ehnvicon ehnvicon-pin"></i>
+			</a>
+		{{/each}}
+	</div>
+	<img class="img-responsive" src="{{#unless fabricator}}../{{/unless}}build/img/map.jpg" alt="">
+</div>

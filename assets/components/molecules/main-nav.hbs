@@ -1,0 +1,23 @@
+---
+  notes: |
+  ##### Usage : `{{> main-nav }}`
+  ##### Options :
+  - **navbar** - Bool
+---
+<ul class="nav {{#if navbar}}navbar-nav{{/if}} main">
+  {{#each nav.main }}
+  <li {{#if this.sub}}class="dropdown"{{/if}} >
+    <a href="#" {{#if this.sub}}class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"{{/if}}>{{ this.label }} {{#if this.sub}}<i class="ehnvicon ehnvicon-arrow-down"></i>
+      {{/if}}</a>
+      {{#if this.sub}}
+      <ul class="dropdown-menu">
+        {{#each this.sub }}
+        <li><a href="#">{{ this.label }}</a></li>
+        {{/each}}
+      </ul>
+      {{/if}}
+  </li>
+  {{/each}}
+</ul>
+
+

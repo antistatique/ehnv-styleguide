@@ -1,0 +1,50 @@
+{{> header }}
+
+{{> breadcrumb }}
+
+{{> cover portrait=false }}
+
+<div class="entry" id="search">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        {{> entry-title title="Résultats de recherche" subtitle="Votre recherche concernant “Cossonay“ a retourné 12 résultat" }}
+
+        <div class="spacer spacer-xs"></div>
+
+        <div>
+          {{> card card-title="Ouverture à Orbe" card-subtitle="www.adressedelapage.ch"}}
+
+          {{> card card-title="L’exposition aux eHnv" card-subtitle="www.adressedelapage.ch"}}
+
+
+          {{> card-duo }}
+
+        </div>
+        <div class="spacer spacer-lg"></div>
+        <div class="spacer spacer-xl visible-xs-block"></div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        {{> table }}
+      </div>
+      <div class="col-md-5 col-md-offset-1">
+        {{> pagination summary=true }}
+      </div>
+      <div class="col-md-5">
+        {{> pagination }}
+      </div>
+      <div class="col-md-8 col-md-offset-2">
+        {{> contact-form }}
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,145 @@
+@charset "UTF-8";
+ul.nav.main{
+  a:focus{
+    outline: 0;
+  }
+  @media (min-width: $screen-sm-min) {
+    margin: 20px auto 0;
+    text-align: justify;
+    float: none;
+    width: 100%;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+  }
+  > li{
+    @media (min-width: $screen-sm-min) {
+      display: inline-block;
+      float: none;
+      text-align: left;
+      &:first-child{
+        a {
+          padding-left: 0;
+        }
+      }
+      &:last-child{
+        a {
+          padding-right: 0;
+          text-align: right;
+        }
+      }
+    }
+
+
+    &.dropdown{
+      &.open{
+        > a, a:focus{
+          @media (max-width: $screen-xs-max) {
+            margin:0;
+          }
+        }
+        > a, a:focus{
+          background:transparentize($lightblue, 0.05);
+          @media (max-width: $screen-xs-max) {
+            background: none;
+          }
+          color:$white;
+        }
+      }
+    }
+
+    > a {
+      font-size: 22px;
+      @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+        font-size: 18px;
+        padding: 15px 5px 15px 5px;
+      }
+      line-height: 1.18;
+      font-weight: 700;
+      color:$blue;
+      background: none;
+      display: block;
+      padding: 15px 20px;
+      @media (max-width: $screen-xs-max) {
+        font-size: 22px;
+        color:$white;
+        padding: 0;
+        margin:0 0 20px 0;
+      }
+      margin: 0;
+
+      &:hover{
+        @media (min-width: $screen-xs-max) {
+          color:transparentize($lightblue, 0.05);
+          background: none;
+        }
+      }
+
+    }
+    i.ehnvicon{
+      display: inline-block;
+      font-size: 7px;
+      margin-left: 7px;
+      position:relative;
+      bottom:2px;
+
+      @media (max-width: $screen-xs-max) {
+        bottom:2px;
+        font-size: 8px;
+        margin-left: 2px;
+      }
+
+    }
+    ul{
+      background: transparentize($lightblue, 0.05);
+      @media screen and (min-width: $screen-sm-min) {
+        min-width: 14em;
+      }
+      @media (max-width: $screen-xs-max) {
+        background: none;
+        position: static;
+        float:none;
+        padding: 0 0 30px 15px;
+      }
+      border-radius: 0;
+      padding: 15px 0 0;
+      box-shadow: none;
+      border:none;
+      li{
+        margin:0;
+        padding: 0;
+
+        a, a:focus{
+          color:$white;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 1.375;
+          padding: 15px;
+
+          @media (max-width: $screen-xs-max) {
+
+            font-size: 14px;
+            font-weight: 400;
+            margin:0;
+            padding: 10px 15px;
+          }
+          &:hover{
+            background: #05a3b9;
+            @media (max-width: $screen-xs-max) {
+              background: none;
+            }
+            color:$white;
+          }
+
+        }
+      }
+
+    }
+
+
+  }
+
+}

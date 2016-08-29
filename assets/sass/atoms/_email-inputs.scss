@@ -1,0 +1,16 @@
+@charset "UTF-8";
+.input-group.email-input{
+  .form-control{
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0.01em;
+    padding-left:21px;
+    padding-right:21px;
+  }
+  .input-group-btn{
+    .btn{
+        padding-left: 23px;
+        padding-right: 23px;
+      }
+  }
+}

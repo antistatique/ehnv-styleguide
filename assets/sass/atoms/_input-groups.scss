@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.input-group{
+	.form-control{
+			box-shadow: none;
+			color:#323232;
+			font-size: 16px;
+			line-height: 1.25;
+			letter-spacing: 0.0139em;
+			font-weight: 600;
+			padding: 11px 14px;
+      height: 50px;
+
+
+	}
+  .input-group-btn{
+    .btn{
+        box-shadow: none;
+        &:hover{
+          box-shadow: none;
+        }
+      }
+  }
+}
+

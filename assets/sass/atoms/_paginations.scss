@@ -1,0 +1,15 @@
+@charset "UTF-8";
+ul.pagination{
+	margin: 70px 0;
+	li{
+		a, span{
+			font-size: 20px;
+			padding:8px 17px;
+
+			i.ehnvicon{
+				font-size:9px;
+				line-height: 11px;
+			}
+		}
+	}
+}

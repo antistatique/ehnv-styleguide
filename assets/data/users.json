@@ -1,0 +1,31 @@
+{
+    "medecins": [
+        {
+            "name": "Jacqueline Robin",
+            "title": "Pédiatrie"
+        },
+        {
+            "name": "Dr Nishantan Popol Antonipillaï",
+            "title": "Vitae"
+        },
+
+        {
+            "name": "Mathilde Toussaint",
+            "title": "Vitae"
+        },
+        {
+            "name": "Gabriel Reynaud",
+            "title": "Pédiatrie"
+        },
+        {
+            "name": "Aimée Simon",
+            "title": "Vitae"
+        },
+
+        {
+            "name": "Mathilde Toussaint",
+            "title": "Vitae"
+        },
+       
+    ]
+}

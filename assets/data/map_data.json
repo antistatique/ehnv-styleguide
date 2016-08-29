@@ -1,0 +1,18 @@
+{
+    "pin": [
+        {
+            "top": 20,
+            "left": 25,
+            "tooltip": "Tooltip content for this pin",
+            "position_tooltip": "right"
+        },
+        {
+            "top": 40,
+            "left": 60,
+            "tooltip": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "position_tooltip": "bottom"
+        
+        }
+
+    ]
+}

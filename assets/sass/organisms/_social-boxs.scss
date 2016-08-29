@@ -1,0 +1,62 @@
+@charset "UTF-8";
+.social-box{
+	background: $blue;
+	div.instagram-flow{
+		overflow: hidden;
+		a{
+			display: block;
+			width: 100%;
+			height:0;
+			padding-bottom: 100%;
+			overflow: hidden;
+
+			img{
+				width: 100%;
+				height: auto;
+				display: block;
+				box-sizing:border-box;
+			}
+		}
+	}
+
+
+	.content{
+		padding:35px 0;
+		h1{
+			font-size: 33px;
+      @media only screen and (max-width: $screen-xs-max) {
+        font-size: 25px;
+      }
+			line-height: 1.15;
+			font-weight: 300;
+			color:$white;
+
+			padding:0;
+			margin:0 0 8px 0;
+		}
+
+		h2{
+      @media only screen and (max-width: $screen-xs-max) {
+        font-size: 18px;
+      }
+			font-size: 20px;
+			line-height: 1.25;
+			letter-spacing: 0.01em;
+			font-weight: 400;
+			color:$white;
+			margin:0;
+			padding:0;
+			a{
+				color:$white;
+				border-bottom: 1px solid $white;
+				&:hover{
+
+				}
+			}
+		}
+
+
+	}
+
+
+}

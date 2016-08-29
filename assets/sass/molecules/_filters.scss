@@ -1,0 +1,50 @@
+@charset "UTF-8";
+.filter{
+
+  @media only screen and (min-width: $screen-sm) {
+    .collapse,
+    .collapsing,
+    .collapse.in{
+      display: block !important;
+      overflow: visible !important;
+      height: auto !important;
+    }
+    a.toggle-collapse{
+      cursor: default;
+    }
+  }
+
+	h2{
+		font-size: 28px;
+    @media only screen and (max-width: $screen-xs-max) {
+        font-size: 24px;
+    }
+		line-height: 1.18;
+		font-weight: 700;
+		color:$lightblue;
+    margin-top:0;
+    .ehnvicon{
+      font-size:8px;
+      line-height: 4px;
+      margin-left:5px;
+      bottom:3px;
+      position: relative;
+      transform-origin:50% 50%;
+      transform:rotate(0deg);
+      transition:transform 0.3s;
+      display: none;
+      @media only screen and (max-width: $screen-xs-max) {
+        display: inline-block;
+      }
+    }
+
+	}
+  .collapsed{
+    h2{
+      .ehnvicon{
+      transform:rotate(-180deg);
+
+      }
+    }
+  }
+}

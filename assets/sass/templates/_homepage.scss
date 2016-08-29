@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.home{
+	section.landing{
+		header.header{
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+		}
+		.bg-image{
+			width: 100%;
+			height: auto;
+			max-height: 750px;
+			margin: 0;
+			overflow: hidden;
+			img{
+
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+
+	section.content{
+		padding-top: 59px;
+		padding-bottom: 71px;
+
+		h1{
+			color:$darkblue;
+      font-size:46px;
+      line-height: 1.09;
+      font-weight: 800;
+		}
+		h2{
+			color:$lightblue;
+			margin-top: 17px;
+			margin-bottom: 30px;
+		}
+		a{
+			border:0;
+		}
+	}
+}
+

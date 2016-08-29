@@ -1,0 +1,13 @@
+@charset "UTF-8";
+.cover{
+	overflow: hidden;
+	position: relative;
+	height: 450px;
+}
+
+.cover-container{
+  figure.portrait{
+    transform:translateY(-50%);
+    margin-bottom: -50%;
+  }
+}

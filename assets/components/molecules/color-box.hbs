@@ -1,0 +1,22 @@
+---
+notes: |
+  ##### Usage : `{{> color-box }}`
+  ##### Options :
+  - **big-box** - Bool
+  - **title** - String
+---
+<a href="#" class="colox-box {{#if big-box}}big-box{{/if}}">
+	<div class="focuspoint"
+	data-focus-x="0"
+	data-focus-y="0"
+	data-image-w="700"
+	data-image-h="700">
+		<img src="https://unsplash.it/700/700/?random" alt="">
+	</div>
+
+	<div href="#" class="content">
+		<time datetime="2015-10-27"><i class="ehnvicon ehnvicon-clock"></i>27 Octobre 2015</time>
+		<h4>{{#if title}}{{ title }}{{^}}Title{{/if}}</h4>
+		<p class="excerp">Lorem ipsum dolor sit amet, sed quae tueretur. Sed haec quidem liberius ab eo dicuntur et saepius. Nescio quo modo praetervolavit oratio.</p>
+	</div>
+</a>

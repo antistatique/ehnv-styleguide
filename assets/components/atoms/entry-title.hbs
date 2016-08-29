@@ -1,0 +1,11 @@
+---
+notes: |
+  ##### Usage : `{{> entry-title }}`
+  ##### Options :
+  - **title** - String
+  - **subtitle** - String
+---
+<header class="entry-title">
+	<h1>{{#if title}}{{ title }}{{^}}Title{{/if}}</h1>
+	<h2>{{#if title}}{{ title }}{{^}}Title{{/if}}</h2>
+</header>

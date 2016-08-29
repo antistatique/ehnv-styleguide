@@ -1,0 +1,42 @@
+---
+notes: |
+  ##### Usage : `{{> color-box-container }}`
+  ##### Options :
+  - **summary** - Boolean
+---
+<section class="color-box-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Actualités</h1>
+        <h2>Les dernières actualités</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        {{> color-box big-box=true title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Huius."}}
+      </div>
+      <div class="col-md-6 col-xs-12">
+        {{> color-box title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Huius."}}
+        {{> color-box title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Huius."}}
+      </div>
+    </div>
+
+    {{#if summary}}
+    <div class="row">
+      <div class="col-md-3 center-block">
+        {{> button button-type="primary" button-content="Toutes les actualités"}}
+      </div>
+    </div>
+    {{^}}
+    <div class="row">
+      <div class="col-md-6 col-xs-12">
+        {{> color-box title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Huius."}}
+        </div>
+      <div class="col-md-6 col-xs-12">
+        {{> color-box title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Huius."}}
+      </div>
+    </div>
+    {{/if}}
+  </div>
+</section>

@@ -1,0 +1,25 @@
+---
+notes: |
+  ##### Usage : `{{> contact-form }}`
+  ##### Options :
+  - **option** - Type
+---
+<form action="" class="contact-form">
+	<h1>Contact</h1>
+	<div class="row">
+		<div class="col-md-6">{{> input-text label="Nom" }}</div>
+		<div class="col-md-6">{{> input-text label="Prénom" }}</div>
+		<div class="col-md-6">{{> input-text label="E-Mail" type="email" }}</div>
+		<div class="col-md-6">{{> input-text label="Téléphone" type="tel"}}</div>
+		<div class="col-md-12">{{> input-select placeholder="Tous les sujets" label="Le message concerne" }}</div>
+		<div class="col-md-12">{{> input-textarea placeholder="Message..." }}</div>
+
+
+	</div>
+	<div class="row">
+		<div class="col-md-4 center-block">
+			{{> button button-content="Envoyer"}}
+		</div>
+	</div>
+</form>
+<div class="spacer spacer-xl visible-xs-block"></div>

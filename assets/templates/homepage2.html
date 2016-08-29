@@ -1,0 +1,61 @@
+<div class="home">
+	<section class="landing">
+		{{> header }}
+		<div class="bg-image">
+			<img src="{{#unless fabricator}}../{{/unless}}build/img/bg_home.jpg" alt="">
+		</div>
+	</section>
+	{{> location }}
+	<section class="content">
+   <div class="container">
+    <div class="row">
+     <div class="col-md-8 col-md-offset-2">
+       <h1>Les établissements hospitaliers nord-vaudois</h1>
+       <h2>Une association privée reconnue</h2>
+       <p>Mauris placerat eu leo sed hendrerit. Torbi at metus placerat <a href="#">eu leo sed hendrerit</a>. vecop elit ultrices ullamcorper orbi at metus vel placerat eu leo sed. Torbi at metus placerat eu leo sed hendrerit. Metus placerat eu leo sed hendrerit.</p>
+
+     </div>
+    </div>
+   </div>
+
+ </section>
+
+ {{> urgences-box }}
+
+ <section class="content greybg">
+   <div class="container">
+    <div class="row">
+       <div class="col-md-8 col-md-offset-2">
+         <h1>Obtenir un rendez-vous</h1>
+         <h2>Une association privée reconnue</h2>
+         <p>Mauris placerat eu leo sed hendrerit. Torbi at metus placerat eu leo sed hendrerit. vecop elit ultrices.</p>
+         <div class="spacer spacer-md"></div>
+         <div class="row">
+           <div class="col-md-6">
+            {{> button button-content="Médecins généralistes" }}
+          </div>
+          <div class="col-md-6">
+            {{> button button-content="Médecins spécialistes" }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+{{> thumb-box-container }}
+
+
+
+<div class="greybg">
+  {{> color-box-container summary=true}}
+</div>
+
+
+{{> social-box }}
+
+{{> footer }}
+</div>

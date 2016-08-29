@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.newsletter{
+	background: #f5f5f5;
+	padding-top: 54px;
+	padding-bottom: 94px;
+
+	h1{
+		font-size: 46px;
+		line-height: 1.086;
+		font-weight: 800;
+		color:$darkblue;
+		margin-top:60px;
+		margin-bottom:0px;
+	}
+	h2{
+		font-size: 33px;
+		line-height: 1.15;
+		font-weight: 400;
+		color:$lightblue;
+		margin-top:6px;
+		margin-bottom: 24px;
+	}
+}

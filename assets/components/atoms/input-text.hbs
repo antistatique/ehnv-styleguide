@@ -1,0 +1,12 @@
+---
+notes: |
+  ##### Usage : `{{> input-text }}`
+  ##### Options :
+  - **label** - String
+  - **placeholder** - String
+  - **type** - String
+---
+<div class="input-text form-group">
+	{{#if label}}<label for="">{{label}}</label>{{/if}} 
+	<input class="form-control" placeholder="{{placeholder}}" type="{{#if type}}{{ type }}{{^}}text{{/if}}">
+</div>

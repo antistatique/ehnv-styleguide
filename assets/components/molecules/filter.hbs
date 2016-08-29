@@ -1,0 +1,41 @@
+---
+notes: |
+  ##### Usage : `{{> filter }}`
+  ##### Options :
+  - **option** - Type
+---
+
+<div class="filter">
+  <a role="button" data-toggle="collapse" href="#collapse-input-group" aria-expanded="false" aria-controls="collapse-input-group" class="toggle-collapse collapsed">
+    <h2>Rechercher un médecin <i class="ehnvicon ehnvicon-arrow-down"></i></h2>
+  </a>
+  <div class="collapse" id="collapse-input-group">
+    {{> input-group }}
+  </div>
+
+  <div class="spacer"></div>
+
+  <a role="button" data-toggle="collapse" href="#collapse-tags-select" aria-expanded="false" aria-controls="collapse-tags-select" class="toggle-collapse collapsed">
+    <h2>Filtrer par spécialité <i class="ehnvicon ehnvicon-arrow-down"></i></h2>
+  </a>
+  <div class="collapse" id="collapse-tags-select">
+    {{> tags-select }}
+  </div>
+  <div class="spacer"></div>
+
+  <a role="button" data-toggle="collapse" href="#collapse-checkbox" aria-expanded="false" aria-controls="collapse-checkbox" class="toggle-collapse collapsed">
+    <h2>Filtrer par lieux <i class="ehnvicon ehnvicon-arrow-down"></i></h2>
+  </a>
+  <div class="collapse" id="collapse-checkbox">
+    {{> checkbox label="Option 2"}}
+    {{> checkbox label="Option 18" checked=true}}
+  </div>
+
+  <div class="spacer"></div>
+
+  {{> button button-type="default" button-content="Désactiver les filtres" }}
+  <div class="spacer"></div>
+  <div class="spacer spacer-xl visible-xs-block"></div>
+
+</div>
+

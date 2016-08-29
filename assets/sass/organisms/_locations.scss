@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.location{
+	background: $lightgrey;
+
+	.title-container{
+		overflow: hidden;
+		height: 290px;
+    background: linear-gradient(to bottom, #0099a1 0%,#04b8bc 100%);
+    @media only screen and (max-width: $screen-sm-max) {
+      height: auto;
+    }
+    .content{
+      position: relative;
+      z-index: 20;
+    }
+		i.ehnvicon{
+			font-size:170px;
+			line-height: 0.5;
+			display: inline-block;
+			color:#0baab4;
+			position: absolute;
+			bottom:0;
+			left: 0;
+			transform:translate(-10%, 10%);
+      z-index: 10;
+		}
+	}
+	.mapCont{
+		height: 290px;
+		overflow: hidden;
+		padding: 0;
+    display: flex;
+
+
+    @media only screen and (max-width: $screen-sm-max) {
+      height: auto;
+      overflow: visible;
+    }
+
+
+	}
+
+
+}
