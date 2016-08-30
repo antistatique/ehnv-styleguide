@@ -9,6 +9,12 @@ ul.pagination{
 			i.ehnvicon{
 				font-size:9px;
 				line-height: 11px;
+
+				&.arrow-left {
+				  display: inline-block;
+				  line-height: 0;
+				  transform: rotate(180deg);
+				}
 			}
 		}
 	}
