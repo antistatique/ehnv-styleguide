@@ -15,7 +15,7 @@ ul.nav.main{
       width: 100%;
     }
   }
-  > li{
+  > li {
     @media (min-width: $screen-sm-min) {
       display: inline-block;
       float: none;
@@ -33,6 +33,12 @@ ul.nav.main{
       }
     }
 
+    &.active {
+      > a.is-active {
+        color: $darkblue;
+        background: transparent;
+      }
+    }
 
     &.dropdown{
       &.open{
