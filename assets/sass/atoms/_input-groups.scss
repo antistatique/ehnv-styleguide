@@ -1,6 +1,6 @@
 @charset "UTF-8";
-.input-group{
-	.form-control{
+.input-group {
+	.form-control {
 			box-shadow: none;
 			color:#323232;
 			font-size: 16px;
@@ -9,16 +9,27 @@
 			font-weight: 600;
 			padding: 11px 14px;
       height: 50px;
-
-
 	}
-  .input-group-btn{
+
+	.form-control:last-child {
+		border-radius: $border-radius-base;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+  .input-group-btn {
+		.form-control:last-child {
+			border-radius: $border-radius-base;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+
     .btn{
         box-shadow: none;
+
         &:hover{
           box-shadow: none;
         }
       }
   }
 }
-
