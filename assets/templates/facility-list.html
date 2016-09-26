@@ -1,0 +1,55 @@
+{{> header }}
+
+{{> breadcrumb }}
+
+{{> cover portrait=false }}
+
+<div class="doctors">
+  <div class="spacer"></div>
+  <div class="container">
+    <section class="cards">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          {{> entry-title title="Hôpitaux, centres spécialisés et permanences médicales" }}
+          {{> map }}
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h3>Hôpitaux et centres spécialisés</h3>
+        </div>
+        <div class="col-sm-6">
+          {{> summary-box }}
+        </div>
+        <div class="col-sm-6">
+          {{> summary-box }}
+        </div>
+         <div class="col-sm-6">
+          {{> summary-box }}
+        </div>
+        <div class="col-sm-6">
+          {{> summary-box }}
+        </div>
+      </div>
+      <div class="spacer hidden visible-sm-block visible-xs-block"></div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h3>Permanences médicales</h3>
+        </div>
+        <div class="col-sm-6">
+          {{> summary-box }}
+        </div>
+        <div class="col-sm-6">
+          {{> summary-box }}
+        </div>
+         <div class="col-sm-6">
+          {{> summary-box }}
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="spacer"></div>
+</div>
+
+{{> footer }}
