@@ -12,6 +12,7 @@
     "url": "https://github.com/antistatique/ehnv-styleguide.git"
   },
   "scripts": {
+    "install": "napa",
     "build": "npm install && gulp --production"
   },
   "dependencies": {
@@ -72,9 +73,6 @@
     "tablesaw": "^2.0.2",
     "toolbox-utils": "0.0.1",
     "yargs": "^3.8.0"
-  },
-  "scripts": {
-    "install": "napa"
   },
   "napa": {
     "jquery-focuspoint": "jonom/jquery-focuspoint"
