@@ -6,8 +6,14 @@
 }
 
 .cover-container{
-  figure.portrait{
+  .portrait-container{
     transform:translateY(-50%);
-    margin-bottom: -50%;
+    .placeholder {
+      border-width: 3px;
+      .ehnvicon {
+        font-size: 100px;
+        line-height: 100px;
+      }
+    }
   }
 }

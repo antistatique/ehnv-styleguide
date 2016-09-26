@@ -11,7 +11,7 @@
   min-height: 110px;
   padding: 0 17px;
 
-  i.ehnvicon{
+  .ehnvicon-long-arrow-right{
     font-size:9px;
     display: inline-block;
     color:$lightblue;
@@ -21,15 +21,20 @@
     transform:translateY(-50%);
   }
 
-
   &:hover{
     background: $lightblue;
 
-    i.ehnvicon{
-      color:$white;
+    .vignette .placeholder{
+      border-color: $white;
     }
 
+    .vignette .placeholder .ehnvicon{
+      color: $white;
+    }
 
+    .ehnvicon{
+      color:$white;
+    }
 
     .user-card-infos{
       h3, p{
@@ -39,9 +44,7 @@
   }
 
 
-
-
-  img{
+  .vignette{
     border-radius: 50%;
     width: 65px;
     height: 65px;
@@ -50,8 +53,14 @@
     left:23px;
     top:50%;
     transform:translateY(-50%);
+    overflow: hidden;
 
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
+
   .user-card-infos{
     position: absolute;
     left:46+65px;
@@ -76,6 +85,4 @@
       padding: 0;
     }
   }
-
-
 }

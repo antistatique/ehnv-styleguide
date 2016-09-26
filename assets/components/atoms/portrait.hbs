@@ -1,7 +1,13 @@
 ---
 notes: |
   ##### Usage : `{{> portrait }}`
+  ##### Options :
+  - **portrait-url** - Bool
 ---
 <figure class="portrait">
-	<img src="https://randomuser.me/api/portraits/women/14.jpg" alt="">
+  {{#if portrait-url }}
+  <img src="{{ portrait-url }}" alt="">
+  {{^}}
+    {{> placeholder placeholder-sexe="m" }}
+  {{/if}}
 </figure>
