@@ -89,13 +89,13 @@
                 <a href="atoms.html#checkbox">Checkbox</a>
               </li>
               <li>
+                <a href="atoms.html#contact-infos">Contact Infos</a>
+              </li>
+              <li>
                 <a href="atoms.html#email-input">Email Input</a>
               </li>
               <li>
                 <a href="atoms.html#entry-title">Entry Title</a>
-              </li>
-              <li>
-                <a href="atoms.html#footer-signature">Footer Signature</a>
               </li>
               <li>
                 <a href="atoms.html#input-group">Input Group</a>
@@ -172,6 +172,9 @@
                 <a href="molecules.html#secondary-nav">Secondary Nav</a>
               </li>
               <li>
+                <a href="molecules.html#side-nav">Side Nav</a>
+              </li>
+              <li>
                 <a href="molecules.html#summary-box">Summary Box</a>
               </li>
               <li>
@@ -232,6 +235,9 @@
               </li>
               <li>
                 <a href="templates/elements.html">Elements</a>
+              </li>
+              <li>
+                <a href="templates/facility-detail.html">Facility Detail</a>
               </li>
               <li>
                 <a href="templates/facility-list.html">Facility List</a>
@@ -401,6 +407,63 @@
 </div>
 
 
+<div class="f-item-group" id="contact-infos">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Contact Infos</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Usage : <code>{{&gt; contact-infos }}</code></h5>
+<h5>Options :</h5>
+<ul>
+<li><strong>title</strong> - String</li>
+</ul>
+
+</div>
+<div class="f-item-preview">
+	<div class="contact-infos">
+	<h2></h2>
+	<a href="#" class="btn btn-link">Hôpital d’Yverdon-les-Bains <i class="ehnvicon ehnvicon-arrow-right"></i></a><br>
+	<a href="#" class="btn btn-link">Hôpital de St-Loup <i class="ehnvicon ehnvicon-arrow-right"></i></a><br>
+	<br>
+	<a href="#">olivier.borens@exemple.ch</a><br>
+	<a href="#">079 763 29 04</a><br>
+	<a href="#">079 763 29 04 (Fax)</a><br>
+	<a href="#">LinkedIn</a><br>
+	<a href="#">Skype</a>
+</div>
+<div class="spacer spacer-xl visible-xs-block"></div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;contact-infos&quot;&gt;
+	&lt;h2&gt;&lt;/h2&gt;
+	&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-link&quot;&gt;Hôpital d’Yverdon-les-Bains &lt;i class&#x3D;&quot;ehnvicon ehnvicon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;
+	&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-link&quot;&gt;Hôpital de St-Loup &lt;i class&#x3D;&quot;ehnvicon ehnvicon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;
+	&lt;br&gt;
+	&lt;a href&#x3D;&quot;#&quot;&gt;olivier.borens@exemple.ch&lt;/a&gt;&lt;br&gt;
+	&lt;a href&#x3D;&quot;#&quot;&gt;079 763 29 04&lt;/a&gt;&lt;br&gt;
+	&lt;a href&#x3D;&quot;#&quot;&gt;079 763 29 04 (Fax)&lt;/a&gt;&lt;br&gt;
+	&lt;a href&#x3D;&quot;#&quot;&gt;LinkedIn&lt;/a&gt;&lt;br&gt;
+	&lt;a href&#x3D;&quot;#&quot;&gt;Skype&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;spacer spacer-xl visible-xs-block&quot;&gt;&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="email-input">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -471,63 +534,6 @@
 	&lt;h1&gt;Title&lt;/h1&gt;
 
 &lt;/header&gt;</code></pre>
-</div>
-
-
-</div>
-
-
-<div class="f-item-group" id="footer-signature">
-
-	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Footer Signature</h2>
-		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
-			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
-				<svg>
-					<use xlink:href="#f-icon-code" />
-				</svg>
-			</span>
-		</div>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<h5>Usage : <code>{{&gt; footer-signature }}</code></h5>
-<h5>Options :</h5>
-<ul>
-<li><strong>title</strong> - String</li>
-</ul>
-
-</div>
-<div class="f-item-preview">
-	<div class="footer-signature">
-	<h2></h2>
-	<a href="#" class="btn btn-link">Hôpital d’Yverdon-les-Bains <i class="ehnvicon ehnvicon-arrow-right"></i></a><br>
-	<a href="#" class="btn btn-link">Hôpital de St-Loup <i class="ehnvicon ehnvicon-arrow-right"></i></a><br>
-	<br>
-	<a href="#">olivier.borens@exemple.ch</a><br>
-	<a href="#">079 763 29 04</a><br>
-	<a href="#">079 763 29 04 (Fax)</a><br>
-	<a href="#">LinkedIn</a><br>
-	<a href="#">Skype</a>
-</div>
-<div class="spacer spacer-xl visible-xs-block"></div>
-</div>
-<div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class&#x3D;&quot;footer-signature&quot;&gt;
-	&lt;h2&gt;&lt;/h2&gt;
-	&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-link&quot;&gt;Hôpital d’Yverdon-les-Bains &lt;i class&#x3D;&quot;ehnvicon ehnvicon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;
-	&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-link&quot;&gt;Hôpital de St-Loup &lt;i class&#x3D;&quot;ehnvicon ehnvicon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/a&gt;&lt;br&gt;
-	&lt;br&gt;
-	&lt;a href&#x3D;&quot;#&quot;&gt;olivier.borens@exemple.ch&lt;/a&gt;&lt;br&gt;
-	&lt;a href&#x3D;&quot;#&quot;&gt;079 763 29 04&lt;/a&gt;&lt;br&gt;
-	&lt;a href&#x3D;&quot;#&quot;&gt;079 763 29 04 (Fax)&lt;/a&gt;&lt;br&gt;
-	&lt;a href&#x3D;&quot;#&quot;&gt;LinkedIn&lt;/a&gt;&lt;br&gt;
-	&lt;a href&#x3D;&quot;#&quot;&gt;Skype&lt;/a&gt;
-&lt;/div&gt;
-&lt;div class&#x3D;&quot;spacer spacer-xl visible-xs-block&quot;&gt;&lt;/div&gt;</code></pre>
 </div>
 
 
