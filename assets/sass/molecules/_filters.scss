@@ -30,7 +30,7 @@
       bottom:3px;
       position: relative;
       transform-origin:50% 50%;
-      transform:rotate(0deg);
+      transform:rotateX(-180deg);
       transition:transform 0.3s;
       display: none;
       @media only screen and (max-width: $screen-xs-max) {
@@ -42,7 +42,7 @@
   .collapsed{
     h2{
       .ehnvicon{
-      transform:rotate(-180deg);
+      transform:rotateX(0deg);
 
       }
     }
