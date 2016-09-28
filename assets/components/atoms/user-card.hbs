@@ -4,7 +4,7 @@ notes: |
   ##### Options :
     - **card-portrait-url** - String
     - **card-name** - String
-    - **card-sexe** - String
+    - **card-politesse** - String
     - **card-title** - String
 ---
 <a href="#" class="user-card">
@@ -14,7 +14,7 @@ notes: |
     {{#if card-portrait-url}}
       <img src="{{ card-portrait-url }}" alt="">
     {{^}}
-      {{> placeholder placeholder-sexe=card-sexe }}
+      {{> placeholder placeholder-politesse=card-politesse }}
     {{/if}}
   </div>
   <div class="user-card-infos">

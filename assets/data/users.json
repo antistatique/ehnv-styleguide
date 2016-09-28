@@ -3,38 +3,38 @@
         {
             "name": "Jacqueline Robin",
             "title": "Pédiatrie",
-            "sexe": "f"
+            "politesse": "dresse"
         },
         {
             "name": "Dr Nishantan Popol Antonipillaï",
             "title": "FMH en gynécologie et obstétrique",
             "portrait-url": "https://randomuser.me/api/portraits/women/32.jpg",
-            "sexe": "m"
+            "politesse": "dr"
         },
 
         {
             "name": "Mathilde Toussaint",
             "title": "Vitae",
             "portrait-url": "https://randomuser.me/api/portraits/men/10.jpg",
-            "sexe": "m"
+            "politesse": "dr"
         },
         {
             "name": "Gabriel Reynaud",
             "title": "Pédiatrie",
-            "sexe": "m"
+            "politesse": "dr"
         },
         {
             "name": "Aimée Simon",
             "title": "Vitae",
             "portrait-url": "https://randomuser.me/api/portraits/men/10.jpg",
-            "sexe": "m"
+            "politesse": "dr"
         },
 
         {
             "name": "Mathilde Toussaint",
             "title": "Vitae",
             "portrait-url": "https://randomuser.me/api/portraits/men/11.jpg",
-            "sexe": "m"
+            "politesse": "dr"
         },
 
     ]
