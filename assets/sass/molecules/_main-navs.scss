@@ -21,12 +21,12 @@ ul.nav.main{
       float: none;
       text-align: left;
       &:first-child{
-        a {
+        a, span {
           padding-left: 0;
         }
       }
       &:last-child{
-        a {
+        a, span {
           padding-right: 0;
           text-align: right;
         }
@@ -34,7 +34,7 @@ ul.nav.main{
     }
 
     &.active {
-      > a.is-active {
+      > a.is-active, span.is-active {
         color: $darkblue;
         background: transparent;
       }
@@ -42,12 +42,12 @@ ul.nav.main{
 
     &.dropdown{
       &.open{
-        > a, a:focus{
+        > a, a:focus, span{
           @media (max-width: $screen-xs-max) {
             margin:0;
           }
         }
-        > a, a:focus{
+        > a, a:focus, span{
           background:transparentize($lightblue, 0.05);
           @media (max-width: $screen-xs-max) {
             background: none;
@@ -57,7 +57,7 @@ ul.nav.main{
       }
     }
 
-    > a {
+    > a, span {
       font-size: 22px;
       @media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
         font-size: 18px;
@@ -118,7 +118,7 @@ ul.nav.main{
         margin:0;
         padding: 0;
 
-        a, a:focus{
+        span, a, a:focus{
           color:$white;
           font-weight: 600;
           font-size: 18px;
