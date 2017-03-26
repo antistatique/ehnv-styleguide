@@ -4,15 +4,11 @@
   display: block;
   position: relative;
   border: 1px solid lighten($black, 90%);
-  transition: background 0.3s, box-shadow 0.3s;
+  transition: box-shadow 0.3s;
   margin-bottom: $grid-gutter-width;
 
   &:hover {
     box-shadow: 0 0 30px transparentize($black, 0.8);
-
-    .content {
-      background: darken($white, 7%);
-    }
   }
 
   figure {
@@ -43,7 +39,6 @@
     bottom: 0;
     width: 100%;
     background: $white;
-    transition: background 0.3s;
 
     @media only screen and (max-width: $screen-xs-max) {
       position: static;

@@ -6,22 +6,35 @@ header.entry-title{
     @media only screen and (max-width: $screen-xs-max) {
       font-size: 30px;
     }
-		line-height: 1.09;
-		color:$darkblue;
-		font-weight: 800;
-		padding: 0;
-		margin: 0 0 0.3em 0;
-	}
-	h2{
+    line-height: 1.09;
+    color:$darkblue;
+    font-weight: 800;
+    padding: 0;
+    margin: 0 0 0.3em 0;
+  }
+  h2{
     @media only screen and (max-width: $screen-xs-max) {
       font-size: 20px;
     }
-		font-size: 33px;
-		line-height: 1.15;
-		color:$lightblue;
-		font-weight: 400;
-		padding: 0;
-		margin: 0;
-		margin: 0 0 0.6em 0;
-	}
+    font-size: 33px;
+    line-height: 1.15;
+    color:$lightblue;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+    margin: 0 0 0.6em 0;
+  }
+}
+
+.meta.time {
+  font-size: 0.8em;
+  color: lighten($black, 40%);
+
+  .ehnvicon{
+    vertical-align: middle;
+    top:0.2em;
+    position: relative;
+    margin-right: 0.5em;
+    font-size: 0.8em;
+  }
 }
