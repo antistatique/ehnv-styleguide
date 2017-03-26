@@ -31,6 +31,12 @@
     }
   }
 
+  &.big-box {
+    figure img{
+      padding-bottom: 0%;
+    }
+  }
+
   .content {
     display: block;
     position: absolute;
