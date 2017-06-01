@@ -1,20 +1,25 @@
 @charset "UTF-8";
-.card-duo{
+
+.card-list {
   display: flex;
+  flex-flow: wrap;
+
   @media only screen and (max-width: $screen-sm) {
     display: block;
   }
-  .cell{
-    display: inline-block;
+
+  .card-cell {
     display: flex;
-    float:left;
-    width: 50%;
+    flex: 0 0 50%;
+
     @media only screen and (max-width: $screen-sm) {
-        width: auto;
+      flex: 0 0 100%;
     }
-    .card{
+
+    .card {
       display: block;
       margin: $grid-gutter-width/2;
+      width: 100%;
     }
   }
 }
