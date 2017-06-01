@@ -1,9 +1,32 @@
 @charset "UTF-8";
+
+a.summary-box:hover {
+  background: darken($white, 7%);
+  box-shadow: 0 0 30px transparentize($black, 0.8);
+}
+
 .summary-box{
   border:1px solid #ebebeb;
   display: block;
   overflow: hidden;
   margin-bottom: $grid-gutter-width;
+  background: $white;
+  box-shadow: none;
+  transition: background 0.3s, box-shadow 0.3s;
+
+  .title {
+    margin: 0;
+  }
+
+  time {
+    font-size: 15px;
+    color: lighten($black, 40%);
+  }
+
+  .content {
+    font-size: 15px;
+  }
+
   .content{
     > a{
       display: block;
@@ -30,6 +53,7 @@
     padding-bottom:60%;
     overflow: hidden;
     position: relative;
+
     figcaption{
       position: absolute;
       bottom:0;
@@ -40,9 +64,8 @@
       padding: 25px;
       width: 100%;
       z-index: 10;
-
-
     }
+
     img{
       width: 100%;
     }
@@ -71,9 +94,13 @@
       background: linear-gradient(transparentize($darkblue, 1), transparentize($darkblue, 0));
       bottom:0;
       z-index: 9;
+    }
 
-
-
+    &.no-overlay {
+      &:after,
+      &:before {
+        display: none;
+      }
     }
   }
 

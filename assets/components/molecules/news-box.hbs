@@ -1,0 +1,30 @@
+---
+notes: |
+  ##### Usage : `{{> news-box }}`
+---
+<a href="#" class="news-box {{#if big-box}}bix-box{{/if}}">
+  <figure>
+    <img src="http://placehold.it/{{#if big-box}}500x600{{^}}500x300{{/if}}" alt="Immersion dans le service de pédiatrie">
+  </figure>
+  <div class="content mt-auto">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="spacer spacer-sm"></div>
+        <div class="col-xs-8">
+          <h5 class="title"><strong>Immersion dans le service de pédiatrie</strong></h5>
+        </div>
+        <div class="col-xs-4 text-right">
+          <time>
+            <i class="ehnvicon ehnvicon-clock"></i>13 février 2017
+          </time>
+        </div>
+        <div class="col-xs-12">
+          <div class="spacer spacer-xs"></div>
+          <p class="text">
+            En lire plus...
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+</a>
