@@ -95,7 +95,6 @@
      top:0;
      left:0;
 
-     background: linear-gradient(to right, $darkblue, transparent, $darkblue);
    }
 
 
@@ -105,7 +104,6 @@
 }
 .right{
   width: 50%;
-  background: darken($lightblue, 10%);
   position: relative;
   overflow: hidden;
 
