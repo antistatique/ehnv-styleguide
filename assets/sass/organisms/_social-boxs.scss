@@ -25,9 +25,13 @@
 			line-height: 1.15;
 			font-weight: 300;
 			color:$white;
-
 			padding:0;
-			margin:0 0 8px 0;
+      margin:0 0 8px 0;
+
+      a{
+				color:$white;
+				border-bottom: 1px solid $white;
+			}
 		}
 
 		h2{
@@ -44,9 +48,6 @@
 			a{
 				color:$white;
 				border-bottom: 1px solid $white;
-				&:hover{
-
-				}
 			}
 		}
 

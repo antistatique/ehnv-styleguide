@@ -70,3 +70,19 @@
     }
   }
 }
+
+time {
+  font-size: 0.8em;
+  color: lighten($black, 50%);
+
+  i.ehnvicon{
+    vertical-align: middle;
+
+    top:1px;
+    position: relative;
+    margin-right: 0.5em;
+
+    font-size:10px;
+  }
+}
+

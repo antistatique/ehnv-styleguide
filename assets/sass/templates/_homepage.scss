@@ -10,14 +10,40 @@
 		}
 		.bg-image{
 			width: 100%;
+			max-width: 100%;
 			height: auto;
-			max-height: 750px;
+			max-height: 850px;
 			margin: 0;
-			overflow: hidden;
-			img{
+      overflow: hidden;
+      margin-top: 80px;
 
-				width: 100%;
-				height: auto;
+      @media only screen and (max-width: $screen-md-max) {
+        margin-top: 100px;
+      }
+
+      @media only screen and (max-width: $screen-xs-max) {
+        margin-top: 50px;
+      }
+
+      @media only screen and (min-width: 2000px) {
+        margin-top: 0;
+      }
+
+			img{
+        width: 130%;
+        margin-left: -15%;
+
+        @media only screen and (min-width: $screen-lg) {
+          width: 100%;
+          height: auto;
+          margin-left: 0;
+          margin-top: -2%;
+        }
+
+        @media only screen and (max-width: $screen-xs-max) {
+          width: 250%;
+          margin-left: -75%;
+        }
 			}
 		}
 	}
