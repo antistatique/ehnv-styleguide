@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+.peoples-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.people {
+  text-align: center;
+  width: 25%;
+  padding: 1em;
+
+  @media only screen and (max-width: $screen-md-max) {
+    width: 33.33%;
+  }
+
+  @media only screen and (max-width: $screen-xs-max) {
+    width: 50%;
+  }
+
+  p {
+    line-height: 1.2;
+  }
+
+  img {
+    margin-bottom: 0.4em;
+    display: block;
+  }
+}
