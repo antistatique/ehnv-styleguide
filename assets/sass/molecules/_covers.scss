@@ -2,7 +2,30 @@
 .cover{
 	overflow: hidden;
 	position: relative;
-	height: 450px;
+  height: 450px;
+
+  img {
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: auto;
+  }
+
+  @media only screen and (max-width: $screen-md-max) {
+    height: auto;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media only screen and (max-width: $screen-xs-max) {
+    img {
+      width: 150%;
+      margin-left: -25%;
+    }
+  }
 }
 
 .cover-container{

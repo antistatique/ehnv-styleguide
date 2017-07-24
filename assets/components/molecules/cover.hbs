@@ -6,14 +6,8 @@ notes: |
   - **portrait-url** - String
 ---
 <div class="cover-container">
-  <div class="cover">
-    <div class="focuspoint"
-    data-focus-x="0"
-    data-focus-y="0"
-    data-image-w="1440"
-    data-image-h="468">
-      <img src="{{#unless fabricator}}../{{/unless}}build/img/bg_cover.jpg" alt="">
-    </div>
+  <div class="cover" style="background: url({{#unless fabricator}}../{{/unless}}build/img/bg_cover_infinite.png) center center repeat-x / auto 100%">
+    <img src="{{#unless fabricator}}../{{/unless}}build/img/bg_cover.png" alt="">
   </div>
   {{#if portrait }}
   <div class="container portrait-container">
