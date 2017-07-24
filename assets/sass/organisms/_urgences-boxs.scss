@@ -120,9 +120,14 @@
     left:-3%;
     width:106%;
     height: 100%;
-    background: url(../img/EHNV_mobiles_Urgences@2x.png) center center/ cover;
+    background: url(../img/bg_urgences.png) center right/ cover;
     z-index: 5;
-    opacity: 0.2;
+    opacity: 0.3;
+
+    @media screen and (max-width: 1600px) {
+      opacity: 0.15;
+    }
+
   }
 
   .content{
