@@ -11,7 +11,7 @@
   display: flex;
 
   .content{
-    width: 70%;
+    width: 60%;
     font-size: 15px;
 
     display: flex;
@@ -29,7 +29,7 @@
   }
 
   .figure {
-    width: 30%;
+    width: 40%;
     display: inline-block;
     z-index: 10;
     position: relative;
@@ -55,6 +55,13 @@
     color:$darkblue;
     font-weight: 700;
     margin: $grid-gutter-width/2 0 0.5em;
+
+    .ehnvicon {
+      top: 0.1em;
+      font-size: 0.5em;
+      color: inherit;
+      vertical-align: middle;
+    }
   }
 
   p{
