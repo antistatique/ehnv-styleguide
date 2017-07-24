@@ -31,7 +31,14 @@
 .cover-container{
   .portrait-container{
     transform:translateY(-50%);
-    margin-bottom: -50px;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      clear: both;
+    }
+
     .icon-placeholder {
       border-width: 3px;
       .ehnvicon {
