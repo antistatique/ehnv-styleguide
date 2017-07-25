@@ -1,8 +1,19 @@
 @charset "UTF-8";
 .social-box{
-	background: $darkblue;
+  background: $darkblue;
+
+  @media only screen and (min-width: $screen-sm) {
+    .hmag-logo {
+      display: block;
+      width: 80%;
+    }
+  }
+
+
+
 	div.instagram-flow{
-		overflow: hidden;
+    overflow: hidden;
+
 		a{
 			display: block;
 			width: 100%;
@@ -13,7 +24,6 @@
       background-position: center center;
 		}
 	}
-
 
 	.content{
 		padding:35px 0;
