@@ -86,16 +86,16 @@
      .ie & {animation: none;}
    }
 
-   &:after{
-     content:"";
-     display: block;
-     width: 100%;
-     height: 100%;
-     position: absolute;
-     top:0;
-     left:0;
-
-   }
+    &:after{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top:0;
+      left:0;
+      background: linear-gradient(to right, $darkblue, transparentize($darkblue, 1) 50% );
+    }
 
 
 
@@ -120,12 +120,17 @@
     left:-3%;
     width:106%;
     height: 100%;
-    background: url(../img/bg_urgences.png) center right/ cover;
+    background: url(../img/bg_urgences.png) right center no-repeat / contain;
     z-index: 5;
     opacity: 0.3;
 
     @media screen and (max-width: 1600px) {
+      background-size: cover;
       opacity: 0.15;
+    }
+
+    @media only screen and (max-width: $screen-sm-max) {
+      background-position: center center;
     }
 
   }
