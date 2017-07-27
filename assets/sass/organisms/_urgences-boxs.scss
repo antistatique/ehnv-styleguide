@@ -120,17 +120,18 @@
     left:-3%;
     width:106%;
     height: 100%;
-    background: url(../img/bg_urgences.png) right center no-repeat / contain;
+    background: url(../img/bg_urgences.png) center right no-repeat / contain;
     z-index: 5;
     opacity: 0.3;
 
     @media screen and (max-width: 1600px) {
+      background-position: 50% 50%;
       background-size: cover;
       opacity: 0.15;
     }
 
     @media only screen and (max-width: $screen-sm-max) {
-      background-position: center center;
+      background-position: 75% 50%;
     }
 
   }
