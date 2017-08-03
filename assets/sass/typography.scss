@@ -24,6 +24,8 @@ a.text-white {
 }
 
 @media only screen and (max-width: $screen-xs-max) {
+  ol li,
+  ul li,
   p{
     font-size: floor(($font-size-base * 0.85));
   }
