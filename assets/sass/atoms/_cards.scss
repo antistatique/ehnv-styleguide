@@ -9,6 +9,10 @@
   overflow: hidden;
   position: relative;
 
+  &.card-block {
+    display: block;
+  }
+
   &:hover{
     background: $lightblue;
     color:$white;
