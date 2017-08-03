@@ -15,6 +15,10 @@ strong, b{
 
 .text-white {
   color: $white;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 a.text-white {
