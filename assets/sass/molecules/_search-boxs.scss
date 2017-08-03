@@ -25,21 +25,23 @@
 	&.right{
 		float:right;
 		left:-17px;
-
 	}
 
   &.white{
     &:before, &:after{
       border-color:$white;
     }
+
     .search-form{
       .submit{
         border-color: $white;
         color:$white;
       }
+
       .text{
         border-color: $white;
         color:$white;
+
         &:focus {
           border-color: $white;
           color:$white;
@@ -50,12 +52,10 @@
 
 	&:before{
 		content:"";
-
-	    border-top-left-radius: 18px;  /* 100px of height + 10px of border */
-	    border-bottom-left-radius: 18px; /* 100px of height + 10px of border */
-	    border: 1px solid $blue;
-	    border-right: 0;
-
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    border: 1px solid $blue;
+    border-right: 0;
 
 		z-index: 58;
 		width: 17px;
@@ -64,15 +64,15 @@
 
 		top:0;
 		left: -17px;
-	}
+  }
+
 	&:after{
 		content:"";
-
-	    border-top-right-radius: 18px;  /* 100px of height + 10px of border */
-	    border-bottom-right-radius: 18px; /* 100px of height + 10px of border */
-	    border: 1px solid $blue;
-	    border-left: 0;
-	    box-sizing: border-box;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border: 1px solid $blue;
+    border-left: 0;
+    box-sizing: border-box;
 
 
 		z-index: 58;
@@ -83,9 +83,9 @@
 		top:0;
 		right: -17px;
 	}
-	&.expanded,{
-	    width: calc(100% - 34px);
-	transition:width .5s cubic-bezier(1.000, 0.005, 0.755, 0.955);
+	&.expanded{
+    width: calc(100% - 34px);
+    transition:width .5s cubic-bezier(1.000, 0.005, 0.755, 0.955);
 
 		.input{
 			width: 50px;
@@ -110,7 +110,8 @@
 			left: 0;
 			border:none;
 			border-top:1px solid $blue;
-			border-bottom:1px solid $blue;
+      border-bottom:1px solid $blue;
+      border-radius: 0;
 			z-index: 80;
 			background: none;
 
@@ -152,12 +153,6 @@
 			   	border:none;
 				outline: none;
 			}
-
-
-
 		}
 	}
-
-
-
 }
