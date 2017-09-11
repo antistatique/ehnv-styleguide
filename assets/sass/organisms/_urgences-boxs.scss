@@ -47,13 +47,17 @@
     .phone-number{
      display: inline-block;
      font-size:150px;
-     line-height:150px;
+     line-height:1;
      font-weight: 800;
      margin: 0 0 32px 0;
      padding: 0;
      color:$white;
      z-index: 10;
      position: relative;
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size:100px;
+    }
 
      &:hover{
       color:$lightblue;

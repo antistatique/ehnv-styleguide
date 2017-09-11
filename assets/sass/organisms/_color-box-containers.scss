@@ -5,20 +5,15 @@
 
 	h1{
 		font-size: 46px;
-    @media only screen and (max-width: $screen-xs-max) {
-      font-size: 30px;
-    }
 		line-height: 1.086;
 		font-weight: 800;
 		text-align: center;
 		color:$darkblue;
 		margin-top:1.5em;
 		margin-bottom:0px;
-	}
+  }
+
 	h2{
-    @media only screen and (max-width: $screen-xs-max) {
-      font-size: 20px;
-    }
 		font-size: 33px;
 		line-height: 1.15;
 		font-weight: 400;
