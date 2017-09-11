@@ -96,9 +96,6 @@
       left:0;
       background: linear-gradient(to right, $darkblue, transparentize($darkblue, 1) 50% );
     }
-
-
-
  }
 }
 }
@@ -106,6 +103,9 @@
   width: 50%;
   position: relative;
   overflow: hidden;
+  background:
+    url(../img/bg_urgences.jpg) no-repeat bottom right / contain,
+    linear-gradient(to bottom, #04b8bc, #04b1b7);
 
   @media (max-width: $screen-sm-max) {
     width: 100%;
@@ -113,29 +113,10 @@
     font-size:$font-size-base;
   }
 
-  &:after{
-    content:"";
-    position: absolute;
-    top:0;
-    left:-3%;
-    width:106%;
-    height: 100%;
-    background: url(../img/bg_urgences.png) no-repeat;
-    background-position: center right;
-    background-size: contain;
-    z-index: 5;
-    opacity: 0.3;
-
-    @media screen and (max-width: 1600px) {
-      background-position: 50% 50%;
-      background-size: cover;
-      opacity: 0.15;
-    }
-
-    @media only screen and (max-width: $screen-sm-max) {
-      background-position: 75% 50%;
-    }
-
+  @media only screen and (max-width: $screen-md-max) {
+    background:
+      url(../img/bg_urgences.jpg) no-repeat center center / cover,
+      linear-gradient(to bottom, #04b8bc, #04b1b7);
   }
 
   .content{
