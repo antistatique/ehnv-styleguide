@@ -75,21 +75,6 @@
     z-index: 0;
     opacity: 0.4;
 
-    .ekg{
-     display: block;
-     fill:none;
-     stroke:$lightblue;
-     stroke-width:6;
-     stroke-dasharray: 500;
-     stroke-dashoffset: 0;
-     animation: dash 2s ease-out infinite;
-     position: relative;
-     width: 175px;
-     height: auto;
-
-     .ie & {animation: none;}
-   }
-
     &:after{
       content: "";
       display: block;
@@ -163,3 +148,25 @@
  }
 
 }
+
+
+.ekg-container{
+  position: relative;
+  display: inline-block;
+
+  .ekg{
+   display: block;
+   fill:none;
+   stroke:$lightblue;
+   stroke-width:6;
+   stroke-dasharray: 500;
+   stroke-dashoffset: 0;
+   animation: dash 2s ease-out infinite;
+   position: relative;
+   width: 175px;
+   height: auto;
+
+   .ie & {animation: none;}
+ }
+}
+
