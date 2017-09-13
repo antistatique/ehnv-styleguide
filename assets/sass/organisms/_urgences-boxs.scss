@@ -47,13 +47,17 @@
     .phone-number{
      display: inline-block;
      font-size:150px;
-     line-height:150px;
+     line-height:1;
      font-weight: 800;
      margin: 0 0 32px 0;
      padding: 0;
      color:$white;
      z-index: 10;
      position: relative;
+
+    @media screen and (max-width: $screen-xs-max) {
+      font-size:100px;
+    }
 
      &:hover{
       color:$lightblue;
@@ -71,71 +75,54 @@
     z-index: 0;
     opacity: 0.4;
 
-    .ekg{
-     display: block;
-     fill:none;
-     stroke:$lightblue;
-     stroke-width:6;
-     stroke-dasharray: 500;
-     stroke-dashoffset: 0;
-     animation: dash 2s ease-out infinite;
-     position: relative;
-     width: 175px;
-     height: auto;
-
-     .ie & {animation: none;}
-   }
-
-   &:after{
-     content:"";
-     display: block;
-     width: 100%;
-     height: 100%;
-     position: absolute;
-     top:0;
-     left:0;
-
-     background: linear-gradient(to right, $darkblue, transparent, $darkblue);
-   }
-
-
-
+    &:after{
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top:0;
+      left:0;
+      background: linear-gradient(to right, $darkblue, transparentize($darkblue, 1) 50% );
+    }
  }
 }
 }
 .right{
   width: 50%;
-  background: darken($lightblue, 10%);
+  position: relative;
+  overflow: hidden;
+  background:
+    url(../img/bg_urgences.jpg) no-repeat bottom right / contain,
+    linear-gradient(to bottom, #04b8bc, #04b1b7);
+
   @media (max-width: $screen-sm-max) {
-   width: 100%;
-   display: inline-block;
-   font-size:$font-size-base;
- }
+    width: 100%;
+    display: inline-block;
+    font-size:$font-size-base;
+  }
 
- position: relative;
- &:after{
-   content:"";
-   position: absolute;
-   top:0;
-   left:0;
-   width:100%;
-   height: 100%;
-   background: url(../img/bg_urgences.jpg) center center/ cover;
-   z-index: 5;
-   opacity: 0.2;
- }
- .content{
-   float: left;
-   @media screen and (min-width: $screen-sm-min) {
-    max-width:$container-lg/2;
-   }
-   width: calc(100% - 15px);
-   padding: 0 $grid-gutter-width/2;
-   z-index: 10;
-   position: relative;
+  @media only screen and (max-width: $screen-md-max) {
+    background:
+      url(../img/bg_urgences.jpg) no-repeat center center / cover,
+      linear-gradient(to bottom, #04b8bc, #04b1b7);
+  }
 
+  .content{
+    float: left;
+    width: calc(100% - 15px);
+    padding: 0 $grid-gutter-width/2;
+    z-index: 10;
+    position: relative;
 
- }
+    a:hover {
+      opacity: 0.7;
+    }
+
+    @media screen and (min-width: $screen-sm-min) {
+      max-width:$container-lg/2;
+    }
+  }
 }
 }
 
@@ -161,3 +148,25 @@
  }
 
 }
+
+
+.ekg-container{
+  position: relative;
+  display: inline-block;
+
+  .ekg{
+   display: block;
+   fill:none;
+   stroke:$lightblue;
+   stroke-width:6;
+   stroke-dasharray: 500;
+   stroke-dashoffset: 0;
+   animation: dash 2s ease-out infinite;
+   position: relative;
+   width: 175px;
+   height: auto;
+
+   .ie & {animation: none;}
+ }
+}
+

@@ -2,30 +2,40 @@
     "medecins": [
         {
             "name": "Jacqueline Robin",
-            "title": "Pédiatrie"
+            "title": "Pédiatrie",
+            "politesse": "dresse"
         },
         {
             "name": "Dr Nishantan Popol Antonipillaï",
-            "title": "Vitae"
+            "title": "FMH en gynécologie et obstétrique",
+            "portrait-url": "https://randomuser.me/api/portraits/women/32.jpg",
+            "politesse": "dr"
         },
 
         {
             "name": "Mathilde Toussaint",
-            "title": "Vitae"
+            "title": "Vitae",
+            "portrait-url": "https://randomuser.me/api/portraits/men/10.jpg",
+            "politesse": "dr"
         },
         {
             "name": "Gabriel Reynaud",
-            "title": "Pédiatrie"
+            "title": "Pédiatrie",
+            "politesse": "dr"
         },
         {
             "name": "Aimée Simon",
-            "title": "Vitae"
+            "title": "Vitae",
+            "portrait-url": "https://randomuser.me/api/portraits/men/10.jpg",
+            "politesse": "dr"
         },
 
         {
             "name": "Mathilde Toussaint",
-            "title": "Vitae"
+            "title": "Vitae",
+            "portrait-url": "https://randomuser.me/api/portraits/men/11.jpg",
+            "politesse": "dr"
         },
-       
+
     ]
 }

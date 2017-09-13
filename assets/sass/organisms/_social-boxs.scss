@@ -1,24 +1,27 @@
 @charset "UTF-8";
 .social-box{
-	background: $blue;
+  background: $darkblue;
+
+  @media only screen and (min-width: $screen-sm) {
+    .hmag-logo {
+      display: block;
+      width: 80%;
+    }
+  }
+
 	div.instagram-flow{
-		overflow: hidden;
+    overflow: hidden;
+
 		a{
 			display: block;
 			width: 100%;
 			height:0;
 			padding-bottom: 100%;
 			overflow: hidden;
-
-			img{
-				width: 100%;
-				height: auto;
-				display: block;
-				box-sizing:border-box;
-			}
+      background-size: cover;
+      background-position: center center;
 		}
 	}
-
 
 	.content{
 		padding:35px 0;
@@ -30,9 +33,17 @@
 			line-height: 1.15;
 			font-weight: 300;
 			color:$white;
-
 			padding:0;
-			margin:0 0 8px 0;
+      margin:0 0 8px 0;
+
+      a{
+				color:$white;
+        border-bottom: 1px solid $white;
+
+        &:hover {
+          opacity: 0.7;
+        }
+			}
 		}
 
 		h2{
@@ -49,9 +60,6 @@
 			a{
 				color:$white;
 				border-bottom: 1px solid $white;
-				&:hover{
-
-				}
 			}
 		}
 

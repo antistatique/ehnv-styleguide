@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.header-hmag {
+  position: relative;
+  z-index: 100;
+
+  margin-bottom: -95px;
+  @media only screen and (max-width: $screen-xs-max) {
+    margin-bottom: -108px;
+  }
+}
+
+.tagline{
+  color: $white;
+  font-size: 40px;
+
+  a, a:hover {
+    border-bottom: 0;
+  }
+}

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 footer.footer{
   margin:0;
-  background: $darkblue;
+  background: $blue;
   color:$white;
 
   .content{
@@ -83,11 +83,11 @@ footer.footer{
     margin:0 0 33px 0;
     padding:0;
     a{
-      color:$lightblue;
-      border-bottom: 1px solid $lightblue;
+      color: $white;
+      border-bottom: 1px solid $white;
       &:hover{
-        color:$white;
-        border-bottom: 1px solid $white !important;
+        color: $lightblue;
+        border-bottom: 1px solid $lightblue !important;
       }
     }
   }

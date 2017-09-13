@@ -5,13 +5,8 @@ notes: |
 <div class="row">
   <div class="user-cards-list">
   	{{#each users.medecins }}
-      <div class="col-sm-6">
-      {{> user-card card-name=this.name card-title=this.title}}
-      </div>
-      <div class="spacer spacer-xs visible-xs-block"></div>
+      {{> user-card card-politesse=this.politesse card-name=this.name card-title=this.title card-portrait-url=this.portrait-url}}
   	{{/each}}
   </div>
 </div>
 <div class="spacer spacer-xl visible-xs-block"></div>
-
-

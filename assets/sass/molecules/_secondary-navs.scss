@@ -3,8 +3,11 @@
 ul.nav.secondary {
     margin:0;
     padding: 0;
+    text-align: right;
 
 		li {
+      display: inline-block;
+      float: none;
 			font-size:20px;
       margin:0 0 0 35px;
       padding: 0;

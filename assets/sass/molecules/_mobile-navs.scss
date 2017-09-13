@@ -63,9 +63,13 @@
       }
 
       ul.nav.secondary {
+        text-align: left;
+
         li {
           padding: 0;
           margin:0;
+          display: block;
+
           a {
             color:$white;
             padding: 0;

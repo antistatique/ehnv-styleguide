@@ -1,0 +1,33 @@
+{{> header }}
+
+{{> breadcrumb }}
+
+{{> cover portrait=false }}
+
+<div class="doctor-list">
+  <div class="spacer"></div>
+  <div class="container">
+    <section class="cards">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-4">
+          <h1>Médecins et spécialités</h1>
+          <p>Les eHnv ce sont 600 docteurs, <a href="#">50 spécialités</a>, <a href="#">10 établissements</a>.</p>
+        </div>
+      </div>
+      <div class="spacer spacer-sm"></div>
+      <div class="row">
+        <div class="col-md-3">
+          {{> filter }}
+        </div>
+        <div class="col-md-8 col-md-offset-1">
+          {{> user-cards-list }}
+          <div class="text-center">
+            {{> pagination }}
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="spacer"></div>
+  {{> footer }}
+</div>

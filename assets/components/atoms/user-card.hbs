@@ -2,14 +2,23 @@
 notes: |
   ##### Usage : `{{> user-card }}`
   ##### Options :
-  - **card-name** - String
-  - **card-title** - String
+    - **card-portrait-url** - String
+    - **card-name** - String
+    - **card-politesse** - String
+    - **card-title** - String
 ---
 <a href="#" class="user-card">
-    <i class="ehnvicon ehnvicon-long-arrow-right"></i>
-    <img src="https://randomuser.me/api/portraits/med/men/24.jpg" alt="">
-    <div class="user-card-infos">
-      <h3>{{#if card-name}}{{ card-name }}{{^}}card-title{{/if}}</h3>
-      <p>{{#if card-title}}{{ card-title }}{{^}}card-title{{/if}}</p>
-      </div>
+  <i class="ehnvicon ehnvicon-long-arrow-right"></i>
+
+  <div class="vignette">
+    {{#if card-portrait-url}}
+      <img src="{{ card-portrait-url }}" alt="">
+    {{^}}
+      {{> placeholder placeholder-politesse=card-politesse }}
+    {{/if}}
+  </div>
+  <div class="user-card-infos">
+    <h3>{{#if card-name}}{{ card-name }}{{^}}card-title{{/if}}</h3>
+    <p>{{#if card-title}}{{ card-title }}{{^}}card-title{{/if}}</p>
+  </div>
 </a>

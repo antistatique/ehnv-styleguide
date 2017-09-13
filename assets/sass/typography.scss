@@ -1,6 +1,5 @@
-p{
+.content-wrapper p{
   font-size: $font-size-base;
-
 
 	a, a:visited{
 		border-bottom: 1px solid $blue;
@@ -14,11 +13,23 @@ strong, b{
 	font-weight: 700;
 }
 
-.entry-content{
-	margin-bottom: 56px;
+.text-white {
+  color: $white;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+a.text-white {
+  color: $white;
+  text-decoration: none;
+  border-bottom: 1px solid $white;
 }
 
 @media only screen and (max-width: $screen-xs-max) {
+  ol li,
+  ul li,
   p{
     font-size: floor(($font-size-base * 0.85));
   }
@@ -40,4 +51,42 @@ strong, b{
   h5{
     font-size: floor(($font-size-base * 0.85));
   }
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mr-0 {
+  margin-right: 0;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+.pt-0 {
+  padding-top: 0;
+}
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.pr-0 {
+  padding-right: 0;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.entry-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

@@ -9,6 +9,10 @@
   overflow: hidden;
   position: relative;
 
+  &.card-block {
+    display: block;
+  }
+
   &:hover{
     background: $lightblue;
     color:$white;
@@ -16,7 +20,7 @@
       color:$white;
     }
     div.content{
-      h1, h2, p{
+      h1, h2, p, time{
         color:$white;
       }
     }
