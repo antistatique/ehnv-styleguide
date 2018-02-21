@@ -13,7 +13,8 @@
 			background: $lightblue;
 			box-shadow: 0 3px #0b9b97;
 		}
-	}
+  }
+
 	&.btn-default{
 		background: $lightgrey;
 		box-shadow: 0 3px darken($lightgrey, 19%);
@@ -21,7 +22,15 @@
 		&:hover{
 			color:$lightblue;
 		}
-	}
+  }
+
+  &.btn-info {
+    background: $brand-info;
+
+    &:hover {
+      background: $btn-primary-bg;
+    }
+  }
 
 	&.btn-link{
 		background: none;
