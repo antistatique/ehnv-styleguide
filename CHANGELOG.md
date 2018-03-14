@@ -1,6 +1,8 @@
 CHANGELOG
 =========
 
+## 1.0.3 (2018-03-14)
+
 ## 1.0.2 (2018-02-21)
  - changes the hover color for the btn-info tag
  - add the facebook graphic to the icon set
