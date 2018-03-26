@@ -1,7 +1,11 @@
 CHANGELOG
 =========
 
+## 1.0.4 (2018-03-26)
+ - Adds a new icon for the Youtube channel
+
 ## 1.0.3 (2018-03-14)
+ - Updates the filename of the placeholder with the adjusted civility
 
 ## 1.0.2 (2018-02-21)
  - changes the hover color for the btn-info tag
