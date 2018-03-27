@@ -1,6 +1,9 @@
 CHANGELOG
 =========
 
+## 1.1-beta (2018-03-27)
+ - Minor layout alterations
+
 ## 1.0.4 (2018-03-26)
  - Adds a new icon for the Youtube channel
 

@@ -3,7 +3,7 @@
 .user-card{
   display: inline-block;
   position: relative;
-  margin: $grid-gutter-width/4;
+  margin: $grid-gutter-width/4 0;
 
   background: $lightgrey;
   border-left:2px solid $lightblue;
