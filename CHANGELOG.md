@@ -1,6 +1,9 @@
 CHANGELOG
 =========
 
+## 1.1.1 (2018-04-16)
+ - Fix an issue with gulp
+
 ## 1.1.0 (2018-03-27)
  - Minor layout alterations
 
