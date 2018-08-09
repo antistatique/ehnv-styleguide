@@ -1,6 +1,9 @@
 CHANGELOG
 =========
 
+## 1.1.3 (2018-08-09)
+ - Fix an issue with phantomcss
+ 
 ## 1.1.2 (2018-04-16)
  - Fix an issue with gulp
 
