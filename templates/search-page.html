@@ -14,6 +14,17 @@
     <link rel="stylesheet" href="./../build/css/vendors.min.css">
     <link rel="stylesheet" href="./../build/css/main.css">
 
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'xld7vod',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
     <!--[if lt IE 9]>
       <script src="./../build/js/polyfills.min.js"></script>
     <![endif]-->
@@ -91,23 +102,18 @@
       <div class="container">
         <nav class="navbar navbar-default" role="navigation">
           <div class="row">
-            <div class="col-md-4 col-sm-3 col-xs-5">
+            <div class="col-md-5 col-sm-4 col-xs-8">
               <div class="navbar-header">
                 <a href="">
                   <img
-                  class="img-responsive hidden-xs hidden-sm"
+                  class="img-responsive"
                   src="../build/svg/logo_eHnv_full.svg"
                   alt="eHnv - Etablissements Hospitaliers du Nord Vaudois."
                   onerror="this.onerror=null; this.src='../build/img/logo_eHnv_full.png'" >
-                  <img
-                  class="img-responsive visible-xs-block visible-sm-block"
-                  src="../build/svg/logo_eHnv_redux.svg"
-                  alt="eHnv - Etablissements Hospitaliers du Nord Vaudois."
-                  onerror="this.onerror=null; this.src='../build/img/logo_eHnv_redux.png'" >
                 </a>
               </div>
             </div>
-            <div class="col-lg-5 col-lg-offset-3 col-md-6 col-md-offset-2 col-sm-7 col-sm-offset-2 col-xs-offset-3 hidden-xs">
+            <div class="col-md-7 col-sm-8 hidden-xs">
               <div class="collapse navbar-collapse">
                 <div class="row">
                   <ul class="nav navbar-nav navbar-right secondary">
@@ -187,14 +193,8 @@
   </div>
 </div>
 <div class="cover-container">
-  <div class="cover">
-    <div class="focuspoint"
-    data-focus-x="0"
-    data-focus-y="0"
-    data-image-w="1440"
-    data-image-h="468">
-      <img src="../build/img/bg_cover.jpg" alt="">
-    </div>
+  <div class="cover greybg" style="background: url(../build/img/bg_cover_infinite.png) center center repeat-x / auto 100%">
+    <img src="../build/img/bg_cover.png" alt="">
   </div>
 </div><div class="spacer"></div>
 
@@ -206,6 +206,10 @@
         <header class="entry-title">
         	<h1>Résultats de recherche</h1>
         	<h2>Votre recherche concernant “Cossonay“ a retourné 12 résultat</h2>
+          <p class="meta time">
+            <i class="ehnvicon ehnvicon-clock"></i>
+            <time datetime="2016-08-19">19 Août 2016</time>
+          </p>
         </header>
         <div class="spacer spacer-xs"></div>
 
@@ -230,8 +234,8 @@
           </a>
 
           <div class="row">
-            <div class="card-duo">
-              <div class="cell">
+            <div class="card-list">
+              <div class="card-cell">
                 <a href="#" class="card card-square">
                 		<i class="ehnvicon ehnvicon-long-arrow-right"></i>
                 		<div class="content">
@@ -241,12 +245,22 @@
                 		</div>
                 
                 </a>    </div>
-              <div class="cell">
+              <div class="card-cell">
                 <a href="#" class="card card-square">
                 		<i class="ehnvicon ehnvicon-long-arrow-right"></i>
                 		<div class="content">
                       <h1>Ouverture à Orbe avec un très long titre</h1>
                       <h2>www.adressedelapage.ch</h2></h2>
+                			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat.</p>
+                		</div>
+                
+                </a>    </div>
+              <div class="card-cell">
+                <a href="#" class="card card-square">
+                		<i class="ehnvicon ehnvicon-long-arrow-right"></i>
+                		<div class="content">
+                      <h1>Ouverture à Orbe</h1>
+                      </h2>
                 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat.</p>
                 		</div>
                 
@@ -268,8 +282,8 @@
         <table class="tablesaw" data-tablesaw-sortable data-tablesaw-mode="stack">
         	<thead>
         		<tr>
-        			<th data-tablesaw-sortable-col data-tablesaw-priority="persist">
-        				Titre <i class="ehnvicon ehnvicon-arrow-down"></i>
+        			<th>
+        				Titre
         			</th>
         			<th width="25%" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">
         				Site <i class="ehnvicon ehnvicon-arrow-down"></i>
@@ -420,6 +434,11 @@
 </div>
 
 
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous"></script>
     <script src="./../build/js/vendors.min.js"></script>
     <script src="./../build/js/main.js"></script>
   </body>

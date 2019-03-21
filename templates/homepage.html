@@ -14,6 +14,17 @@
     <link rel="stylesheet" href="./../build/css/vendors.min.css">
     <link rel="stylesheet" href="./../build/css/main.css">
 
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'xld7vod',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
     <!--[if lt IE 9]>
       <script src="./../build/js/polyfills.min.js"></script>
     <![endif]-->
@@ -94,23 +105,18 @@
       <div class="container">
         <nav class="navbar navbar-default" role="navigation">
           <div class="row">
-            <div class="col-md-4 col-sm-3 col-xs-5">
+            <div class="col-md-5 col-sm-4 col-xs-8">
               <div class="navbar-header">
                 <a href="">
                   <img
-                  class="img-responsive hidden-xs hidden-sm"
+                  class="img-responsive"
                   src="../build/svg/logo_eHnv_full.svg"
                   alt="eHnv - Etablissements Hospitaliers du Nord Vaudois."
                   onerror="this.onerror=null; this.src='../build/img/logo_eHnv_full.png'" >
-                  <img
-                  class="img-responsive visible-xs-block visible-sm-block"
-                  src="../build/svg/logo_eHnv_redux.svg"
-                  alt="eHnv - Etablissements Hospitaliers du Nord Vaudois."
-                  onerror="this.onerror=null; this.src='../build/img/logo_eHnv_redux.png'" >
                 </a>
               </div>
             </div>
-            <div class="col-lg-5 col-lg-offset-3 col-md-6 col-md-offset-2 col-sm-7 col-sm-offset-2 col-xs-offset-3 hidden-xs">
+            <div class="col-md-7 col-sm-8 hidden-xs">
               <div class="collapse navbar-collapse">
                 <div class="row">
                   <ul class="nav navbar-nav navbar-right secondary">
@@ -414,22 +420,18 @@
         <div class="col-md-8 col-md-offset-1">
           <div class="row">
             <div class="user-cards-list">
-                <div class="col-sm-6">
                 <a href="#" class="user-card">
                   <i class="ehnvicon ehnvicon-long-arrow-right"></i>
                 
                   <div class="vignette">
-                      <div class="placeholder">
-                        <i class="ehnvicon ehnvicon-placeholder-f"></i>
+                      <div class="icon-placeholder">
+                        <i class="ehnvicon ehnvicon-placeholder-dr"></i>
                       </div>  </div>
                   <div class="user-card-infos">
                     <h3>Jacqueline Robin</h3>
                     <p>Pédiatrie</p>
                   </div>
-                </a>      </div>
-                <div class="spacer spacer-xs visible-xs-block"></div>
-                <div class="col-sm-6">
-                <a href="#" class="user-card">
+                </a>      <a href="#" class="user-card">
                   <i class="ehnvicon ehnvicon-long-arrow-right"></i>
                 
                   <div class="vignette">
@@ -437,12 +439,9 @@
                   </div>
                   <div class="user-card-infos">
                     <h3>Dr Nishantan Popol Antonipillaï</h3>
-                    <p>Vitae</p>
+                    <p>FMH en gynécologie et obstétrique</p>
                   </div>
-                </a>      </div>
-                <div class="spacer spacer-xs visible-xs-block"></div>
-                <div class="col-sm-6">
-                <a href="#" class="user-card">
+                </a>      <a href="#" class="user-card">
                   <i class="ehnvicon ehnvicon-long-arrow-right"></i>
                 
                   <div class="vignette">
@@ -452,24 +451,18 @@
                     <h3>Mathilde Toussaint</h3>
                     <p>Vitae</p>
                   </div>
-                </a>      </div>
-                <div class="spacer spacer-xs visible-xs-block"></div>
-                <div class="col-sm-6">
-                <a href="#" class="user-card">
+                </a>      <a href="#" class="user-card">
                   <i class="ehnvicon ehnvicon-long-arrow-right"></i>
                 
                   <div class="vignette">
-                      <div class="placeholder">
-                        <i class="ehnvicon ehnvicon-placeholder-m"></i>
+                      <div class="icon-placeholder">
+                        <i class="ehnvicon ehnvicon-placeholder-dr"></i>
                       </div>  </div>
                   <div class="user-card-infos">
                     <h3>Gabriel Reynaud</h3>
                     <p>Pédiatrie</p>
                   </div>
-                </a>      </div>
-                <div class="spacer spacer-xs visible-xs-block"></div>
-                <div class="col-sm-6">
-                <a href="#" class="user-card">
+                </a>      <a href="#" class="user-card">
                   <i class="ehnvicon ehnvicon-long-arrow-right"></i>
                 
                   <div class="vignette">
@@ -479,10 +472,7 @@
                     <h3>Aimée Simon</h3>
                     <p>Vitae</p>
                   </div>
-                </a>      </div>
-                <div class="spacer spacer-xs visible-xs-block"></div>
-                <div class="col-sm-6">
-                <a href="#" class="user-card">
+                </a>      <a href="#" class="user-card">
                   <i class="ehnvicon ehnvicon-long-arrow-right"></i>
                 
                   <div class="vignette">
@@ -492,97 +482,91 @@
                     <h3>Mathilde Toussaint</h3>
                     <p>Vitae</p>
                   </div>
-                </a>      </div>
-                <div class="spacer spacer-xs visible-xs-block"></div>
-            </div>
+                </a>  </div>
           </div>
           <div class="spacer spacer-xl visible-xs-block"></div>        </div>
       </div>
     </section>
-
+    <div class="spacer spacer-lg"></div>
     <div class="row">
-      <div class="col-sm-6">
+      <div class="col-lg-6">
         <div href="#" class="summary-box">
+          <a class="figure" href="#" style="background: url(https://unsplash.it/700/700/?random) 50% 50% / cover"></a>
           <div class="content">
-            <a href="">
-              <figure>
-                <img src="https://unsplash.it/700/700/?random" alt="">
-                <figcaption>
-                  Urgences d’Yverdon-les-bains
-                </figcaption>
-              </figure>
-        
-              <div href="#" class="summary-box-informations-link">Plus d'informations <i class="ehnvicon ehnvicon-arrow-right"></i></div>
-            </a>
-            <div class="spacer spacer-sm visible-xs-block visible-sm-block"></div>
-            <div class="row">
+            <div class="informations">
               <div class="col-xs-12">
-                <div class="col-sm-12 col-md-7">
-                  <div class="spacer spacer-sm"></div>
-                    <i class="ehnvicon ehnvicon-pin"></i>
-                    <p>
-                      <a href="#">
-                        Rue d'Entremonts 11<br>
-                        1400 Yverdon-les-bains
-                      </a>
-                    </p>
-                  <div class="spacer spacer-sm"></div>
-                </div>
-                <div class="col-sm-12 col-md-5">
-                  <div class="spacer spacer-sm"></div>
-                    <i class="ehnvicon ehnvicon-phone"></i>
-                    <p>
-                      <a href="tel:0244244444">024 424 44 44</a><br>
-                      Réception 24/24
-                    </p>
-                  <div class="spacer spacer-sm"></div>
+                <a href="#"><h2>Urgences d’Yverdon-les-bains</h2></a>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="icon-container">
+                      <i class="ehnvicon ehnvicon-pin"></i>
+                    </div>
+                    <div class="text-container">
+                      <p>
+                        <a href="#">
+                          Rue d'Entremonts 11<br>
+                          1400 Yverdon-les-bains
+                        </a>
+                      </p>
+                    </div>
+                    <div class="spacer spacer-sm"></div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="icon-container">
+                      <i class="ehnvicon ehnvicon-phone"></i>
+                    </div>
+                    <div class="text-container">
+                      <p>
+                        <a href="tel:0244244444">024 424 44 44</a><br>
+                        Réception 24/24
+                      </p>
+                    </div>
+                    <div class="spacer spacer-sm"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="spacer spacer-xl visible-xs-block"></div>      </div>
-      <div class="col-sm-6">
+        </div>      </div>
+      <div class="col-lg-6">
         <div href="#" class="summary-box">
+          <a class="figure" href="#" style="background: url(https://unsplash.it/700/700/?random) 50% 50% / cover"></a>
           <div class="content">
-            <a href="">
-              <figure>
-                <img src="https://unsplash.it/700/700/?random" alt="">
-                <figcaption>
-                  Urgences d’Yverdon-les-bains
-                </figcaption>
-              </figure>
-        
-              <div href="#" class="summary-box-informations-link">Plus d'informations <i class="ehnvicon ehnvicon-arrow-right"></i></div>
-            </a>
-            <div class="spacer spacer-sm visible-xs-block visible-sm-block"></div>
-            <div class="row">
+            <div class="informations">
               <div class="col-xs-12">
-                <div class="col-sm-12 col-md-7">
-                  <div class="spacer spacer-sm"></div>
-                    <i class="ehnvicon ehnvicon-pin"></i>
-                    <p>
-                      <a href="#">
-                        Rue d'Entremonts 11<br>
-                        1400 Yverdon-les-bains
-                      </a>
-                    </p>
-                  <div class="spacer spacer-sm"></div>
-                </div>
-                <div class="col-sm-12 col-md-5">
-                  <div class="spacer spacer-sm"></div>
-                    <i class="ehnvicon ehnvicon-phone"></i>
-                    <p>
-                      <a href="tel:0244244444">024 424 44 44</a><br>
-                      Réception 24/24
-                    </p>
-                  <div class="spacer spacer-sm"></div>
+                <a href="#"><h2>Urgences d’Yverdon-les-bains</h2></a>
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="icon-container">
+                      <i class="ehnvicon ehnvicon-pin"></i>
+                    </div>
+                    <div class="text-container">
+                      <p>
+                        <a href="#">
+                          Rue d'Entremonts 11<br>
+                          1400 Yverdon-les-bains
+                        </a>
+                      </p>
+                    </div>
+                    <div class="spacer spacer-sm"></div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="icon-container">
+                      <i class="ehnvicon ehnvicon-phone"></i>
+                    </div>
+                    <div class="text-container">
+                      <p>
+                        <a href="tel:0244244444">024 424 44 44</a><br>
+                        Réception 24/24
+                      </p>
+                    </div>
+                    <div class="spacer spacer-sm"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="spacer spacer-xl visible-xs-block"></div>      </div>
+        </div>      </div>
     </div>
   </div>
   <div class="spacer"></div>
@@ -597,7 +581,7 @@
         <div class="input-group email-input">
         <input type="email" class="form-control" placeholder="Votre E-mail">
         	<span class="input-group-btn">
-        		<button class="btn btn-primary" type="button">S’inscrire</button>
+        		<button class="btn btn-default" type="button">S’inscrire</button>
         	</span>
         </div>    </div>
     </div>
@@ -605,74 +589,34 @@
   
   </section>
   <section class="social-box">
-  	<div class="instagram-flow">
-  		<div class="container-fluid no-gutter">
-  			<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 no-gutter">
-  				<a href="#" target="_blank">
-  					<div class="focuspoint"
-  					data-focus-x="0"
-  					data-focus-y="0"
-  					data-image-w="500"
-  					data-image-h="500">
-  					<img src="https://unsplash.it/500/500/?random" alt="">
-  				</div>
-  			</a>
-  		</div>
-  		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 no-gutter">
-  			<a href="#" target="_blank">
-  				<div class="focuspoint"
-  				data-focus-x="0"
-  				data-focus-y="0"
-  				data-image-w="500"
-  				data-image-h="500">
-  				<img src="https://unsplash.it/500/500/?random" alt="">
-  			</div>				</a>
-  		</div>
-  		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 hidden-xs no-gutter">
-  			<a href="#" target="_blank">
-  				<div class="focuspoint"
-  				data-focus-x="0"
-  				data-focus-y="0"
-  				data-image-w="500"
-  				data-image-h="500">
-  				<img src="https://unsplash.it/500/500/?random" alt="">
-  			</div>				</a>
-  		</div>
-  		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 hidden-sm hidden-xs no-gutter">
-  			<a href="#" target="_blank">
-  				<div class="focuspoint"
-  				data-focus-x="0"
-  				data-focus-y="0"
-  				data-image-w="500"
-  				data-image-h="500">
-  				<img src="https://unsplash.it/500/500/?random" alt="">
-  			</div>				</a>
-  		</div>
-  		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 hidden-md hidden-sm hidden-xs no-gutter">
-  			<a href="#" target="_blank">
-  				<div class="focuspoint"
-  				data-focus-x="0"
-  				data-focus-y="0"
-  				data-image-w="500"
-  				data-image-h="500">
-  				<img src="https://unsplash.it/500/500/?random" alt="">
-  			</div>				</a>
-  		</div>
-  		<div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 hidden-md hidden-sm hidden-xs no-gutter">
-  			<a href="#" target="_blank">
-  				<div class="focuspoint"
-  				data-focus-x="0"
-  				data-focus-y="0"
-  				data-image-w="500"
-  				data-image-h="500">
-  				<img src="https://unsplash.it/500/500/?random" alt="">
-  			</div>				</a>
-  		</div>
-  	</div>
-  </div>
-  
-  <div class="content">
-  	<div class="container">
+    <div class="instagram-flow">
+      <div class="container-fluid no-gutter">
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 no-gutter">
+          <a href="https://www.instagram.com/p/BLQRbCRAn88/" target="_blank" style="background-image:url(https://scontent-mxp1-1.cdninstagram.com/t51.2885-15/e35/14591071_1218396834907532_438036211211173888_n.jpg?ig_cache_key=MTM1NTY2MDExMjQ4NzkzOTkwMA%3D%3D.2)"></a>
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 no-gutter">
+          <a href="https://www.instagram.com/p/BLQSD6FgkWU/" target="_blank" style="background-image:url(https://scontent-mxp1-1.cdninstagram.com/t51.2885-15/e35/14574081_310184799355839_5312417960063664128_n.jpg?ig_cache_key=MTM1NTY2MjkyMTIwMzU5ODc0MA%3D%3D.2)">
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 hidden-xs no-gutter">
+          <a href="https://www.instagram.com/p/BLQRvfPAD3T/" target="_blank" style="background-image:url(https://scontent-mxp1-1.cdninstagram.com/t51.2885-15/e35/14597250_258057031262406_644163910928171008_n.jpg?ig_cache_key=MTM1NTY2MTUxNzk4MjI4NTI2Nw%3D%3D.2)">
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 hidden-sm hidden-xs no-gutter">
+          <a href="https://www.instagram.com/p/BLQRmiaAL1M/" target="_blank" style="background-image:url(https://scontent-mxp1-1.cdninstagram.com/t51.2885-15/e35/14566740_1609792355980486_3589570109347201024_n.jpg?ig_cache_key=MTM1NTY2MDkwMjkxMjgwMjEyNA%3D%3D.2)">
+          </a>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 hidden-md hidden-sm hidden-xs no-gutter">
+          <a href="https://www.instagram.com/p/BLQRbCRAn88/" target="_blank" style="background-image:url(https://scontent-mxp1-1.cdninstagram.com/t51.2885-15/e35/14591071_1218396834907532_438036211211173888_n.jpg?ig_cache_key=MTM1NTY2MDExMjQ4NzkzOTkwMA%3D%3D.2)"></a>
+        </div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6 hidden-md hidden-sm hidden-xs no-gutter">
+          <a class="picture" href="https://www.instagram.com/p/BLQRJmLAYu-/" target="_blank" style="background-image:url(https://scontent-mxp1-1.cdninstagram.com/t51.2885-15/e35/14592200_199675117123517_8017171054919155712_n.jpg?ig_cache_key=MTM1NTY1ODkxNDA5MTMzODY4Ng%3D%3D.2)"></a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+     <div class="container">
       <div class="row">
         <div class="col-sm-7">
           <h1>Suivez Hashtag, le mag des eHnv</h1>
@@ -682,14 +626,12 @@
   
           <a href="#" target="_blank" class="social-link"><i class="ehnvicon ehnvicon-twitter"></i></a>        <a href="#" target="_blank" class="social-link"><i class="ehnvicon ehnvicon-instagram"></i></a>      </div>
       </div>
-  	</div>
+    </div>
   </div>
   
   </section>
   <footer class="footer">
   	<div class="content">
-  
-  
   		<div class="container">
         <div class="row">
     			<div class="col-sm-7">
@@ -698,7 +640,7 @@
     				<div class="input-group email-input">
     				<input type="email" class="form-control" placeholder="Votre E-mail">
     					<span class="input-group-btn">
-    						<button class="btn btn-primary" type="button">S’inscrire</button>
+    						<button class="btn btn-default" type="button">S’inscrire</button>
     					</span>
     				</div>  			</div>
     			<div class="col-sm-4 col-sm-offset-1 text-xs-center">
@@ -730,6 +672,11 @@
   </footer></div>
 
 
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous"></script>
     <script src="./../build/js/vendors.min.js"></script>
     <script src="./../build/js/main.js"></script>
   </body>

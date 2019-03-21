@@ -15,6 +15,17 @@
     <link rel="stylesheet" href="./build/css/vendors.min.css">
     <link rel="stylesheet" href="./build/css/main.css">
 
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'xld7vod',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
     <!--[if lt IE 9]>
       <script src="./build/js/polyfills.min.js"></script>
     <![endif]-->
@@ -133,16 +144,25 @@
             <a href="molecules.html" class="f-menu__heading">Molecules</a>
             <ul>
               <li>
+                <a href="molecules.html#background-box">Background Box</a>
+              </li>
+              <li>
                 <a href="molecules.html#breadcrumb">Breadcrumb</a>
               </li>
               <li>
-                <a href="molecules.html#card-duo">Card Duo</a>
+                <a href="molecules.html#card-list">Card List</a>
               </li>
               <li>
                 <a href="molecules.html#color-box">Color Box</a>
               </li>
               <li>
                 <a href="molecules.html#cover">Cover</a>
+              </li>
+              <li>
+                <a href="molecules.html#doc-box">Doc Box</a>
+              </li>
+              <li>
+                <a href="molecules.html#download-list">Download List</a>
               </li>
               <li>
                 <a href="molecules.html#entry-footer">Entry Footer</a>
@@ -166,6 +186,12 @@
                 <a href="molecules.html#mobile-nav">Mobile Nav</a>
               </li>
               <li>
+                <a href="molecules.html#news-box">News Box</a>
+              </li>
+              <li>
+                <a href="molecules.html#peoples">Peoples</a>
+              </li>
+              <li>
                 <a href="molecules.html#search-box">Search Box</a>
               </li>
               <li>
@@ -179,6 +205,9 @@
               </li>
               <li>
                 <a href="molecules.html#table">Table</a>
+              </li>
+              <li>
+                <a href="molecules.html#teaser">Teaser</a>
               </li>
               <li>
                 <a href="molecules.html#thumb-box">Thumb Box</a>
@@ -204,6 +233,9 @@
                 <a href="organisms.html#header">Header</a>
               </li>
               <li>
+                <a href="organisms.html#header-hmag">Header Hmag</a>
+              </li>
+              <li>
                 <a href="organisms.html#location">Location</a>
               </li>
               <li>
@@ -224,6 +256,12 @@
           <li>
             <a href="templates.html" class="f-menu__heading">Templates</a>
             <ul>
+              <li>
+                <a href="templates/404.html">404</a>
+              </li>
+              <li>
+                <a href="templates/comite.html">Comite</a>
+              </li>
               <li>
                 <a href="templates/content.html">Content</a>
               </li>
@@ -247,6 +285,9 @@
               </li>
               <li>
                 <a href="templates/homepage2.html">Homepage2</a>
+              </li>
+              <li>
+                <a href="templates/job-detail.html">Job Detail</a>
               </li>
               <li>
                 <a href="templates/news-detail.html">News Detail</a>
@@ -278,19 +319,109 @@
 <h1 data-f-toggle="labels">Molecules</h1>
 
 
-<div class="f-item-group" id="breadcrumb">
+<div class="f-item-group" id="background-box">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Breadcrumb</h2>
+		<h2 class="f-item-heading">Background Box</h2>
 		<div class="f-item-controls">
-			
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 				<svg>
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Usage : <code>{{&gt; background-box }}</code></h5>
+
+</div>
+<div class="f-item-preview">
+	<div class="row d-flex">
+	<div class="col-sm-6 d-flex">
+		<div class="bg-dark-blue w-100">
+			<h3 class="h2 font-weight-bold mt-0">Coordonnées</h3>
+			<p>
+				<a href="#">
+					Rue de Plaisance 2<br />
+					1400 Yverdon-les-Bains
+				</a>
+			</p>
+			<a href="#" class="btn mb-0">Accès Google Maps</a>
+		</div>
 	</div>
+	<div class="col-sm-6 d-flex">
+		<div class="bg-light-blue w-100">
+			<h3 class="h2 font-weight-bold mt-0">Contact</h3>
+			<p>
+				<a href="#">daisy@ehnv.ch</a><br />
+				Tél. <a href="#">024 424 54 21</a><br />
+				Fax 024 424 54 20
+			</p>
+			<p class="mb-0">
+				Ouverture du lundi au vendredi, dès 7h du matin.
+			</p>
+		</div>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row d-flex&quot;&gt;
+	&lt;div class&#x3D;&quot;col-sm-6 d-flex&quot;&gt;
+		&lt;div class&#x3D;&quot;bg-dark-blue w-100&quot;&gt;
+			&lt;h3 class&#x3D;&quot;h2 font-weight-bold mt-0&quot;&gt;Coordonnées&lt;/h3&gt;
+			&lt;p&gt;
+				&lt;a href&#x3D;&quot;#&quot;&gt;
+					Rue de Plaisance 2&lt;br /&gt;
+					1400 Yverdon-les-Bains
+				&lt;/a&gt;
+			&lt;/p&gt;
+			&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn mb-0&quot;&gt;Accès Google Maps&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;col-sm-6 d-flex&quot;&gt;
+		&lt;div class&#x3D;&quot;bg-light-blue w-100&quot;&gt;
+			&lt;h3 class&#x3D;&quot;h2 font-weight-bold mt-0&quot;&gt;Contact&lt;/h3&gt;
+			&lt;p&gt;
+				&lt;a href&#x3D;&quot;#&quot;&gt;daisy@ehnv.ch&lt;/a&gt;&lt;br /&gt;
+				Tél. &lt;a href&#x3D;&quot;#&quot;&gt;024 424 54 21&lt;/a&gt;&lt;br /&gt;
+				Fax 024 424 54 20
+			&lt;/p&gt;
+			&lt;p class&#x3D;&quot;mb-0&quot;&gt;
+				Ouverture du lundi au vendredi, dès 7h du matin.
+			&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="breadcrumb">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Breadcrumb</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Usage : <code>{{&gt; breadcrumb }}</code></h5>
+
+</div>
 <div class="f-item-preview">
 	<div class="greybg">
 	<div class="container">
@@ -330,10 +461,10 @@
 </div>
 
 
-<div class="f-item-group" id="card-duo">
+<div class="f-item-group" id="card-list">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
-		<h2 class="f-item-heading">Card Duo</h2>
+		<h2 class="f-item-heading">Card List</h2>
 		<div class="f-item-controls">
 			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
 				<svg>
@@ -347,13 +478,13 @@
 			</span>
 		</div>
 	</div><div class="f-item-notes" data-f-toggle="notes">
-	<h5>Usage : <code>{{&gt; card-duo }}</code></h5>
+	<h5>Usage : <code>{{&gt; card-list }}</code></h5>
 
 </div>
 <div class="f-item-preview">
 	<div class="row">
-	<div class="card-duo">
-		<div class="cell">
+	<div class="card-list">
+		<div class="card-cell">
 			<a href="#" class="card card-square">
 				<i class="ehnvicon ehnvicon-long-arrow-right"></i>
 				<div class="content">
@@ -362,9 +493,8 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat.</p>
 				</div>
 
-			</a>
-		</div>
-		<div class="cell">
+			</a> </div>
+		<div class="card-cell">
 			<a href="#" class="card card-square">
 				<i class="ehnvicon ehnvicon-long-arrow-right"></i>
 				<div class="content">
@@ -374,15 +504,24 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat.</p>
 				</div>
 
-			</a>
-		</div>
+			</a> </div>
+		<div class="card-cell">
+			<a href="#" class="card card-square">
+				<i class="ehnvicon ehnvicon-long-arrow-right"></i>
+				<div class="content">
+					<h1>Ouverture à Orbe</h1>
+					</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat.</p>
+				</div>
+
+			</a> </div>
 	</div>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
-	&lt;div class&#x3D;&quot;card-duo&quot;&gt;
-		&lt;div class&#x3D;&quot;cell&quot;&gt;
+	&lt;div class&#x3D;&quot;card-list&quot;&gt;
+		&lt;div class&#x3D;&quot;card-cell&quot;&gt;
 			&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;card card-square&quot;&gt;
 				&lt;i class&#x3D;&quot;ehnvicon ehnvicon-long-arrow-right&quot;&gt;&lt;/i&gt;
 				&lt;div class&#x3D;&quot;content&quot;&gt;
@@ -391,9 +530,8 @@
 					&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat.&lt;/p&gt;
 				&lt;/div&gt;
 
-			&lt;/a&gt;
-		&lt;/div&gt;
-		&lt;div class&#x3D;&quot;cell&quot;&gt;
+			&lt;/a&gt; &lt;/div&gt;
+		&lt;div class&#x3D;&quot;card-cell&quot;&gt;
 			&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;card card-square&quot;&gt;
 				&lt;i class&#x3D;&quot;ehnvicon ehnvicon-long-arrow-right&quot;&gt;&lt;/i&gt;
 				&lt;div class&#x3D;&quot;content&quot;&gt;
@@ -403,8 +541,17 @@
 					&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat.&lt;/p&gt;
 				&lt;/div&gt;
 
-			&lt;/a&gt;
-		&lt;/div&gt;
+			&lt;/a&gt; &lt;/div&gt;
+		&lt;div class&#x3D;&quot;card-cell&quot;&gt;
+			&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;card card-square&quot;&gt;
+				&lt;i class&#x3D;&quot;ehnvicon ehnvicon-long-arrow-right&quot;&gt;&lt;/i&gt;
+				&lt;div class&#x3D;&quot;content&quot;&gt;
+					&lt;h1&gt;Ouverture à Orbe&lt;/h1&gt;
+					&lt;/h2&gt;
+					&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Expressa vero in iis aetatibus, quae iam confirmatae sunt. Nec lapathi suavitatem acupenseri Galloni Laelius anteponebat, sed suavitatem ipsam neglegebat.&lt;/p&gt;
+				&lt;/div&gt;
+
+			&lt;/a&gt; &lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -496,16 +643,14 @@
 </div>
 <div class="f-item-preview">
 	<div class="cover-container">
-	<div class="cover">
-		<div class="focuspoint" data-focus-x="0" data-focus-y="0" data-image-w="1440" data-image-h="468">
-			<img src="build/img/bg_cover.jpg" alt="">
-		</div>
+	<div class="cover greybg" style="background: url(build/img/bg_cover_infinite.png) center center repeat-x / auto 100%">
+		<img src="build/img/bg_cover.png" alt="">
 	</div>
 	<div class="container portrait-container">
 		<div class="col-sm-4 col-md-3 col-md-push-2 col-sm-push-0 col-xs-5">
 			<figure class="portrait">
-				<div class="placeholder">
-					<i class="ehnvicon ehnvicon-placeholder-m"></i>
+				<div class="icon-placeholder">
+					<i class="ehnvicon ehnvicon-placeholder-dr"></i>
 				</div>
 			</figure>
 		</div>
@@ -514,19 +659,102 @@
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;cover-container&quot;&gt;
-	&lt;div class&#x3D;&quot;cover&quot;&gt;
-		&lt;div class&#x3D;&quot;focuspoint&quot; data-focus-x&#x3D;&quot;0&quot; data-focus-y&#x3D;&quot;0&quot; data-image-w&#x3D;&quot;1440&quot; data-image-h&#x3D;&quot;468&quot;&gt;
-			&lt;img src&#x3D;&quot;build/img/bg_cover.jpg&quot; alt&#x3D;&quot;&quot;&gt;
-		&lt;/div&gt;
+	&lt;div class&#x3D;&quot;cover greybg&quot; style&#x3D;&quot;background: url(build/img/bg_cover_infinite.png) center center repeat-x / auto 100%&quot;&gt;
+		&lt;img src&#x3D;&quot;build/img/bg_cover.png&quot; alt&#x3D;&quot;&quot;&gt;
 	&lt;/div&gt;
 	&lt;div class&#x3D;&quot;container portrait-container&quot;&gt;
 		&lt;div class&#x3D;&quot;col-sm-4 col-md-3 col-md-push-2 col-sm-push-0 col-xs-5&quot;&gt;
 			&lt;figure class&#x3D;&quot;portrait&quot;&gt;
-				&lt;div class&#x3D;&quot;placeholder&quot;&gt;
-					&lt;i class&#x3D;&quot;ehnvicon ehnvicon-placeholder-m&quot;&gt;&lt;/i&gt;
+				&lt;div class&#x3D;&quot;icon-placeholder&quot;&gt;
+					&lt;i class&#x3D;&quot;ehnvicon ehnvicon-placeholder-dr&quot;&gt;&lt;/i&gt;
 				&lt;/div&gt;
 			&lt;/figure&gt;
 		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="doc-box">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Doc Box</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Usage : <code>{{&gt; doc-box }}</code></h5>
+
+</div>
+<div class="f-item-preview">
+	<div class="doc-box">
+	<span class="badge">48 médecins</span>
+	<h3 class="h1 font-weight-bold text-dark-blue">Les médecins de DaisY</h3>
+	<div class="spacer spacer-sm"></div>
+	<a href="#" class="btn btn-primary mb-0">Consulter la liste</a>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;doc-box&quot;&gt;
+	&lt;span class&#x3D;&quot;badge&quot;&gt;48 médecins&lt;/span&gt;
+	&lt;h3 class&#x3D;&quot;h1 font-weight-bold text-dark-blue&quot;&gt;Les médecins de DaisY&lt;/h3&gt;
+	&lt;div class&#x3D;&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
+	&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-primary mb-0&quot;&gt;Consulter la liste&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="download-list">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Download List</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div class="download-list">
+	<div class="link">
+		<span class="label lb-sm">zip</span> <a href="#" download="">Document 1 <i class="ehnvicon ehnvicon-download"></i></a>
+	</div>
+	<div class="link">
+		<span class="label">pdf</span> <a href="#" download="">Document 1 <i class="ehnvicon ehnvicon-download"></i></a>
+	</div>
+	<div class="link">
+		<span class="label">doc</span> <a href="#" download="">Document 1 <i class="ehnvicon ehnvicon-download"></i></a>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;download-list&quot;&gt;
+	&lt;div class&#x3D;&quot;link&quot;&gt;
+		&lt;span class&#x3D;&quot;label lb-sm&quot;&gt;zip&lt;/span&gt; &lt;a href&#x3D;&quot;#&quot; download&#x3D;&quot;&quot;&gt;Document 1 &lt;i class&#x3D;&quot;ehnvicon ehnvicon-download&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;link&quot;&gt;
+		&lt;span class&#x3D;&quot;label&quot;&gt;pdf&lt;/span&gt; &lt;a href&#x3D;&quot;#&quot; download&#x3D;&quot;&quot;&gt;Document 1 &lt;i class&#x3D;&quot;ehnvicon ehnvicon-download&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;link&quot;&gt;
+		&lt;span class&#x3D;&quot;label&quot;&gt;doc&lt;/span&gt; &lt;a href&#x3D;&quot;#&quot; download&#x3D;&quot;&quot;&gt;Document 1 &lt;i class&#x3D;&quot;ehnvicon ehnvicon-download&quot;&gt;&lt;/i&gt;&lt;/a&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -695,8 +923,8 @@
 		<div class="input-group">
 			<input type="text" class="form-control" placeholder="Rechercher">
 			<span class="input-group-btn">
-            <button class="btn btn-primary" type="button">Ok</button>
-          </span>
+				<button class="btn btn-primary" type="button">Ok</button>
+			</span>
 		</div>
 	</div>
 
@@ -707,10 +935,10 @@
 	</a>
 	<div class="collapse" id="collapse-tags-select">
 		<select class="form-control tags-select" multiple="multiple">
-      <option value="">Pédiatrie</option>
-      <option value="">Option 1</option> te
-      <option value="">Option 2 </option>
-    </select> </div>
+			<option value="">Pédiatrie</option>
+			<option value="">Option 1</option> te
+			<option value="">Option 2 </option>
+		</select> </div>
 	<div class="spacer"></div>
 
 	<a role="button" data-toggle="collapse" href="#collapse-checkbox" aria-expanded="false" aria-controls="collapse-checkbox" class="toggle-collapse collapsed">
@@ -718,7 +946,7 @@
 	</a>
 	<div class="collapse" id="collapse-checkbox">
 		<div class="checkbox">
-			<label><input type="checkbox" value="" >&nbsp;Option 2</label>
+			<label><input type="checkbox" value="">&nbsp;Option 2</label>
 		</div>
 		<div class="checkbox">
 			<label><input type="checkbox" value="" checked>&nbsp;Option 18</label>
@@ -742,8 +970,8 @@
 		&lt;div class&#x3D;&quot;input-group&quot;&gt;
 			&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Rechercher&quot;&gt;
 			&lt;span class&#x3D;&quot;input-group-btn&quot;&gt;
-            &lt;button class&#x3D;&quot;btn btn-primary&quot; type&#x3D;&quot;button&quot;&gt;Ok&lt;/button&gt;
-          &lt;/span&gt;
+				&lt;button class&#x3D;&quot;btn btn-primary&quot; type&#x3D;&quot;button&quot;&gt;Ok&lt;/button&gt;
+			&lt;/span&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 
@@ -754,10 +982,10 @@
 	&lt;/a&gt;
 	&lt;div class&#x3D;&quot;collapse&quot; id&#x3D;&quot;collapse-tags-select&quot;&gt;
 		&lt;select class&#x3D;&quot;form-control tags-select&quot; multiple&#x3D;&quot;multiple&quot;&gt;
-      &lt;option value&#x3D;&quot;&quot;&gt;Pédiatrie&lt;/option&gt;
-      &lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt; te
-      &lt;option value&#x3D;&quot;&quot;&gt;Option 2 &lt;/option&gt;
-    &lt;/select&gt; &lt;/div&gt;
+			&lt;option value&#x3D;&quot;&quot;&gt;Pédiatrie&lt;/option&gt;
+			&lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt; te
+			&lt;option value&#x3D;&quot;&quot;&gt;Option 2 &lt;/option&gt;
+		&lt;/select&gt; &lt;/div&gt;
 	&lt;div class&#x3D;&quot;spacer&quot;&gt;&lt;/div&gt;
 
 	&lt;a role&#x3D;&quot;button&quot; data-toggle&#x3D;&quot;collapse&quot; href&#x3D;&quot;#collapse-checkbox&quot; aria-expanded&#x3D;&quot;false&quot; aria-controls&#x3D;&quot;collapse-checkbox&quot; class&#x3D;&quot;toggle-collapse collapsed&quot;&gt;
@@ -765,7 +993,7 @@
 	&lt;/a&gt;
 	&lt;div class&#x3D;&quot;collapse&quot; id&#x3D;&quot;collapse-checkbox&quot;&gt;
 		&lt;div class&#x3D;&quot;checkbox&quot;&gt;
-			&lt;label&gt;&lt;input type&#x3D;&quot;checkbox&quot; value&#x3D;&quot;&quot; &gt;&amp;nbsp;Option 2&lt;/label&gt;
+			&lt;label&gt;&lt;input type&#x3D;&quot;checkbox&quot; value&#x3D;&quot;&quot;&gt;&amp;nbsp;Option 2&lt;/label&gt;
 		&lt;/div&gt;
 		&lt;div class&#x3D;&quot;checkbox&quot;&gt;
 			&lt;label&gt;&lt;input type&#x3D;&quot;checkbox&quot; value&#x3D;&quot;&quot; checked&gt;&amp;nbsp;Option 18&lt;/label&gt;
@@ -956,7 +1184,7 @@
 	</li>
 	<li class="dropdown">
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Organisation <i class="ehnvicon ehnvicon-arrow-down"></i>
-      </a>
+		</a>
 		<ul class="dropdown-menu">
 			<li><a href="#">Le conseil de direction</a></li>
 			<li><a href="#">L&#x27;association</a></li>
@@ -986,7 +1214,7 @@
 	&lt;/li&gt;
 	&lt;li class&#x3D;&quot;dropdown&quot;&gt;
 		&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;dropdown-toggle&quot; data-toggle&#x3D;&quot;dropdown&quot; role&#x3D;&quot;button&quot; aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot;&gt;Organisation &lt;i class&#x3D;&quot;ehnvicon ehnvicon-arrow-down&quot;&gt;&lt;/i&gt;
-      &lt;/a&gt;
+		&lt;/a&gt;
 		&lt;ul class&#x3D;&quot;dropdown-menu&quot;&gt;
 			&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Le conseil de direction&lt;/a&gt;&lt;/li&gt;
 			&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;L&amp;#x27;association&lt;/a&gt;&lt;/li&gt;
@@ -1102,7 +1330,7 @@
 					</li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Organisation <i class="ehnvicon ehnvicon-arrow-down"></i>
-              </a>
+						</a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Le conseil de direction</a></li>
 							<li><a href="#">L&#x27;association</a></li>
@@ -1135,7 +1363,7 @@
 					<form class="search-form">
 						<input class="text" type="text">
 						<button class="submit" type="submit" value="Search"><i class="ehnvicon ehnvicon-search"></i>
-                </button>
+						</button>
 					</form>
 
 				</div>
@@ -1171,7 +1399,7 @@
 					&lt;/li&gt;
 					&lt;li class&#x3D;&quot;dropdown&quot;&gt;
 						&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;dropdown-toggle&quot; data-toggle&#x3D;&quot;dropdown&quot; role&#x3D;&quot;button&quot; aria-haspopup&#x3D;&quot;true&quot; aria-expanded&#x3D;&quot;false&quot;&gt;Organisation &lt;i class&#x3D;&quot;ehnvicon ehnvicon-arrow-down&quot;&gt;&lt;/i&gt;
-              &lt;/a&gt;
+						&lt;/a&gt;
 						&lt;ul class&#x3D;&quot;dropdown-menu&quot;&gt;
 							&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Le conseil de direction&lt;/a&gt;&lt;/li&gt;
 							&lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;L&amp;#x27;association&lt;/a&gt;&lt;/li&gt;
@@ -1204,13 +1432,329 @@
 					&lt;form class&#x3D;&quot;search-form&quot;&gt;
 						&lt;input class&#x3D;&quot;text&quot; type&#x3D;&quot;text&quot;&gt;
 						&lt;button class&#x3D;&quot;submit&quot; type&#x3D;&quot;submit&quot; value&#x3D;&quot;Search&quot;&gt;&lt;i class&#x3D;&quot;ehnvicon ehnvicon-search&quot;&gt;&lt;/i&gt;
-                &lt;/button&gt;
+						&lt;/button&gt;
 					&lt;/form&gt;
 
 				&lt;/div&gt;
 			&lt;/div&gt;
 
 		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="news-box">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">News Box</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Usage : <code>{{&gt; news-box }}</code></h5>
+
+</div>
+<div class="f-item-preview">
+	<a href="#" class="news-box ">
+	<figure>
+		<img src="http://placehold.it/500x300" alt="Immersion dans le service de pédiatrie">
+	</figure>
+	<div class="content mt-auto">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="spacer spacer-sm"></div>
+				<div class="col-xs-8">
+					<h5 class="title"><strong>Immersion dans le service de pédiatrie</strong></h5>
+				</div>
+				<div class="col-xs-4 text-right">
+					<time>
+						<i class="ehnvicon ehnvicon-clock"></i>13 février 2017
+					</time>
+				</div>
+				<div class="col-xs-12">
+					<div class="spacer spacer-xs"></div>
+					<p class="text">
+						En lire plus...
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</a>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;news-box &quot;&gt;
+	&lt;figure&gt;
+		&lt;img src&#x3D;&quot;http://placehold.it/500x300&quot; alt&#x3D;&quot;Immersion dans le service de pédiatrie&quot;&gt;
+	&lt;/figure&gt;
+	&lt;div class&#x3D;&quot;content mt-auto&quot;&gt;
+		&lt;div class&#x3D;&quot;row&quot;&gt;
+			&lt;div class&#x3D;&quot;col-xs-12&quot;&gt;
+				&lt;div class&#x3D;&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
+				&lt;div class&#x3D;&quot;col-xs-8&quot;&gt;
+					&lt;h5 class&#x3D;&quot;title&quot;&gt;&lt;strong&gt;Immersion dans le service de pédiatrie&lt;/strong&gt;&lt;/h5&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;col-xs-4 text-right&quot;&gt;
+					&lt;time&gt;
+						&lt;i class&#x3D;&quot;ehnvicon ehnvicon-clock&quot;&gt;&lt;/i&gt;13 février 2017
+					&lt;/time&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;col-xs-12&quot;&gt;
+					&lt;div class&#x3D;&quot;spacer spacer-xs&quot;&gt;&lt;/div&gt;
+					&lt;p class&#x3D;&quot;text&quot;&gt;
+						En lire plus...
+					&lt;/p&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/a&gt;</code></pre>
+</div>
+
+
+</div>
+
+
+<div class="f-item-group" id="peoples">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Peoples</h2>
+		<div class="f-item-controls">
+			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
+				<svg>
+					<use xlink:href="#f-icon-notes" />
+				</svg>
+			</span>
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div><div class="f-item-notes" data-f-toggle="notes">
+	<h5>Usage : <code>{{&gt; peoples }}</code></h5>
+
+</div>
+<div class="f-item-preview">
+	<div class="peoples-container">
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_15@8x.png">
+		<p><strong>Dr Bertrand Vuilleumier </strong><br><small>Président</small></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_1@8x.png">
+		<p><strong>Jeannine Rainaud-Meylan</strong><br><small>Vice-présidente</small></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_Michel_Beetschen.png">
+		<p><strong>Michel Beetschen</strong></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_2@8x.png">
+		<p><strong>Jean-Daniel Carrard</strong></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_3@8x.png">
+		<p><strong>Philippe Dépraz</strong></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_4@8x.png">
+		<p><strong>Isabelle Gay-Crosier</strong></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_Henri_Germond.png">
+		<p><strong>Henri Germond</strong></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_5@8x.png">
+		<p><strong>Vassilis Venizelos</strong></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_6@8x.png">
+		<p><strong>Jean-Claude Nicod</strong></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_7@8x.png">
+		<p><strong>Jacques Levaillant</strong></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_8@8x.png">
+		<p><strong>Christian Kramer</strong></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_9@8x.png">
+		<p><strong>Dr Philippe Hungerbuehler</strong></p>
+	</div>
+
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_10@8x.png">
+		<p><strong>Catherine Zeiter</strong><br><small>Conseil de direction</small></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_11@8x.png">
+		<p><strong>Jean-François Cardis</strong><br><small>Directeur général</small></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_12@8x.png">
+		<p><strong>Pascal Cotter</strong><br><small>Directeur général adjoint</small></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_13@8x.png">
+		<p><strong>Dr Julien Ombelli</strong><br><small>Directeur médical</small></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_14@8x.png">
+		<p><strong>Christian Kordo</strong><br><small>Directrice des soins</small></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_20@8x.png">
+		<p><strong>Laure Jagiello</strong><br><small>Directrice des soins</small></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_19@8x.png">
+		<p><strong>Christophe Habisreutinger</strong><br><small>Directeur de la logistique hospitalière</small></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_18@8x.png">
+		<p><strong>Nicolas Aubert</strong><br><small>Directeur administratif et financier</small></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_17@8x.png">
+		<p><strong>Véronique Devenoge</strong><br><small>Responsable planification et financement</small></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_16@8x.png">
+		<p><strong>Loïc Favre</strong><br><small>Responsable communication</small></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_21@8x.png">
+		<p><strong>Véronique Gendre</strong><br><small>Responsable des ressources humaines</small></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_22@8x.png">
+		<p><strong>Pierre-François Gérin</strong><br><small>Responsable qualité, sécurité et risques</small></p>
+	</div>
+	<div class="people">
+		<img class="img-responsive" src="build/img/comite/EHNV_Comite_23@8x.png">
+		<p><strong>José Gil</strong><br><small>Responsable communication</small></p>
+	</div>
+</div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;peoples-container&quot;&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_15@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Dr Bertrand Vuilleumier &lt;/strong&gt;&lt;br&gt;&lt;small&gt;Président&lt;/small&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_1@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Jeannine Rainaud-Meylan&lt;/strong&gt;&lt;br&gt;&lt;small&gt;Vice-présidente&lt;/small&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_Michel_Beetschen.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Michel Beetschen&lt;/strong&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_2@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Jean-Daniel Carrard&lt;/strong&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_3@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Philippe Dépraz&lt;/strong&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_4@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Isabelle Gay-Crosier&lt;/strong&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_Henri_Germond.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Henri Germond&lt;/strong&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_5@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Vassilis Venizelos&lt;/strong&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_6@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Jean-Claude Nicod&lt;/strong&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_7@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Jacques Levaillant&lt;/strong&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_8@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Christian Kramer&lt;/strong&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_9@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Dr Philippe Hungerbuehler&lt;/strong&gt;&lt;/p&gt;
+	&lt;/div&gt;
+
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_10@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Catherine Zeiter&lt;/strong&gt;&lt;br&gt;&lt;small&gt;Conseil de direction&lt;/small&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_11@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Jean-François Cardis&lt;/strong&gt;&lt;br&gt;&lt;small&gt;Directeur général&lt;/small&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_12@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Pascal Cotter&lt;/strong&gt;&lt;br&gt;&lt;small&gt;Directeur général adjoint&lt;/small&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_13@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Dr Julien Ombelli&lt;/strong&gt;&lt;br&gt;&lt;small&gt;Directeur médical&lt;/small&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_14@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Christian Kordo&lt;/strong&gt;&lt;br&gt;&lt;small&gt;Directrice des soins&lt;/small&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_20@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Laure Jagiello&lt;/strong&gt;&lt;br&gt;&lt;small&gt;Directrice des soins&lt;/small&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_19@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Christophe Habisreutinger&lt;/strong&gt;&lt;br&gt;&lt;small&gt;Directeur de la logistique hospitalière&lt;/small&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_18@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Nicolas Aubert&lt;/strong&gt;&lt;br&gt;&lt;small&gt;Directeur administratif et financier&lt;/small&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_17@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Véronique Devenoge&lt;/strong&gt;&lt;br&gt;&lt;small&gt;Responsable planification et financement&lt;/small&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_16@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Loïc Favre&lt;/strong&gt;&lt;br&gt;&lt;small&gt;Responsable communication&lt;/small&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_21@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Véronique Gendre&lt;/strong&gt;&lt;br&gt;&lt;small&gt;Responsable des ressources humaines&lt;/small&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_22@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;Pierre-François Gérin&lt;/strong&gt;&lt;br&gt;&lt;small&gt;Responsable qualité, sécurité et risques&lt;/small&gt;&lt;/p&gt;
+	&lt;/div&gt;
+	&lt;div class&#x3D;&quot;people&quot;&gt;
+		&lt;img class&#x3D;&quot;img-responsive&quot; src&#x3D;&quot;build/img/comite/EHNV_Comite_23@8x.png&quot;&gt;
+		&lt;p&gt;&lt;strong&gt;José Gil&lt;/strong&gt;&lt;br&gt;&lt;small&gt;Responsable communication&lt;/small&gt;&lt;/p&gt;
 	&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -1250,7 +1794,7 @@
 	<form class="search-form">
 		<input class="text" type="text">
 		<button class="submit" type="submit" value="Search"><i class="ehnvicon ehnvicon-search"></i>
-        </button>
+		</button>
 	</form>
 
 </div>
@@ -1260,7 +1804,7 @@
 	&lt;form class&#x3D;&quot;search-form&quot;&gt;
 		&lt;input class&#x3D;&quot;text&quot; type&#x3D;&quot;text&quot;&gt;
 		&lt;button class&#x3D;&quot;submit&quot; type&#x3D;&quot;submit&quot; value&#x3D;&quot;Search&quot;&gt;&lt;i class&#x3D;&quot;ehnvicon ehnvicon-search&quot;&gt;&lt;/i&gt;
-        &lt;/button&gt;
+		&lt;/button&gt;
 	&lt;/form&gt;
 
 &lt;/div&gt;</code></pre>
@@ -1398,102 +1942,97 @@
 	<div class="f-item-heading-group" data-f-toggle="labels">
 		<h2 class="f-item-heading">Summary Box</h2>
 		<div class="f-item-controls">
-			<span class="f-control f-icon" data-f-toggle-control="notes" title="Toggle Notes">
-				<svg>
-					<use xlink:href="#f-icon-notes" />
-				</svg>
-			</span>
+			
 			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
 				<svg>
 					<use xlink:href="#f-icon-code" />
 				</svg>
 			</span>
 		</div>
-	</div><div class="f-item-notes" data-f-toggle="notes">
-	<h5>Usage : <code>{{&gt; summary-box }}</code></h5>
-
-</div>
+	</div>
 <div class="f-item-preview">
 	<div href="#" class="summary-box">
+	<a class="figure" href="#" style="background: url(https://unsplash.it/700/700/?random) 50% 50% / cover"></a>
 	<div class="content">
-		<a href="">
-			<figure>
-				<img src="https://unsplash.it/700/700/?random" alt="">
-				<figcaption>
-					Urgences d’Yverdon-les-bains
-				</figcaption>
-			</figure>
-
-			<div href="#" class="summary-box-informations-link">Plus d'informations <i class="ehnvicon ehnvicon-arrow-right"></i></div>
-		</a>
-		<div class="spacer spacer-sm visible-xs-block visible-sm-block"></div>
-		<div class="row">
+		<div class="informations">
 			<div class="col-xs-12">
-				<div class="col-sm-12 col-md-7">
-					<div class="spacer spacer-sm"></div>
-					<i class="ehnvicon ehnvicon-pin"></i>
-					<p>
-						<a href="#">
-                Rue d'Entremonts 11<br>
-                1400 Yverdon-les-bains
-              </a>
-					</p>
-					<div class="spacer spacer-sm"></div>
-				</div>
-				<div class="col-sm-12 col-md-5">
-					<div class="spacer spacer-sm"></div>
-					<i class="ehnvicon ehnvicon-phone"></i>
-					<p>
-						<a href="tel:0244244444">024 424 44 44</a><br> Réception 24/24
-					</p>
-					<div class="spacer spacer-sm"></div>
+				<a href="#">
+					<h2>Urgences d’Yverdon-les-bains</h2>
+				</a>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="icon-container">
+							<i class="ehnvicon ehnvicon-pin"></i>
+						</div>
+						<div class="text-container">
+							<p>
+								<a href="#">
+									Rue d'Entremonts 11<br>
+									1400 Yverdon-les-bains
+								</a>
+							</p>
+						</div>
+						<div class="spacer spacer-sm"></div>
+					</div>
+					<div class="col-sm-12">
+						<div class="icon-container">
+							<i class="ehnvicon ehnvicon-phone"></i>
+						</div>
+						<div class="text-container">
+							<p>
+								<a href="tel:0244244444">024 424 44 44</a><br>
+								Réception 24/24
+							</p>
+						</div>
+						<div class="spacer spacer-sm"></div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="spacer spacer-xl visible-xs-block"></div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div href&#x3D;&quot;#&quot; class&#x3D;&quot;summary-box&quot;&gt;
+	&lt;a class&#x3D;&quot;figure&quot; href&#x3D;&quot;#&quot; style&#x3D;&quot;background: url(https://unsplash.it/700/700/?random) 50% 50% / cover&quot;&gt;&lt;/a&gt;
 	&lt;div class&#x3D;&quot;content&quot;&gt;
-		&lt;a href&#x3D;&quot;&quot;&gt;
-			&lt;figure&gt;
-				&lt;img src&#x3D;&quot;https://unsplash.it/700/700/?random&quot; alt&#x3D;&quot;&quot;&gt;
-				&lt;figcaption&gt;
-					Urgences d’Yverdon-les-bains
-				&lt;/figcaption&gt;
-			&lt;/figure&gt;
-
-			&lt;div href&#x3D;&quot;#&quot; class&#x3D;&quot;summary-box-informations-link&quot;&gt;Plus d&#x27;informations &lt;i class&#x3D;&quot;ehnvicon ehnvicon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/div&gt;
-		&lt;/a&gt;
-		&lt;div class&#x3D;&quot;spacer spacer-sm visible-xs-block visible-sm-block&quot;&gt;&lt;/div&gt;
-		&lt;div class&#x3D;&quot;row&quot;&gt;
+		&lt;div class&#x3D;&quot;informations&quot;&gt;
 			&lt;div class&#x3D;&quot;col-xs-12&quot;&gt;
-				&lt;div class&#x3D;&quot;col-sm-12 col-md-7&quot;&gt;
-					&lt;div class&#x3D;&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
-					&lt;i class&#x3D;&quot;ehnvicon ehnvicon-pin&quot;&gt;&lt;/i&gt;
-					&lt;p&gt;
-						&lt;a href&#x3D;&quot;#&quot;&gt;
-                Rue d&#x27;Entremonts 11&lt;br&gt;
-                1400 Yverdon-les-bains
-              &lt;/a&gt;
-					&lt;/p&gt;
-					&lt;div class&#x3D;&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
-				&lt;/div&gt;
-				&lt;div class&#x3D;&quot;col-sm-12 col-md-5&quot;&gt;
-					&lt;div class&#x3D;&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
-					&lt;i class&#x3D;&quot;ehnvicon ehnvicon-phone&quot;&gt;&lt;/i&gt;
-					&lt;p&gt;
-						&lt;a href&#x3D;&quot;tel:0244244444&quot;&gt;024 424 44 44&lt;/a&gt;&lt;br&gt; Réception 24/24
-					&lt;/p&gt;
-					&lt;div class&#x3D;&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
+				&lt;a href&#x3D;&quot;#&quot;&gt;
+					&lt;h2&gt;Urgences d’Yverdon-les-bains&lt;/h2&gt;
+				&lt;/a&gt;
+				&lt;div class&#x3D;&quot;row&quot;&gt;
+					&lt;div class&#x3D;&quot;col-sm-12&quot;&gt;
+						&lt;div class&#x3D;&quot;icon-container&quot;&gt;
+							&lt;i class&#x3D;&quot;ehnvicon ehnvicon-pin&quot;&gt;&lt;/i&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;text-container&quot;&gt;
+							&lt;p&gt;
+								&lt;a href&#x3D;&quot;#&quot;&gt;
+									Rue d&#x27;Entremonts 11&lt;br&gt;
+									1400 Yverdon-les-bains
+								&lt;/a&gt;
+							&lt;/p&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class&#x3D;&quot;col-sm-12&quot;&gt;
+						&lt;div class&#x3D;&quot;icon-container&quot;&gt;
+							&lt;i class&#x3D;&quot;ehnvicon ehnvicon-phone&quot;&gt;&lt;/i&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;text-container&quot;&gt;
+							&lt;p&gt;
+								&lt;a href&#x3D;&quot;tel:0244244444&quot;&gt;024 424 44 44&lt;/a&gt;&lt;br&gt;
+								Réception 24/24
+							&lt;/p&gt;
+						&lt;/div&gt;
+						&lt;div class&#x3D;&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
 				&lt;/div&gt;
 			&lt;/div&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class&#x3D;&quot;spacer spacer-xl visible-xs-block&quot;&gt;&lt;/div&gt;</code></pre>
+&lt;/div&gt;</code></pre>
 </div>
 
 
@@ -1524,8 +2063,8 @@
 	<table class="tablesaw" data-tablesaw-sortable data-tablesaw-mode="stack">
 	<thead>
 		<tr>
-			<th data-tablesaw-sortable-col data-tablesaw-priority="persist">
-				Titre <i class="ehnvicon ehnvicon-arrow-down"></i>
+			<th>
+				Titre
 			</th>
 			<th width="25%" data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority="3">
 				Site <i class="ehnvicon ehnvicon-arrow-down"></i>
@@ -1589,8 +2128,8 @@
 	<pre><code class="language-markup">&lt;table class&#x3D;&quot;tablesaw&quot; data-tablesaw-sortable data-tablesaw-mode&#x3D;&quot;stack&quot;&gt;
 	&lt;thead&gt;
 		&lt;tr&gt;
-			&lt;th data-tablesaw-sortable-col data-tablesaw-priority&#x3D;&quot;persist&quot;&gt;
-				Titre &lt;i class&#x3D;&quot;ehnvicon ehnvicon-arrow-down&quot;&gt;&lt;/i&gt;
+			&lt;th&gt;
+				Titre
 			&lt;/th&gt;
 			&lt;th width&#x3D;&quot;25%&quot; data-tablesaw-sortable-col data-tablesaw-sortable-default-col data-tablesaw-priority&#x3D;&quot;3&quot;&gt;
 				Site &lt;i class&#x3D;&quot;ehnvicon ehnvicon-arrow-down&quot;&gt;&lt;/i&gt;
@@ -1655,6 +2194,124 @@
 </div>
 
 
+<div class="f-item-group" id="teaser">
+
+	<div class="f-item-heading-group" data-f-toggle="labels">
+		<h2 class="f-item-heading">Teaser</h2>
+		<div class="f-item-controls">
+			
+			<span class="f-control f-icon" data-f-toggle-control="code" title="Toggle Code">
+				<svg>
+					<use xlink:href="#f-icon-code" />
+				</svg>
+			</span>
+		</div>
+	</div>
+<div class="f-item-preview">
+	<div href="#" class="summary-box">
+	<div class="content">
+		<a href="">
+			<figure>
+				<img src="https://unsplash.it/700/700/?random" alt="">
+				<figcaption>
+					Urgences d’Yverdon-les-bains
+				</figcaption>
+			</figure>
+
+			<div href="#" class="summary-box-informations-link">Plus d'informations <i class="ehnvicon ehnvicon-arrow-right"></i></div>
+		</a>
+		<div class="spacer spacer-sm visible-xs-block visible-sm-block"></div>
+		<div class="row informations">
+			<div class="col-xs-12">
+				<div class="col-sm-12 col-md-7">
+					<div class="spacer spacer-sm"></div>
+					<div class="icon-container">
+						<i class="ehnvicon ehnvicon-pin"></i>
+					</div>
+					<div class="text-container">
+						<p>
+							<a href="#">
+								Rue d'Entremonts 11<br>
+								1400 Yverdon-les-bains
+							</a>
+						</p>
+					</div>
+					<div class="spacer spacer-sm"></div>
+				</div>
+				<div class="col-sm-12 col-md-5">
+					<div class="spacer spacer-sm"></div>
+					<div class="icon-container">
+						<i class="ehnvicon ehnvicon-phone"></i>
+					</div>
+					<div class="text-container">
+						<p>
+							<a href="tel:0244244444">024 424 44 44</a><br>
+							Réception 24/24
+						</p>
+					</div>
+					<div class="spacer spacer-sm"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="spacer spacer-xl visible-xs-block"></div>
+</div>
+<div class="f-item-code f-item-hidden" data-f-toggle="code">
+	<pre><code class="language-markup">&lt;div href&#x3D;&quot;#&quot; class&#x3D;&quot;summary-box&quot;&gt;
+	&lt;div class&#x3D;&quot;content&quot;&gt;
+		&lt;a href&#x3D;&quot;&quot;&gt;
+			&lt;figure&gt;
+				&lt;img src&#x3D;&quot;https://unsplash.it/700/700/?random&quot; alt&#x3D;&quot;&quot;&gt;
+				&lt;figcaption&gt;
+					Urgences d’Yverdon-les-bains
+				&lt;/figcaption&gt;
+			&lt;/figure&gt;
+
+			&lt;div href&#x3D;&quot;#&quot; class&#x3D;&quot;summary-box-informations-link&quot;&gt;Plus d&#x27;informations &lt;i class&#x3D;&quot;ehnvicon ehnvicon-arrow-right&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+		&lt;/a&gt;
+		&lt;div class&#x3D;&quot;spacer spacer-sm visible-xs-block visible-sm-block&quot;&gt;&lt;/div&gt;
+		&lt;div class&#x3D;&quot;row informations&quot;&gt;
+			&lt;div class&#x3D;&quot;col-xs-12&quot;&gt;
+				&lt;div class&#x3D;&quot;col-sm-12 col-md-7&quot;&gt;
+					&lt;div class&#x3D;&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
+					&lt;div class&#x3D;&quot;icon-container&quot;&gt;
+						&lt;i class&#x3D;&quot;ehnvicon ehnvicon-pin&quot;&gt;&lt;/i&gt;
+					&lt;/div&gt;
+					&lt;div class&#x3D;&quot;text-container&quot;&gt;
+						&lt;p&gt;
+							&lt;a href&#x3D;&quot;#&quot;&gt;
+								Rue d&#x27;Entremonts 11&lt;br&gt;
+								1400 Yverdon-les-bains
+							&lt;/a&gt;
+						&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class&#x3D;&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
+				&lt;/div&gt;
+				&lt;div class&#x3D;&quot;col-sm-12 col-md-5&quot;&gt;
+					&lt;div class&#x3D;&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
+					&lt;div class&#x3D;&quot;icon-container&quot;&gt;
+						&lt;i class&#x3D;&quot;ehnvicon ehnvicon-phone&quot;&gt;&lt;/i&gt;
+					&lt;/div&gt;
+					&lt;div class&#x3D;&quot;text-container&quot;&gt;
+						&lt;p&gt;
+							&lt;a href&#x3D;&quot;tel:0244244444&quot;&gt;024 424 44 44&lt;/a&gt;&lt;br&gt;
+							Réception 24/24
+						&lt;/p&gt;
+					&lt;/div&gt;
+					&lt;div class&#x3D;&quot;spacer spacer-sm&quot;&gt;&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class&#x3D;&quot;spacer spacer-xl visible-xs-block&quot;&gt;&lt;/div&gt;</code></pre>
+</div>
+
+
+</div>
+
+
 <div class="f-item-group" id="thumb-box">
 
 	<div class="f-item-heading-group" data-f-toggle="labels">
@@ -1684,14 +2341,16 @@
 	<img src="https://randomuser.me/api/portraits/women/36.jpg" alt="">
 	<h1>Title</h1>
 	<p>Mauris placerat eu leo sed hendrerit. Torbi at metus placerat.</p>
-	<a href="#" class="btn btn-default btn-block" role="button">My button</a></div>
+	<a href="#" class="btn btn-default btn-block" role="button">My button</a>
+</div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;thumb-box text-center&quot;&gt;
 	&lt;img src&#x3D;&quot;https://randomuser.me/api/portraits/women/36.jpg&quot; alt&#x3D;&quot;&quot;&gt;
 	&lt;h1&gt;Title&lt;/h1&gt;
 	&lt;p&gt;Mauris placerat eu leo sed hendrerit. Torbi at metus placerat.&lt;/p&gt;
-	&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-default btn-block&quot; role&#x3D;&quot;button&quot;&gt;My button&lt;/a&gt;&lt;/div&gt;</code></pre>
+	&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;btn btn-default btn-block&quot; role&#x3D;&quot;button&quot;&gt;My button&lt;/a&gt;
+&lt;/div&gt;</code></pre>
 </div>
 
 
@@ -1721,190 +2380,142 @@
 <div class="f-item-preview">
 	<div class="row">
 	<div class="user-cards-list">
-		<div class="col-sm-6">
-			<a href="#" class="user-card">
-				<i class="ehnvicon ehnvicon-long-arrow-right"></i>
+		<a href="#" class="user-card">
+			<i class="ehnvicon ehnvicon-long-arrow-right"></i>
 
-				<div class="vignette">
-					<div class="placeholder">
-						<i class="ehnvicon ehnvicon-placeholder-f"></i>
-					</div>
+			<div class="vignette">
+				<div class="icon-placeholder">
+					<i class="ehnvicon ehnvicon-placeholder-dr"></i>
 				</div>
-				<div class="user-card-infos">
-					<h3>Jacqueline Robin</h3>
-					<p>Pédiatrie</p>
-				</div>
-			</a>
-		</div>
-		<div class="spacer spacer-xs visible-xs-block"></div>
-		<div class="col-sm-6">
-			<a href="#" class="user-card">
-				<i class="ehnvicon ehnvicon-long-arrow-right"></i>
+			</div>
+			<div class="user-card-infos">
+				<h3>Jacqueline Robin</h3>
+				<p>Pédiatrie</p>
+			</div>
+		</a> <a href="#" class="user-card">
+			<i class="ehnvicon ehnvicon-long-arrow-right"></i>
 
-				<div class="vignette">
-					<img src="https://randomuser.me/api/portraits/women/32.jpg" alt="">
-				</div>
-				<div class="user-card-infos">
-					<h3>Dr Nishantan Popol Antonipillaï</h3>
-					<p>Vitae</p>
-				</div>
-			</a>
-		</div>
-		<div class="spacer spacer-xs visible-xs-block"></div>
-		<div class="col-sm-6">
-			<a href="#" class="user-card">
-				<i class="ehnvicon ehnvicon-long-arrow-right"></i>
+			<div class="vignette">
+				<img src="https://randomuser.me/api/portraits/women/32.jpg" alt="">
+			</div>
+			<div class="user-card-infos">
+				<h3>Dr Nishantan Popol Antonipillaï</h3>
+				<p>FMH en gynécologie et obstétrique</p>
+			</div>
+		</a> <a href="#" class="user-card">
+			<i class="ehnvicon ehnvicon-long-arrow-right"></i>
 
-				<div class="vignette">
-					<img src="https://randomuser.me/api/portraits/men/10.jpg" alt="">
-				</div>
-				<div class="user-card-infos">
-					<h3>Mathilde Toussaint</h3>
-					<p>Vitae</p>
-				</div>
-			</a>
-		</div>
-		<div class="spacer spacer-xs visible-xs-block"></div>
-		<div class="col-sm-6">
-			<a href="#" class="user-card">
-				<i class="ehnvicon ehnvicon-long-arrow-right"></i>
+			<div class="vignette">
+				<img src="https://randomuser.me/api/portraits/men/10.jpg" alt="">
+			</div>
+			<div class="user-card-infos">
+				<h3>Mathilde Toussaint</h3>
+				<p>Vitae</p>
+			</div>
+		</a> <a href="#" class="user-card">
+			<i class="ehnvicon ehnvicon-long-arrow-right"></i>
 
-				<div class="vignette">
-					<div class="placeholder">
-						<i class="ehnvicon ehnvicon-placeholder-m"></i>
-					</div>
+			<div class="vignette">
+				<div class="icon-placeholder">
+					<i class="ehnvicon ehnvicon-placeholder-dr"></i>
 				</div>
-				<div class="user-card-infos">
-					<h3>Gabriel Reynaud</h3>
-					<p>Pédiatrie</p>
-				</div>
-			</a>
-		</div>
-		<div class="spacer spacer-xs visible-xs-block"></div>
-		<div class="col-sm-6">
-			<a href="#" class="user-card">
-				<i class="ehnvicon ehnvicon-long-arrow-right"></i>
+			</div>
+			<div class="user-card-infos">
+				<h3>Gabriel Reynaud</h3>
+				<p>Pédiatrie</p>
+			</div>
+		</a> <a href="#" class="user-card">
+			<i class="ehnvicon ehnvicon-long-arrow-right"></i>
 
-				<div class="vignette">
-					<img src="https://randomuser.me/api/portraits/men/10.jpg" alt="">
-				</div>
-				<div class="user-card-infos">
-					<h3>Aimée Simon</h3>
-					<p>Vitae</p>
-				</div>
-			</a>
-		</div>
-		<div class="spacer spacer-xs visible-xs-block"></div>
-		<div class="col-sm-6">
-			<a href="#" class="user-card">
-				<i class="ehnvicon ehnvicon-long-arrow-right"></i>
+			<div class="vignette">
+				<img src="https://randomuser.me/api/portraits/men/10.jpg" alt="">
+			</div>
+			<div class="user-card-infos">
+				<h3>Aimée Simon</h3>
+				<p>Vitae</p>
+			</div>
+		</a> <a href="#" class="user-card">
+			<i class="ehnvicon ehnvicon-long-arrow-right"></i>
 
-				<div class="vignette">
-					<img src="https://randomuser.me/api/portraits/men/11.jpg" alt="">
-				</div>
-				<div class="user-card-infos">
-					<h3>Mathilde Toussaint</h3>
-					<p>Vitae</p>
-				</div>
-			</a>
-		</div>
-		<div class="spacer spacer-xs visible-xs-block"></div>
-	</div>
+			<div class="vignette">
+				<img src="https://randomuser.me/api/portraits/men/11.jpg" alt="">
+			</div>
+			<div class="user-card-infos">
+				<h3>Mathilde Toussaint</h3>
+				<p>Vitae</p>
+			</div>
+		</a> </div>
 </div>
 <div class="spacer spacer-xl visible-xs-block"></div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;row&quot;&gt;
 	&lt;div class&#x3D;&quot;user-cards-list&quot;&gt;
-		&lt;div class&#x3D;&quot;col-sm-6&quot;&gt;
-			&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;user-card&quot;&gt;
-				&lt;i class&#x3D;&quot;ehnvicon ehnvicon-long-arrow-right&quot;&gt;&lt;/i&gt;
+		&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;user-card&quot;&gt;
+			&lt;i class&#x3D;&quot;ehnvicon ehnvicon-long-arrow-right&quot;&gt;&lt;/i&gt;
 
-				&lt;div class&#x3D;&quot;vignette&quot;&gt;
-					&lt;div class&#x3D;&quot;placeholder&quot;&gt;
-						&lt;i class&#x3D;&quot;ehnvicon ehnvicon-placeholder-f&quot;&gt;&lt;/i&gt;
-					&lt;/div&gt;
+			&lt;div class&#x3D;&quot;vignette&quot;&gt;
+				&lt;div class&#x3D;&quot;icon-placeholder&quot;&gt;
+					&lt;i class&#x3D;&quot;ehnvicon ehnvicon-placeholder-dr&quot;&gt;&lt;/i&gt;
 				&lt;/div&gt;
-				&lt;div class&#x3D;&quot;user-card-infos&quot;&gt;
-					&lt;h3&gt;Jacqueline Robin&lt;/h3&gt;
-					&lt;p&gt;Pédiatrie&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/a&gt;
-		&lt;/div&gt;
-		&lt;div class&#x3D;&quot;spacer spacer-xs visible-xs-block&quot;&gt;&lt;/div&gt;
-		&lt;div class&#x3D;&quot;col-sm-6&quot;&gt;
-			&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;user-card&quot;&gt;
-				&lt;i class&#x3D;&quot;ehnvicon ehnvicon-long-arrow-right&quot;&gt;&lt;/i&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;user-card-infos&quot;&gt;
+				&lt;h3&gt;Jacqueline Robin&lt;/h3&gt;
+				&lt;p&gt;Pédiatrie&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/a&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;user-card&quot;&gt;
+			&lt;i class&#x3D;&quot;ehnvicon ehnvicon-long-arrow-right&quot;&gt;&lt;/i&gt;
 
-				&lt;div class&#x3D;&quot;vignette&quot;&gt;
-					&lt;img src&#x3D;&quot;https://randomuser.me/api/portraits/women/32.jpg&quot; alt&#x3D;&quot;&quot;&gt;
-				&lt;/div&gt;
-				&lt;div class&#x3D;&quot;user-card-infos&quot;&gt;
-					&lt;h3&gt;Dr Nishantan Popol Antonipillaï&lt;/h3&gt;
-					&lt;p&gt;Vitae&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/a&gt;
-		&lt;/div&gt;
-		&lt;div class&#x3D;&quot;spacer spacer-xs visible-xs-block&quot;&gt;&lt;/div&gt;
-		&lt;div class&#x3D;&quot;col-sm-6&quot;&gt;
-			&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;user-card&quot;&gt;
-				&lt;i class&#x3D;&quot;ehnvicon ehnvicon-long-arrow-right&quot;&gt;&lt;/i&gt;
+			&lt;div class&#x3D;&quot;vignette&quot;&gt;
+				&lt;img src&#x3D;&quot;https://randomuser.me/api/portraits/women/32.jpg&quot; alt&#x3D;&quot;&quot;&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;user-card-infos&quot;&gt;
+				&lt;h3&gt;Dr Nishantan Popol Antonipillaï&lt;/h3&gt;
+				&lt;p&gt;FMH en gynécologie et obstétrique&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/a&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;user-card&quot;&gt;
+			&lt;i class&#x3D;&quot;ehnvicon ehnvicon-long-arrow-right&quot;&gt;&lt;/i&gt;
 
-				&lt;div class&#x3D;&quot;vignette&quot;&gt;
-					&lt;img src&#x3D;&quot;https://randomuser.me/api/portraits/men/10.jpg&quot; alt&#x3D;&quot;&quot;&gt;
-				&lt;/div&gt;
-				&lt;div class&#x3D;&quot;user-card-infos&quot;&gt;
-					&lt;h3&gt;Mathilde Toussaint&lt;/h3&gt;
-					&lt;p&gt;Vitae&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/a&gt;
-		&lt;/div&gt;
-		&lt;div class&#x3D;&quot;spacer spacer-xs visible-xs-block&quot;&gt;&lt;/div&gt;
-		&lt;div class&#x3D;&quot;col-sm-6&quot;&gt;
-			&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;user-card&quot;&gt;
-				&lt;i class&#x3D;&quot;ehnvicon ehnvicon-long-arrow-right&quot;&gt;&lt;/i&gt;
+			&lt;div class&#x3D;&quot;vignette&quot;&gt;
+				&lt;img src&#x3D;&quot;https://randomuser.me/api/portraits/men/10.jpg&quot; alt&#x3D;&quot;&quot;&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;user-card-infos&quot;&gt;
+				&lt;h3&gt;Mathilde Toussaint&lt;/h3&gt;
+				&lt;p&gt;Vitae&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/a&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;user-card&quot;&gt;
+			&lt;i class&#x3D;&quot;ehnvicon ehnvicon-long-arrow-right&quot;&gt;&lt;/i&gt;
 
-				&lt;div class&#x3D;&quot;vignette&quot;&gt;
-					&lt;div class&#x3D;&quot;placeholder&quot;&gt;
-						&lt;i class&#x3D;&quot;ehnvicon ehnvicon-placeholder-m&quot;&gt;&lt;/i&gt;
-					&lt;/div&gt;
+			&lt;div class&#x3D;&quot;vignette&quot;&gt;
+				&lt;div class&#x3D;&quot;icon-placeholder&quot;&gt;
+					&lt;i class&#x3D;&quot;ehnvicon ehnvicon-placeholder-dr&quot;&gt;&lt;/i&gt;
 				&lt;/div&gt;
-				&lt;div class&#x3D;&quot;user-card-infos&quot;&gt;
-					&lt;h3&gt;Gabriel Reynaud&lt;/h3&gt;
-					&lt;p&gt;Pédiatrie&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/a&gt;
-		&lt;/div&gt;
-		&lt;div class&#x3D;&quot;spacer spacer-xs visible-xs-block&quot;&gt;&lt;/div&gt;
-		&lt;div class&#x3D;&quot;col-sm-6&quot;&gt;
-			&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;user-card&quot;&gt;
-				&lt;i class&#x3D;&quot;ehnvicon ehnvicon-long-arrow-right&quot;&gt;&lt;/i&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;user-card-infos&quot;&gt;
+				&lt;h3&gt;Gabriel Reynaud&lt;/h3&gt;
+				&lt;p&gt;Pédiatrie&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/a&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;user-card&quot;&gt;
+			&lt;i class&#x3D;&quot;ehnvicon ehnvicon-long-arrow-right&quot;&gt;&lt;/i&gt;
 
-				&lt;div class&#x3D;&quot;vignette&quot;&gt;
-					&lt;img src&#x3D;&quot;https://randomuser.me/api/portraits/men/10.jpg&quot; alt&#x3D;&quot;&quot;&gt;
-				&lt;/div&gt;
-				&lt;div class&#x3D;&quot;user-card-infos&quot;&gt;
-					&lt;h3&gt;Aimée Simon&lt;/h3&gt;
-					&lt;p&gt;Vitae&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/a&gt;
-		&lt;/div&gt;
-		&lt;div class&#x3D;&quot;spacer spacer-xs visible-xs-block&quot;&gt;&lt;/div&gt;
-		&lt;div class&#x3D;&quot;col-sm-6&quot;&gt;
-			&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;user-card&quot;&gt;
-				&lt;i class&#x3D;&quot;ehnvicon ehnvicon-long-arrow-right&quot;&gt;&lt;/i&gt;
+			&lt;div class&#x3D;&quot;vignette&quot;&gt;
+				&lt;img src&#x3D;&quot;https://randomuser.me/api/portraits/men/10.jpg&quot; alt&#x3D;&quot;&quot;&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;user-card-infos&quot;&gt;
+				&lt;h3&gt;Aimée Simon&lt;/h3&gt;
+				&lt;p&gt;Vitae&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/a&gt; &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;user-card&quot;&gt;
+			&lt;i class&#x3D;&quot;ehnvicon ehnvicon-long-arrow-right&quot;&gt;&lt;/i&gt;
 
-				&lt;div class&#x3D;&quot;vignette&quot;&gt;
-					&lt;img src&#x3D;&quot;https://randomuser.me/api/portraits/men/11.jpg&quot; alt&#x3D;&quot;&quot;&gt;
-				&lt;/div&gt;
-				&lt;div class&#x3D;&quot;user-card-infos&quot;&gt;
-					&lt;h3&gt;Mathilde Toussaint&lt;/h3&gt;
-					&lt;p&gt;Vitae&lt;/p&gt;
-				&lt;/div&gt;
-			&lt;/a&gt;
-		&lt;/div&gt;
-		&lt;div class&#x3D;&quot;spacer spacer-xs visible-xs-block&quot;&gt;&lt;/div&gt;
-	&lt;/div&gt;
+			&lt;div class&#x3D;&quot;vignette&quot;&gt;
+				&lt;img src&#x3D;&quot;https://randomuser.me/api/portraits/men/11.jpg&quot; alt&#x3D;&quot;&quot;&gt;
+			&lt;/div&gt;
+			&lt;div class&#x3D;&quot;user-card-infos&quot;&gt;
+				&lt;h3&gt;Mathilde Toussaint&lt;/h3&gt;
+				&lt;p&gt;Vitae&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/a&gt; &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class&#x3D;&quot;spacer spacer-xl visible-xs-block&quot;&gt;&lt;/div&gt;</code></pre>
 </div>
@@ -1914,6 +2525,11 @@
 
 
 
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous"></script>
       </div>
       <script src="./build/js/styleguide.min.js"></script>
     <script src="./build/js/vendors.min.js"></script>

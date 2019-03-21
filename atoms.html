@@ -15,6 +15,17 @@
     <link rel="stylesheet" href="./build/css/vendors.min.css">
     <link rel="stylesheet" href="./build/css/main.css">
 
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'xld7vod',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
     <!--[if lt IE 9]>
       <script src="./build/js/polyfills.min.js"></script>
     <![endif]-->
@@ -133,16 +144,25 @@
             <a href="molecules.html" class="f-menu__heading">Molecules</a>
             <ul>
               <li>
+                <a href="molecules.html#background-box">Background Box</a>
+              </li>
+              <li>
                 <a href="molecules.html#breadcrumb">Breadcrumb</a>
               </li>
               <li>
-                <a href="molecules.html#card-duo">Card Duo</a>
+                <a href="molecules.html#card-list">Card List</a>
               </li>
               <li>
                 <a href="molecules.html#color-box">Color Box</a>
               </li>
               <li>
                 <a href="molecules.html#cover">Cover</a>
+              </li>
+              <li>
+                <a href="molecules.html#doc-box">Doc Box</a>
+              </li>
+              <li>
+                <a href="molecules.html#download-list">Download List</a>
               </li>
               <li>
                 <a href="molecules.html#entry-footer">Entry Footer</a>
@@ -166,6 +186,12 @@
                 <a href="molecules.html#mobile-nav">Mobile Nav</a>
               </li>
               <li>
+                <a href="molecules.html#news-box">News Box</a>
+              </li>
+              <li>
+                <a href="molecules.html#peoples">Peoples</a>
+              </li>
+              <li>
                 <a href="molecules.html#search-box">Search Box</a>
               </li>
               <li>
@@ -179,6 +205,9 @@
               </li>
               <li>
                 <a href="molecules.html#table">Table</a>
+              </li>
+              <li>
+                <a href="molecules.html#teaser">Teaser</a>
               </li>
               <li>
                 <a href="molecules.html#thumb-box">Thumb Box</a>
@@ -204,6 +233,9 @@
                 <a href="organisms.html#header">Header</a>
               </li>
               <li>
+                <a href="organisms.html#header-hmag">Header Hmag</a>
+              </li>
+              <li>
                 <a href="organisms.html#location">Location</a>
               </li>
               <li>
@@ -224,6 +256,12 @@
           <li>
             <a href="templates.html" class="f-menu__heading">Templates</a>
             <ul>
+              <li>
+                <a href="templates/404.html">404</a>
+              </li>
+              <li>
+                <a href="templates/comite.html">Comite</a>
+              </li>
               <li>
                 <a href="templates/content.html">Content</a>
               </li>
@@ -247,6 +285,9 @@
               </li>
               <li>
                 <a href="templates/homepage2.html">Homepage2</a>
+              </li>
+              <li>
+                <a href="templates/job-detail.html">Job Detail</a>
               </li>
               <li>
                 <a href="templates/news-detail.html">News Detail</a>
@@ -394,12 +435,12 @@
 </div>
 <div class="f-item-preview">
 	<div class="checkbox">
-	<label><input type="checkbox" value="" >&nbsp;My Checkbox</label>
+	<label><input type="checkbox" value="">&nbsp;My Checkbox</label>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;checkbox&quot;&gt;
-	&lt;label&gt;&lt;input type&#x3D;&quot;checkbox&quot; value&#x3D;&quot;&quot; &gt;&amp;nbsp;My Checkbox&lt;/label&gt;
+	&lt;label&gt;&lt;input type&#x3D;&quot;checkbox&quot; value&#x3D;&quot;&quot;&gt;&amp;nbsp;My Checkbox&lt;/label&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -481,7 +522,7 @@
 	<div class="input-group email-input">
 	<input type="email" class="form-control" placeholder="Votre E-mail">
 	<span class="input-group-btn">
-		<button class="btn btn-primary" type="button">S’inscrire</button>
+		<button class="btn btn-default" type="button">S’inscrire</button>
 	</span>
 </div>
 </div>
@@ -489,7 +530,7 @@
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;input-group email-input&quot;&gt;
 	&lt;input type&#x3D;&quot;email&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Votre E-mail&quot;&gt;
 	&lt;span class&#x3D;&quot;input-group-btn&quot;&gt;
-		&lt;button class&#x3D;&quot;btn btn-primary&quot; type&#x3D;&quot;button&quot;&gt;S’inscrire&lt;/button&gt;
+		&lt;button class&#x3D;&quot;btn btn-default&quot; type&#x3D;&quot;button&quot;&gt;S’inscrire&lt;/button&gt;
 	&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 </div>
@@ -527,12 +568,20 @@
 	<header class="entry-title">
 	<h1>Title</h1>
 
+	<p class="meta time">
+		<i class="ehnvicon ehnvicon-clock"></i>
+		<time datetime="2016-08-19">19 Août 2016</time>
+	</p>
 </header>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;header class&#x3D;&quot;entry-title&quot;&gt;
 	&lt;h1&gt;Title&lt;/h1&gt;
 
+	&lt;p class&#x3D;&quot;meta time&quot;&gt;
+		&lt;i class&#x3D;&quot;ehnvicon ehnvicon-clock&quot;&gt;&lt;/i&gt;
+		&lt;time datetime&#x3D;&quot;2016-08-19&quot;&gt;19 Août 2016&lt;/time&gt;
+	&lt;/p&gt;
 &lt;/header&gt;</code></pre>
 </div>
 
@@ -568,16 +617,16 @@
 	<div class="input-group">
 	<input type="text" class="form-control" placeholder="Rechercher">
 	<span class="input-group-btn">
-        <button class="btn btn-primary" type="button">Ok</button>
-      </span>
+		<button class="btn btn-primary" type="button">Ok</button>
+	</span>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;div class&#x3D;&quot;input-group&quot;&gt;
 	&lt;input type&#x3D;&quot;text&quot; class&#x3D;&quot;form-control&quot; placeholder&#x3D;&quot;Rechercher&quot;&gt;
 	&lt;span class&#x3D;&quot;input-group-btn&quot;&gt;
-        &lt;button class&#x3D;&quot;btn btn-primary&quot; type&#x3D;&quot;button&quot;&gt;Ok&lt;/button&gt;
-      &lt;/span&gt;
+		&lt;button class&#x3D;&quot;btn btn-primary&quot; type&#x3D;&quot;button&quot;&gt;Ok&lt;/button&gt;
+	&lt;/span&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -615,8 +664,8 @@
 
 
 	<select class="form-control" default name="" id="">
-			<option value="" class="placeholder" disabled selected>[object Object]</option>
-    
+		<option value="" class="placeholder" disabled selected>[object Object]</option>
+
 		<option value="">Option 1</option>
 		<option value="">Option 2</option>
 		<option value="">Option 3</option>
@@ -629,8 +678,8 @@
 
 
 	&lt;select class&#x3D;&quot;form-control&quot; default name&#x3D;&quot;&quot; id&#x3D;&quot;&quot;&gt;
-			&lt;option value&#x3D;&quot;&quot; class&#x3D;&quot;placeholder&quot; disabled selected&gt;[object Object]&lt;/option&gt;
-    
+		&lt;option value&#x3D;&quot;&quot; class&#x3D;&quot;placeholder&quot; disabled selected&gt;[object Object]&lt;/option&gt;
+
 		&lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt;
 		&lt;option value&#x3D;&quot;&quot;&gt;Option 2&lt;/option&gt;
 		&lt;option value&#x3D;&quot;&quot;&gt;Option 3&lt;/option&gt;
@@ -823,18 +872,18 @@
 	<h5>Usage : <code>{{&gt; placeholder }}</code></h5>
 <h5>Options :</h5>
 <ul>
-<li><strong>placeholder-sexe</strong> - Bool</li>
+<li><strong>placeholder-politesse</strong> - Bool</li>
 </ul>
 
 </div>
 <div class="f-item-preview">
-	<div class="placeholder">
-	<i class="ehnvicon ehnvicon-placeholder-"></i>
+	<div class="icon-placeholder">
+	<i class="ehnvicon ehnvicon-placeholder-dr"></i>
 </div>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
-	<pre><code class="language-markup">&lt;div class&#x3D;&quot;placeholder&quot;&gt;
-	&lt;i class&#x3D;&quot;ehnvicon ehnvicon-placeholder-&quot;&gt;&lt;/i&gt;
+	<pre><code class="language-markup">&lt;div class&#x3D;&quot;icon-placeholder&quot;&gt;
+	&lt;i class&#x3D;&quot;ehnvicon ehnvicon-placeholder-dr&quot;&gt;&lt;/i&gt;
 &lt;/div&gt;</code></pre>
 </div>
 
@@ -868,15 +917,15 @@
 </div>
 <div class="f-item-preview">
 	<figure class="portrait">
-	<div class="placeholder">
-		<i class="ehnvicon ehnvicon-placeholder-m"></i>
+	<div class="icon-placeholder">
+		<i class="ehnvicon ehnvicon-placeholder-dr"></i>
 	</div>
 </figure>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;figure class&#x3D;&quot;portrait&quot;&gt;
-	&lt;div class&#x3D;&quot;placeholder&quot;&gt;
-		&lt;i class&#x3D;&quot;ehnvicon ehnvicon-placeholder-m&quot;&gt;&lt;/i&gt;
+	&lt;div class&#x3D;&quot;icon-placeholder&quot;&gt;
+		&lt;i class&#x3D;&quot;ehnvicon ehnvicon-placeholder-dr&quot;&gt;&lt;/i&gt;
 	&lt;/div&gt;
 &lt;/figure&gt;</code></pre>
 </div>
@@ -942,16 +991,16 @@
 </div>
 <div class="f-item-preview">
 	<select class="form-control tags-select" multiple="multiple">
-  <option value="">Pédiatrie</option>
-  <option value="">Option 1</option> te
-  <option value="">Option 2 </option>
+	<option value="">Pédiatrie</option>
+	<option value="">Option 1</option> te
+	<option value="">Option 2 </option>
 </select>
 </div>
 <div class="f-item-code f-item-hidden" data-f-toggle="code">
 	<pre><code class="language-markup">&lt;select class&#x3D;&quot;form-control tags-select&quot; multiple&#x3D;&quot;multiple&quot;&gt;
-  &lt;option value&#x3D;&quot;&quot;&gt;Pédiatrie&lt;/option&gt;
-  &lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt; te
-  &lt;option value&#x3D;&quot;&quot;&gt;Option 2 &lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Pédiatrie&lt;/option&gt;
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 1&lt;/option&gt; te
+	&lt;option value&#x3D;&quot;&quot;&gt;Option 2 &lt;/option&gt;
 &lt;/select&gt;</code></pre>
 </div>
 
@@ -981,7 +1030,7 @@
 <ul>
 <li><strong>card-portrait-url</strong> - String</li>
 <li><strong>card-name</strong> - String</li>
-<li><strong>card-sexe</strong> - String</li>
+<li><strong>card-politesse</strong> - String</li>
 <li><strong>card-title</strong> - String</li>
 </ul>
 
@@ -991,8 +1040,8 @@
 	<i class="ehnvicon ehnvicon-long-arrow-right"></i>
 
 	<div class="vignette">
-		<div class="placeholder">
-			<i class="ehnvicon ehnvicon-placeholder-"></i>
+		<div class="icon-placeholder">
+			<i class="ehnvicon ehnvicon-placeholder-dr"></i>
 		</div>
 	</div>
 	<div class="user-card-infos">
@@ -1006,8 +1055,8 @@
 	&lt;i class&#x3D;&quot;ehnvicon ehnvicon-long-arrow-right&quot;&gt;&lt;/i&gt;
 
 	&lt;div class&#x3D;&quot;vignette&quot;&gt;
-		&lt;div class&#x3D;&quot;placeholder&quot;&gt;
-			&lt;i class&#x3D;&quot;ehnvicon ehnvicon-placeholder-&quot;&gt;&lt;/i&gt;
+		&lt;div class&#x3D;&quot;icon-placeholder&quot;&gt;
+			&lt;i class&#x3D;&quot;ehnvicon ehnvicon-placeholder-dr&quot;&gt;&lt;/i&gt;
 		&lt;/div&gt;
 	&lt;/div&gt;
 	&lt;div class&#x3D;&quot;user-card-infos&quot;&gt;
@@ -1022,6 +1071,11 @@
 
 
 
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous"></script>
       </div>
       <script src="./build/js/styleguide.min.js"></script>
     <script src="./build/js/vendors.min.js"></script>

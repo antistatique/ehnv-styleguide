@@ -15,6 +15,17 @@
     <link rel="stylesheet" href="./build/css/vendors.min.css">
     <link rel="stylesheet" href="./build/css/main.css">
 
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'xld7vod',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
     <!--[if lt IE 9]>
       <script src="./build/js/polyfills.min.js"></script>
     <![endif]-->
@@ -133,16 +144,25 @@
             <a href="molecules.html" class="f-menu__heading">Molecules</a>
             <ul>
               <li>
+                <a href="molecules.html#background-box">Background Box</a>
+              </li>
+              <li>
                 <a href="molecules.html#breadcrumb">Breadcrumb</a>
               </li>
               <li>
-                <a href="molecules.html#card-duo">Card Duo</a>
+                <a href="molecules.html#card-list">Card List</a>
               </li>
               <li>
                 <a href="molecules.html#color-box">Color Box</a>
               </li>
               <li>
                 <a href="molecules.html#cover">Cover</a>
+              </li>
+              <li>
+                <a href="molecules.html#doc-box">Doc Box</a>
+              </li>
+              <li>
+                <a href="molecules.html#download-list">Download List</a>
               </li>
               <li>
                 <a href="molecules.html#entry-footer">Entry Footer</a>
@@ -166,6 +186,12 @@
                 <a href="molecules.html#mobile-nav">Mobile Nav</a>
               </li>
               <li>
+                <a href="molecules.html#news-box">News Box</a>
+              </li>
+              <li>
+                <a href="molecules.html#peoples">Peoples</a>
+              </li>
+              <li>
                 <a href="molecules.html#search-box">Search Box</a>
               </li>
               <li>
@@ -179,6 +205,9 @@
               </li>
               <li>
                 <a href="molecules.html#table">Table</a>
+              </li>
+              <li>
+                <a href="molecules.html#teaser">Teaser</a>
               </li>
               <li>
                 <a href="molecules.html#thumb-box">Thumb Box</a>
@@ -204,6 +233,9 @@
                 <a href="organisms.html#header">Header</a>
               </li>
               <li>
+                <a href="organisms.html#header-hmag">Header Hmag</a>
+              </li>
+              <li>
                 <a href="organisms.html#location">Location</a>
               </li>
               <li>
@@ -224,6 +256,12 @@
           <li>
             <a href="templates.html" class="f-menu__heading">Templates</a>
             <ul>
+              <li>
+                <a href="templates/404.html">404</a>
+              </li>
+              <li>
+                <a href="templates/comite.html">Comite</a>
+              </li>
               <li>
                 <a href="templates/content.html">Content</a>
               </li>
@@ -247,6 +285,9 @@
               </li>
               <li>
                 <a href="templates/homepage2.html">Homepage2</a>
+              </li>
+              <li>
+                <a href="templates/job-detail.html">Job Detail</a>
               </li>
               <li>
                 <a href="templates/news-detail.html">News Detail</a>
@@ -278,6 +319,16 @@
 <h1 data-f-toggle="labels">Templates</h1>
 
 <ul>
+
+	<li>
+		<a href="templates/404.html" class="f-item-heading">404</a>
+	</li>
+
+
+	<li>
+		<a href="templates/comite.html" class="f-item-heading">Comite</a>
+	</li>
+
 
 	<li>
 		<a href="templates/content.html" class="f-item-heading">Content</a>
@@ -320,6 +371,11 @@
 
 
 	<li>
+		<a href="templates/job-detail.html" class="f-item-heading">Job Detail</a>
+	</li>
+
+
+	<li>
 		<a href="templates/news-detail.html" class="f-item-heading">News Detail</a>
 	</li>
 
@@ -336,6 +392,11 @@
 </ul>
 
 
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous"></script>
       </div>
       <script src="./build/js/styleguide.min.js"></script>
     <script src="./build/js/vendors.min.js"></script>

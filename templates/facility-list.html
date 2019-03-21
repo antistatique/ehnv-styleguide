@@ -14,6 +14,17 @@
     <link rel="stylesheet" href="./../build/css/vendors.min.css">
     <link rel="stylesheet" href="./../build/css/main.css">
 
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'xld7vod',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
     <!--[if lt IE 9]>
       <script src="./../build/js/polyfills.min.js"></script>
     <![endif]-->
@@ -91,23 +102,18 @@
       <div class="container">
         <nav class="navbar navbar-default" role="navigation">
           <div class="row">
-            <div class="col-md-4 col-sm-3 col-xs-5">
+            <div class="col-md-5 col-sm-4 col-xs-8">
               <div class="navbar-header">
                 <a href="">
                   <img
-                  class="img-responsive hidden-xs hidden-sm"
+                  class="img-responsive"
                   src="../build/svg/logo_eHnv_full.svg"
                   alt="eHnv - Etablissements Hospitaliers du Nord Vaudois."
                   onerror="this.onerror=null; this.src='../build/img/logo_eHnv_full.png'" >
-                  <img
-                  class="img-responsive visible-xs-block visible-sm-block"
-                  src="../build/svg/logo_eHnv_redux.svg"
-                  alt="eHnv - Etablissements Hospitaliers du Nord Vaudois."
-                  onerror="this.onerror=null; this.src='../build/img/logo_eHnv_redux.png'" >
                 </a>
               </div>
             </div>
-            <div class="col-lg-5 col-lg-offset-3 col-md-6 col-md-offset-2 col-sm-7 col-sm-offset-2 col-xs-offset-3 hidden-xs">
+            <div class="col-md-7 col-sm-8 hidden-xs">
               <div class="collapse navbar-collapse">
                 <div class="row">
                   <ul class="nav navbar-nav navbar-right secondary">
@@ -187,14 +193,8 @@
   </div>
 </div>
 <div class="cover-container">
-  <div class="cover">
-    <div class="focuspoint"
-    data-focus-x="0"
-    data-focus-y="0"
-    data-image-w="1440"
-    data-image-h="468">
-      <img src="../build/img/bg_cover.jpg" alt="">
-    </div>
+  <div class="cover greybg" style="background: url(../build/img/bg_cover_infinite.png) center center repeat-x / auto 100%">
+    <img src="../build/img/bg_cover.png" alt="">
   </div>
 </div>
 <div class="facility-list">
@@ -206,6 +206,10 @@
           <header class="entry-title">
           	<h1>Hôpitaux, centres spécialisés et permanences médicales</h1>
           	
+            <p class="meta time">
+              <i class="ehnvicon ehnvicon-clock"></i>
+              <time datetime="2016-08-19">19 Août 2016</time>
+            </p>
           </header>          <div class="map">
           	<div class="icons">
           			<a style="top:20%;left:25%" data-toggle="tooltip" data-placement="right" title="Tooltip content for this pin" href="#" class="pin">
@@ -225,168 +229,160 @@
         </div>
         <div class="col-sm-6">
           <div href="#" class="summary-box">
+            <a class="figure" href="#" style="background: url(https://unsplash.it/700/700/?random) 50% 50% / cover"></a>
             <div class="content">
-              <a href="">
-                <figure>
-                  <img src="https://unsplash.it/700/700/?random" alt="">
-                  <figcaption>
-                    Urgences d’Yverdon-les-bains
-                  </figcaption>
-                </figure>
-          
-                <div href="#" class="summary-box-informations-link">Plus d'informations <i class="ehnvicon ehnvicon-arrow-right"></i></div>
-              </a>
-              <div class="spacer spacer-sm visible-xs-block visible-sm-block"></div>
-              <div class="row">
+              <div class="informations">
                 <div class="col-xs-12">
-                  <div class="col-sm-12 col-md-7">
-                    <div class="spacer spacer-sm"></div>
-                      <i class="ehnvicon ehnvicon-pin"></i>
-                      <p>
-                        <a href="#">
-                          Rue d'Entremonts 11<br>
-                          1400 Yverdon-les-bains
-                        </a>
-                      </p>
-                    <div class="spacer spacer-sm"></div>
-                  </div>
-                  <div class="col-sm-12 col-md-5">
-                    <div class="spacer spacer-sm"></div>
-                      <i class="ehnvicon ehnvicon-phone"></i>
-                      <p>
-                        <a href="tel:0244244444">024 424 44 44</a><br>
-                        Réception 24/24
-                      </p>
-                    <div class="spacer spacer-sm"></div>
+                  <a href="#"><h2>Urgences d’Yverdon-les-bains</h2></a>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="icon-container">
+                        <i class="ehnvicon ehnvicon-pin"></i>
+                      </div>
+                      <div class="text-container">
+                        <p>
+                          <a href="#">
+                            Rue d'Entremonts 11<br>
+                            1400 Yverdon-les-bains
+                          </a>
+                        </p>
+                      </div>
+                      <div class="spacer spacer-sm"></div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="icon-container">
+                        <i class="ehnvicon ehnvicon-phone"></i>
+                      </div>
+                      <div class="text-container">
+                        <p>
+                          <a href="tel:0244244444">024 424 44 44</a><br>
+                          Réception 24/24
+                        </p>
+                      </div>
+                      <div class="spacer spacer-sm"></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="spacer spacer-xl visible-xs-block"></div>        </div>
+          </div>        </div>
         <div class="col-sm-6">
           <div href="#" class="summary-box">
+            <a class="figure" href="#" style="background: url(https://unsplash.it/700/700/?random) 50% 50% / cover"></a>
             <div class="content">
-              <a href="">
-                <figure>
-                  <img src="https://unsplash.it/700/700/?random" alt="">
-                  <figcaption>
-                    Urgences d’Yverdon-les-bains
-                  </figcaption>
-                </figure>
-          
-                <div href="#" class="summary-box-informations-link">Plus d'informations <i class="ehnvicon ehnvicon-arrow-right"></i></div>
-              </a>
-              <div class="spacer spacer-sm visible-xs-block visible-sm-block"></div>
-              <div class="row">
+              <div class="informations">
                 <div class="col-xs-12">
-                  <div class="col-sm-12 col-md-7">
-                    <div class="spacer spacer-sm"></div>
-                      <i class="ehnvicon ehnvicon-pin"></i>
-                      <p>
-                        <a href="#">
-                          Rue d'Entremonts 11<br>
-                          1400 Yverdon-les-bains
-                        </a>
-                      </p>
-                    <div class="spacer spacer-sm"></div>
-                  </div>
-                  <div class="col-sm-12 col-md-5">
-                    <div class="spacer spacer-sm"></div>
-                      <i class="ehnvicon ehnvicon-phone"></i>
-                      <p>
-                        <a href="tel:0244244444">024 424 44 44</a><br>
-                        Réception 24/24
-                      </p>
-                    <div class="spacer spacer-sm"></div>
+                  <a href="#"><h2>Urgences d’Yverdon-les-bains</h2></a>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="icon-container">
+                        <i class="ehnvicon ehnvicon-pin"></i>
+                      </div>
+                      <div class="text-container">
+                        <p>
+                          <a href="#">
+                            Rue d'Entremonts 11<br>
+                            1400 Yverdon-les-bains
+                          </a>
+                        </p>
+                      </div>
+                      <div class="spacer spacer-sm"></div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="icon-container">
+                        <i class="ehnvicon ehnvicon-phone"></i>
+                      </div>
+                      <div class="text-container">
+                        <p>
+                          <a href="tel:0244244444">024 424 44 44</a><br>
+                          Réception 24/24
+                        </p>
+                      </div>
+                      <div class="spacer spacer-sm"></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="spacer spacer-xl visible-xs-block"></div>        </div>
+          </div>        </div>
          <div class="col-sm-6">
           <div href="#" class="summary-box">
+            <a class="figure" href="#" style="background: url(https://unsplash.it/700/700/?random) 50% 50% / cover"></a>
             <div class="content">
-              <a href="">
-                <figure>
-                  <img src="https://unsplash.it/700/700/?random" alt="">
-                  <figcaption>
-                    Urgences d’Yverdon-les-bains
-                  </figcaption>
-                </figure>
-          
-                <div href="#" class="summary-box-informations-link">Plus d'informations <i class="ehnvicon ehnvicon-arrow-right"></i></div>
-              </a>
-              <div class="spacer spacer-sm visible-xs-block visible-sm-block"></div>
-              <div class="row">
+              <div class="informations">
                 <div class="col-xs-12">
-                  <div class="col-sm-12 col-md-7">
-                    <div class="spacer spacer-sm"></div>
-                      <i class="ehnvicon ehnvicon-pin"></i>
-                      <p>
-                        <a href="#">
-                          Rue d'Entremonts 11<br>
-                          1400 Yverdon-les-bains
-                        </a>
-                      </p>
-                    <div class="spacer spacer-sm"></div>
-                  </div>
-                  <div class="col-sm-12 col-md-5">
-                    <div class="spacer spacer-sm"></div>
-                      <i class="ehnvicon ehnvicon-phone"></i>
-                      <p>
-                        <a href="tel:0244244444">024 424 44 44</a><br>
-                        Réception 24/24
-                      </p>
-                    <div class="spacer spacer-sm"></div>
+                  <a href="#"><h2>Urgences d’Yverdon-les-bains</h2></a>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="icon-container">
+                        <i class="ehnvicon ehnvicon-pin"></i>
+                      </div>
+                      <div class="text-container">
+                        <p>
+                          <a href="#">
+                            Rue d'Entremonts 11<br>
+                            1400 Yverdon-les-bains
+                          </a>
+                        </p>
+                      </div>
+                      <div class="spacer spacer-sm"></div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="icon-container">
+                        <i class="ehnvicon ehnvicon-phone"></i>
+                      </div>
+                      <div class="text-container">
+                        <p>
+                          <a href="tel:0244244444">024 424 44 44</a><br>
+                          Réception 24/24
+                        </p>
+                      </div>
+                      <div class="spacer spacer-sm"></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="spacer spacer-xl visible-xs-block"></div>        </div>
+          </div>        </div>
         <div class="col-sm-6">
           <div href="#" class="summary-box">
+            <a class="figure" href="#" style="background: url(https://unsplash.it/700/700/?random) 50% 50% / cover"></a>
             <div class="content">
-              <a href="">
-                <figure>
-                  <img src="https://unsplash.it/700/700/?random" alt="">
-                  <figcaption>
-                    Urgences d’Yverdon-les-bains
-                  </figcaption>
-                </figure>
-          
-                <div href="#" class="summary-box-informations-link">Plus d'informations <i class="ehnvicon ehnvicon-arrow-right"></i></div>
-              </a>
-              <div class="spacer spacer-sm visible-xs-block visible-sm-block"></div>
-              <div class="row">
+              <div class="informations">
                 <div class="col-xs-12">
-                  <div class="col-sm-12 col-md-7">
-                    <div class="spacer spacer-sm"></div>
-                      <i class="ehnvicon ehnvicon-pin"></i>
-                      <p>
-                        <a href="#">
-                          Rue d'Entremonts 11<br>
-                          1400 Yverdon-les-bains
-                        </a>
-                      </p>
-                    <div class="spacer spacer-sm"></div>
-                  </div>
-                  <div class="col-sm-12 col-md-5">
-                    <div class="spacer spacer-sm"></div>
-                      <i class="ehnvicon ehnvicon-phone"></i>
-                      <p>
-                        <a href="tel:0244244444">024 424 44 44</a><br>
-                        Réception 24/24
-                      </p>
-                    <div class="spacer spacer-sm"></div>
+                  <a href="#"><h2>Urgences d’Yverdon-les-bains</h2></a>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="icon-container">
+                        <i class="ehnvicon ehnvicon-pin"></i>
+                      </div>
+                      <div class="text-container">
+                        <p>
+                          <a href="#">
+                            Rue d'Entremonts 11<br>
+                            1400 Yverdon-les-bains
+                          </a>
+                        </p>
+                      </div>
+                      <div class="spacer spacer-sm"></div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="icon-container">
+                        <i class="ehnvicon ehnvicon-phone"></i>
+                      </div>
+                      <div class="text-container">
+                        <p>
+                          <a href="tel:0244244444">024 424 44 44</a><br>
+                          Réception 24/24
+                        </p>
+                      </div>
+                      <div class="spacer spacer-sm"></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="spacer spacer-xl visible-xs-block"></div>        </div>
+          </div>        </div>
       </div>
       <div class="spacer hidden visible-sm-block visible-xs-block"></div>
       <div class="row">
@@ -395,127 +391,121 @@
         </div>
         <div class="col-sm-6">
           <div href="#" class="summary-box">
+            <a class="figure" href="#" style="background: url(https://unsplash.it/700/700/?random) 50% 50% / cover"></a>
             <div class="content">
-              <a href="">
-                <figure>
-                  <img src="https://unsplash.it/700/700/?random" alt="">
-                  <figcaption>
-                    Urgences d’Yverdon-les-bains
-                  </figcaption>
-                </figure>
-          
-                <div href="#" class="summary-box-informations-link">Plus d'informations <i class="ehnvicon ehnvicon-arrow-right"></i></div>
-              </a>
-              <div class="spacer spacer-sm visible-xs-block visible-sm-block"></div>
-              <div class="row">
+              <div class="informations">
                 <div class="col-xs-12">
-                  <div class="col-sm-12 col-md-7">
-                    <div class="spacer spacer-sm"></div>
-                      <i class="ehnvicon ehnvicon-pin"></i>
-                      <p>
-                        <a href="#">
-                          Rue d'Entremonts 11<br>
-                          1400 Yverdon-les-bains
-                        </a>
-                      </p>
-                    <div class="spacer spacer-sm"></div>
-                  </div>
-                  <div class="col-sm-12 col-md-5">
-                    <div class="spacer spacer-sm"></div>
-                      <i class="ehnvicon ehnvicon-phone"></i>
-                      <p>
-                        <a href="tel:0244244444">024 424 44 44</a><br>
-                        Réception 24/24
-                      </p>
-                    <div class="spacer spacer-sm"></div>
+                  <a href="#"><h2>Urgences d’Yverdon-les-bains</h2></a>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="icon-container">
+                        <i class="ehnvicon ehnvicon-pin"></i>
+                      </div>
+                      <div class="text-container">
+                        <p>
+                          <a href="#">
+                            Rue d'Entremonts 11<br>
+                            1400 Yverdon-les-bains
+                          </a>
+                        </p>
+                      </div>
+                      <div class="spacer spacer-sm"></div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="icon-container">
+                        <i class="ehnvicon ehnvicon-phone"></i>
+                      </div>
+                      <div class="text-container">
+                        <p>
+                          <a href="tel:0244244444">024 424 44 44</a><br>
+                          Réception 24/24
+                        </p>
+                      </div>
+                      <div class="spacer spacer-sm"></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="spacer spacer-xl visible-xs-block"></div>        </div>
+          </div>        </div>
         <div class="col-sm-6">
           <div href="#" class="summary-box">
+            <a class="figure" href="#" style="background: url(https://unsplash.it/700/700/?random) 50% 50% / cover"></a>
             <div class="content">
-              <a href="">
-                <figure>
-                  <img src="https://unsplash.it/700/700/?random" alt="">
-                  <figcaption>
-                    Urgences d’Yverdon-les-bains
-                  </figcaption>
-                </figure>
-          
-                <div href="#" class="summary-box-informations-link">Plus d'informations <i class="ehnvicon ehnvicon-arrow-right"></i></div>
-              </a>
-              <div class="spacer spacer-sm visible-xs-block visible-sm-block"></div>
-              <div class="row">
+              <div class="informations">
                 <div class="col-xs-12">
-                  <div class="col-sm-12 col-md-7">
-                    <div class="spacer spacer-sm"></div>
-                      <i class="ehnvicon ehnvicon-pin"></i>
-                      <p>
-                        <a href="#">
-                          Rue d'Entremonts 11<br>
-                          1400 Yverdon-les-bains
-                        </a>
-                      </p>
-                    <div class="spacer spacer-sm"></div>
-                  </div>
-                  <div class="col-sm-12 col-md-5">
-                    <div class="spacer spacer-sm"></div>
-                      <i class="ehnvicon ehnvicon-phone"></i>
-                      <p>
-                        <a href="tel:0244244444">024 424 44 44</a><br>
-                        Réception 24/24
-                      </p>
-                    <div class="spacer spacer-sm"></div>
+                  <a href="#"><h2>Urgences d’Yverdon-les-bains</h2></a>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="icon-container">
+                        <i class="ehnvicon ehnvicon-pin"></i>
+                      </div>
+                      <div class="text-container">
+                        <p>
+                          <a href="#">
+                            Rue d'Entremonts 11<br>
+                            1400 Yverdon-les-bains
+                          </a>
+                        </p>
+                      </div>
+                      <div class="spacer spacer-sm"></div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="icon-container">
+                        <i class="ehnvicon ehnvicon-phone"></i>
+                      </div>
+                      <div class="text-container">
+                        <p>
+                          <a href="tel:0244244444">024 424 44 44</a><br>
+                          Réception 24/24
+                        </p>
+                      </div>
+                      <div class="spacer spacer-sm"></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="spacer spacer-xl visible-xs-block"></div>        </div>
+          </div>        </div>
          <div class="col-sm-6">
           <div href="#" class="summary-box">
+            <a class="figure" href="#" style="background: url(https://unsplash.it/700/700/?random) 50% 50% / cover"></a>
             <div class="content">
-              <a href="">
-                <figure>
-                  <img src="https://unsplash.it/700/700/?random" alt="">
-                  <figcaption>
-                    Urgences d’Yverdon-les-bains
-                  </figcaption>
-                </figure>
-          
-                <div href="#" class="summary-box-informations-link">Plus d'informations <i class="ehnvicon ehnvicon-arrow-right"></i></div>
-              </a>
-              <div class="spacer spacer-sm visible-xs-block visible-sm-block"></div>
-              <div class="row">
+              <div class="informations">
                 <div class="col-xs-12">
-                  <div class="col-sm-12 col-md-7">
-                    <div class="spacer spacer-sm"></div>
-                      <i class="ehnvicon ehnvicon-pin"></i>
-                      <p>
-                        <a href="#">
-                          Rue d'Entremonts 11<br>
-                          1400 Yverdon-les-bains
-                        </a>
-                      </p>
-                    <div class="spacer spacer-sm"></div>
-                  </div>
-                  <div class="col-sm-12 col-md-5">
-                    <div class="spacer spacer-sm"></div>
-                      <i class="ehnvicon ehnvicon-phone"></i>
-                      <p>
-                        <a href="tel:0244244444">024 424 44 44</a><br>
-                        Réception 24/24
-                      </p>
-                    <div class="spacer spacer-sm"></div>
+                  <a href="#"><h2>Urgences d’Yverdon-les-bains</h2></a>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="icon-container">
+                        <i class="ehnvicon ehnvicon-pin"></i>
+                      </div>
+                      <div class="text-container">
+                        <p>
+                          <a href="#">
+                            Rue d'Entremonts 11<br>
+                            1400 Yverdon-les-bains
+                          </a>
+                        </p>
+                      </div>
+                      <div class="spacer spacer-sm"></div>
+                    </div>
+                    <div class="col-sm-12">
+                      <div class="icon-container">
+                        <i class="ehnvicon ehnvicon-phone"></i>
+                      </div>
+                      <div class="text-container">
+                        <p>
+                          <a href="tel:0244244444">024 424 44 44</a><br>
+                          Réception 24/24
+                        </p>
+                      </div>
+                      <div class="spacer spacer-sm"></div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="spacer spacer-xl visible-xs-block"></div>        </div>
+          </div>        </div>
       </div>
     </section>
   </div>
@@ -524,8 +514,6 @@
 
 <footer class="footer">
 	<div class="content">
-
-
 		<div class="container">
       <div class="row">
   			<div class="col-sm-7">
@@ -534,7 +522,7 @@
   				<div class="input-group email-input">
   				<input type="email" class="form-control" placeholder="Votre E-mail">
   					<span class="input-group-btn">
-  						<button class="btn btn-primary" type="button">S’inscrire</button>
+  						<button class="btn btn-default" type="button">S’inscrire</button>
   					</span>
   				</div>  			</div>
   			<div class="col-sm-4 col-sm-offset-1 text-xs-center">
@@ -565,6 +553,11 @@
 
 </footer>
 
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous"></script>
     <script src="./../build/js/vendors.min.js"></script>
     <script src="./../build/js/main.js"></script>
   </body>

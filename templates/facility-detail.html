@@ -14,6 +14,17 @@
     <link rel="stylesheet" href="./../build/css/vendors.min.css">
     <link rel="stylesheet" href="./../build/css/main.css">
 
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'xld7vod',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+
     <!--[if lt IE 9]>
       <script src="./../build/js/polyfills.min.js"></script>
     <![endif]-->
@@ -91,23 +102,18 @@
       <div class="container">
         <nav class="navbar navbar-default" role="navigation">
           <div class="row">
-            <div class="col-md-4 col-sm-3 col-xs-5">
+            <div class="col-md-5 col-sm-4 col-xs-8">
               <div class="navbar-header">
                 <a href="">
                   <img
-                  class="img-responsive hidden-xs hidden-sm"
+                  class="img-responsive"
                   src="../build/svg/logo_eHnv_full.svg"
                   alt="eHnv - Etablissements Hospitaliers du Nord Vaudois."
                   onerror="this.onerror=null; this.src='../build/img/logo_eHnv_full.png'" >
-                  <img
-                  class="img-responsive visible-xs-block visible-sm-block"
-                  src="../build/svg/logo_eHnv_redux.svg"
-                  alt="eHnv - Etablissements Hospitaliers du Nord Vaudois."
-                  onerror="this.onerror=null; this.src='../build/img/logo_eHnv_redux.png'" >
                 </a>
               </div>
             </div>
-            <div class="col-lg-5 col-lg-offset-3 col-md-6 col-md-offset-2 col-sm-7 col-sm-offset-2 col-xs-offset-3 hidden-xs">
+            <div class="col-md-7 col-sm-8 hidden-xs">
               <div class="collapse navbar-collapse">
                 <div class="row">
                   <ul class="nav navbar-nav navbar-right secondary">
@@ -186,98 +192,90 @@
     </div>
   </div>
 </div>
-<div class="cover-container">
-  <div class="cover">
-    <div class="focuspoint"
-    data-focus-x="0"
-    data-focus-y="0"
-    data-image-w="1440"
-    data-image-h="468">
-      <img src="../build/img/bg_cover.jpg" alt="">
-    </div>
-  </div>
-</div>
-<div class="facility-detail greybg">
-  <div class="spacer"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="side-nav">
-            <div class="spacer spacer-xs"></div>
-            <h3>Centres et hôpitaux</h3>
-            <nav>
-              <ul>
-                <li><a href="#">Hôpital d'Yverdon</a></li>
-                <li><a href="#">Hôpital d'Orbe</a></li>
-                <li><a href="#">Hôpital de Chamblon</a></li>
-                <li><a href="#">Hôpital de la Vallée de Joux</a></li>
-                <li><a href="#">Hôpital de St-Loup</a></li>
-                <li><a href="#">Centre DaisY</a></li>
-                <li><a href="#">Permanence de Cossonay</a></li>
-              </ul>
-            </nav>
-            <div class="spacer spacer-xs"></div>
-          </div>        </div>
-        <div class="col-md-8 col-md-offset-1">
-          <header class="entry-title">
-          	<h1>Hôpital d&#x27;Yverdon-les-Bains</h1>
-          	
-          </header>          <p><strong>Et ut in facilis minima qui perspiciatis harum. Adipisci ut deserunt et velit. Provident et quos ullam est reprehenderit et facilis. Autem numquam nostrum autem consequuntur similique sint.</strong></p>
-
-          <div class="contact-infos">
-              <h2>Contact</h2>
-              <a href="#" class="btn btn-link">Hôpital d’Yverdon-les-Bains <i class="ehnvicon ehnvicon-arrow-right"></i></a><br>
-              <a href="#" class="btn btn-link">Hôpital de St-Loup <i class="ehnvicon ehnvicon-arrow-right"></i></a><br>
-              <br>
-              <a href="#">olivier.borens@exemple.ch</a><br>
-            <a href="#">079 763 29 04</a><br>
-            <a href="#">079 763 29 04 (Fax)</a><br>
-              <a href="#">LinkedIn</a><br>
-            <a href="#">Skype</a>
+<div class="facility-detail">
+  <div class="container">
+    <div class="spacer spacer-md"></div>
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        <div class="row">
+          <div class="col-xs-5 col-sm-3">
+            <img src="https://via.placeholder.com/480" class="img-responsive" alt="ALT">
+            <div class="spacer spacer-md"></div>
           </div>
-          <div class="spacer spacer-xl visible-xs-block"></div>
-          <h3>Horaires</h3>
-          <p>Voluptatem ducimus laborum quibusdam aut qui occaecati. Iste minima voluptatem commodi. Et doloribus qui natus omnis cum. Est sit odit delectus et possimus in. Dolorem officia eos fugiat occaecati placeat quia. Et harum voluptatem exercitationem et numquam aut. Cumque dolor autem maiores aut soluta.</p>
-          <p>Voluptatem ducimus laborum quibusdam aut qui occaecati. Iste minima voluptatem commodi. Et doloribus qui natus omnis cum. Est sit odit delectus et possimus in. Dolorem officia eos fugiat occaecati placeat quia. Et harum voluptatem exercitationem et numquam aut. Cumque dolor autem maiores aut soluta.</p>
-          <h3>Parking</h3>
-          <p>Voluptatem ducimus laborum quibusdam aut qui occaecati. Iste minima voluptatem commodi. Et doloribus qui natus omnis cum. <strong>Est sit odit delectus</strong> et possimus in. Dolorem officia eos fugiat occaecati <a href="">placeat quia</a>. Et harum voluptatem exercitationem et numquam aut. Cumque dolor autem maiores aut soluta.</p>
-
-          <div class="link-list">
-              <h3>Spécialités</h3>
-              <ul>
-                  <li>
-                      <a href="#">Anésthésiologie, réanimation et antalgie</a>
-                  </li>
-                  <li>
-                      <a href="#">Suscipit</a>
-                  </li>
-                  <li>
-                      <a href="#">Magnam</a>
-                  </li>
-                  <li>
-                      <a href="#">Suscipit</a>
-                  </li>
-                  <li>
-                      <a href="#">Odit enim aliquid molestias molestias</a>
-                  </li>
-                  <li>
-                      <a href="#">Dolorem perferendis ut quisquam</a>
-                  </li>
-              </ul>
-          </div>
-          <h3>Médecins</h3>
-          <p>Il y a <a href="#">30 médecins</a> dans cet établissement</p>
-
         </div>
+
+        <header class="entry-title">
+          <h1>Hôpital d'Yverdon-les-Bains</h1>
+        </header>
+
+        <p>Et ut in facilis minima qui perspiciatis harum. Adipisci ut deserunt et velit. Provident et quos ullam est reprehenderit et facilis. Autem numquam nostrum autem consequuntur similique sint.</p>
+
+        <p>Et ut in facilis minima qui perspiciatis harum. Adipisci ut deserunt et velit. Provident et quos ullam est reprehenderit et facilis. Autem numquam nostrum autem consequuntur similique sint.</p>
       </div>
     </div>
+
+    <div class="spacer"></div>
+    <div class="row d-flex">
+      <div class="col-sm-6 d-flex">
+        <div class="bg-dark-blue w-100">
+          <h3 class="h2 font-weight-bold mt-0">Coordonnées</h3>
+          <p>
+            <a href="#">
+              Rue de Plaisance 2<br />
+              1400 Yverdon-les-Bains
+            </a>
+          </p>
+          <a href="#" class="btn mb-0">Accès Google Maps</a>
+        </div>
+      </div>
+      <div class="col-sm-6 d-flex">
+        <div class="bg-light-blue w-100">
+          <h3 class="h2 font-weight-bold mt-0">Contact</h3>
+          <p>
+            <a href="#">daisy@ehnv.ch</a><br />
+            Tél. <a href="#">024 424 54 21</a><br />
+            Fax 024 424 54 20
+          </p>
+          <p class="mb-0">
+            Ouverture du lundi au vendredi, dès 7h du matin.
+          </p>
+        </div>
+      </div>
+    </div>    <div class="spacer"></div>
+
+    <div class="row">
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+
+        <h3 class="h1 font-weight-bold text-dark-blue">Nos prestations</h3>
+
+        <p class="lead text-light-blue font-weight-normal">Voluptatem ducimus laborum quibusdam aut qui occaecati. Iste minima voluptatem commodi. Et doloribus qui natus omnis cum. Est sit odit delectus et possimus in. Dolorem officia eos fugiat occaecati placeat quia. Et harum voluptatem exercitationem et numquam aut. Cumque dolor autem maiores aut soluta.</p>
+
+        <p>Voluptatem ducimus laborum quibusdam aut qui occaecati. Iste minima voluptatem commodi. Et doloribus qui natus omnis cum. Est sit odit delectus et possimus in. Dolorem officia eos fugiat occaecati placeat quia. Et harum voluptatem exercitationem et numquam aut. Cumque dolor autem maiores aut soluta.</p>
+
+        <div class="spacer spacer-sm"></div>
+        <a href="#" class="btn btn-primary">Découvrir nos prestations</a>
+
+        <div class="spacer"></div>
+
+        <h3 class="h1 font-weight-bold text-dark-blue">Parking</h3>
+        <p>Voluptatem ducimus laborum quibusdam aut qui occaecati. Iste minima voluptatem commodi. Et doloribus qui natus omnis cum. <strong>Est sit odit delectus</strong> et possimus in. Dolorem officia eos fugiat occaecati <a href="">placeat quia</a>. Et harum voluptatem exercitationem et numquam aut. Cumque dolor autem maiores aut soluta.</p>
+
+
+        <div class="spacer"></div>
+        <div class="doc-box">
+          <span class="badge">48 médecins</span>
+          <h3 class="h1 font-weight-bold text-dark-blue">Les médecins de DaisY</h3>
+          <div class="spacer spacer-sm"></div>
+          <a href="#" class="btn btn-primary mb-0">Consulter la liste</a>
+        </div>        <div class="spacer"></div>
+      </div>
+    </div>
+  </div>
   <div class="spacer"></div>
 </div>
 
 <footer class="footer">
 	<div class="content">
-
-
 		<div class="container">
       <div class="row">
   			<div class="col-sm-7">
@@ -286,7 +284,7 @@
   				<div class="input-group email-input">
   				<input type="email" class="form-control" placeholder="Votre E-mail">
   					<span class="input-group-btn">
-  						<button class="btn btn-primary" type="button">S’inscrire</button>
+  						<button class="btn btn-default" type="button">S’inscrire</button>
   					</span>
   				</div>  			</div>
   			<div class="col-sm-4 col-sm-offset-1 text-xs-center">
@@ -317,6 +315,11 @@
 
 </footer>
 
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+      crossorigin="anonymous"></script>
     <script src="./../build/js/vendors.min.js"></script>
     <script src="./../build/js/main.js"></script>
   </body>
