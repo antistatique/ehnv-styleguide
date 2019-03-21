@@ -12,7 +12,7 @@
     "url": "https://github.com/antistatique/ehnv-styleguide.git"
   },
   "scripts": {
-    "build": "npm install && gulp --production",
+    "build": "gulp --production",
     "start": "gulp serve"
   },
   "dependencies": {
