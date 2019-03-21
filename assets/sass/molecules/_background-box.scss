@@ -5,14 +5,12 @@
   padding: 40px;
   color: $white;
 
-  [class^="h"] {
-    font-weight: bold;
-    margin-top: 0;
+  @media (max-width: $screen-sm) {
+    padding: 20px;
   }
 
   p {
     margin-bottom: 25px;
-    &:last-child { margin-bottom: 0; }
   }
 
   a:not(.btn) {
@@ -27,7 +25,6 @@
   }
 
   .btn {
-    margin-bottom: 0;
     background: transparent;
     border: 2px solid $white;
     color: $white;
