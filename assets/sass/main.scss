@@ -8,6 +8,7 @@
 @import 'typography';
 @import 'theme';
 @import 'spacer';
+@import 'helpers';
 
 @import url("https://use.typekit.net/xld7vod.css");
 
@@ -50,6 +51,7 @@
 @import 'molecules/search-boxs';
 @import 'molecules/secondary-navs';
 @import 'molecules/main-navs';
+@import 'molecules/background-box';
 
 // organisms:
 @import 'organisms/contact-forms';

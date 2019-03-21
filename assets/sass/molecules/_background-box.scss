@@ -1,0 +1,44 @@
+@charset 'UTF-8';
+
+.bg-dark-blue,
+.bg-light-blue {
+  padding: 40px;
+  color: $white;
+
+  [class^="h"] {
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 25px;
+    &:last-child { margin-bottom: 0; }
+  }
+
+  a:not(.btn) {
+    display: inline;
+    background: linear-gradient(to right, $white 0%, $white 98%);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: left 90%;
+    color: $white;
+    text-decoration: none !important;
+    padding-bottom: 4px;
+  }
+
+  .btn {
+    margin-bottom: 0;
+    background: transparent;
+    border: 2px solid $white;
+    color: $white;
+    font-weight: normal;
+  }
+}
+
+.bg-dark-blue {
+  background: $darkblue;
+}
+
+.bg-light-blue {
+  background: $lightblue;
+}
