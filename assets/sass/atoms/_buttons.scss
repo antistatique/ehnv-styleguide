@@ -52,4 +52,8 @@
 			border-bottom:2px solid $lightblue;
 		}
 	}
+
+  &.no-white-space{
+    white-space: inherit;
+  }
 }
