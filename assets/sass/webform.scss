@@ -1,0 +1,76 @@
+.webform-submission-form {
+
+  input[type=checkbox],
+  input[type=radio]{
+    margin-right: 10px;
+  }
+
+  .progress-step:after {
+    background-color: $lightgrey;
+  }
+
+  .progress-step .progress-marker {
+    background-color: $mine;
+  }
+
+  .progress-step.is-active .progress-marker {
+    background-color: $lightblue;
+  }
+
+  .progress-step.is-active:hover .progress-marker,
+  .progress-step:hover .progress-marker {
+    background-color: $darkblue;
+  }
+
+  .progress-title {
+    color: $mine;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  label,
+  .fieldset-legend,
+  .panel-title{
+    display: block;
+    color: $darkblue;
+    width: 100%;
+
+    &.form-required{
+      position: relative;
+      padding: 0 10px;
+    }
+
+    &.form-required::after {
+      content: '*';
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: $blue;
+    }
+
+    &.option{
+      color: $mine;
+      font-weight: 400;
+    }
+  }
+
+  .fieldset-legend,
+  .panel-title{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .fieldgroup {
+    border: none;
+  }
+
+  .panel-heading{
+    background: none;
+    padding: 0;
+  }
+
+  .panel-body{
+    padding-left: 0;
+  }
+
+}
