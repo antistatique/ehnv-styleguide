@@ -11,7 +11,8 @@
   }
 
   input[type=date],
-  input[type=tel]{
+  input[type=tel],
+  input[type=time]{
     width: 100%;
   }
 
@@ -51,6 +52,7 @@
   .panel-title{
     display: inline-block;
     color: $darkblue;
+    margin-top: 1.5rem;
 
     &.form-required{
       position: relative;
@@ -92,6 +94,15 @@
 
     &-body{
       padding-left: 0;
+    }
+  }
+
+  #edit-time-date{
+    .form-group{
+      width: 50%;
+      &:first-child{
+        padding-right: 10px;
+      }
     }
   }
 }
