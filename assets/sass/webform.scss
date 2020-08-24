@@ -1,0 +1,107 @@
+.webform-submission-form {
+
+  h1,h2,h3{
+    color: $darkblue;
+    font-weight: 700;
+  }
+
+  input[type=checkbox],
+  input[type=radio]{
+    margin-right: 10px;
+  }
+
+  input[type=date],
+  input[type=tel]{
+    width: 100%;
+  }
+
+  .progress-marker{
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 4px;
+  }
+
+  .progress-step{
+    &::after{
+      background-color: $lightgrey;
+    }
+
+    .progress-marker {
+      background-color: $mine;
+    }
+
+    &.is-active .progress-marker {
+      background-color: $lightblue;
+    }
+
+    &:hover .progress-marker,
+    &.is-active:hover .progress-marker{
+      background-color: $darkblue;
+    }
+  }
+
+  .progress-title {
+    color: $mine;
+    font-weight: 400;
+    font-size: 2rem;
+  }
+
+  label,
+  .fieldset-legend,
+  .panel-title{
+    display: inline-block;
+    color: $darkblue;
+
+    &.form-required{
+      position: relative;
+      padding: 0 10px 0 0;
+    }
+
+    &.form-required::after {
+      content: '*';
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: $blue;
+    }
+
+    &.option{
+      color: $mine;
+      font-weight: 400;
+    }
+  }
+
+  .fieldset-legend,
+  .panel-title{
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .fieldgroup {
+    border: none;
+  }
+
+  .panel{
+    margin-bottom: 0;
+    box-shadow: none;
+
+    &-heading{
+      background: none;
+      padding: 0;
+    }
+
+    &-body{
+      padding-left: 0;
+    }
+  }
+}
+
+// SUBMIT CONFIRMATION
+.webform-confirmation__message{
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  margin: 5rem 0;
+  color: $lightblue;
+}

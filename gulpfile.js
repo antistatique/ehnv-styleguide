@@ -18,9 +18,6 @@ require(config.tasks + 'clean')();              // $ gulp clean
 require(config.tasks + 'styleguide')();         // $ gulp styleguide
 require(config.tasks + 'server')();             // $ gulp serve
 require(config.tasks + 'gh-pages')();           // $ gulp deploy
-require(config.tasks + 'tests-regression')();   // $ gulp regression
-require(config.tasks + 'tests-unit')();         // $ gulp test:unit
-require(config.tasks + 'tests-navigation')();   // $ gulp test:navigation
 
 
 /**

@@ -9,12 +9,18 @@
 		}
 	}
 }
-strong, b{
-	font-weight: 700;
-}
+
+strong,
+b { font-weight: 700 !important; }
+.font-weight-bold { font-weight: 800 !important; }
+.font-weight-normal { font-weight: 400 !important; }
+
+.text-dark-blue { color: $darkblue !important; }
+.text-light-blue { color: $lightblue !important; }
 
 .text-white {
   color: $white;
+  transition: opacity 0.2s;
 
   &:hover {
     opacity: 0.7;
@@ -53,39 +59,7 @@ a.text-white {
   }
 }
 
-.mt-0 {
-  margin-top: 0;
-}
-
-.mb-0 {
-  margin-bottom: 0;
-}
-
-.mr-0 {
-  margin-right: 0;
-}
-
-.ml-0 {
-  margin-left: 0;
-}
-
-.pt-0 {
-  padding-top: 0;
-}
-
-.pb-0 {
-  padding-bottom: 0;
-}
-
-.pr-0 {
-  padding-right: 0;
-}
-
-.pl-0 {
-  padding-left: 0;
-}
-
-.entry-content img {
+.col-md-8 img {
   max-width: 100%;
   height: auto;
   display: block;
