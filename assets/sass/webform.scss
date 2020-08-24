@@ -1,28 +1,28 @@
 .webform-submission-form {
-
-  h1,h2,h3{
+  h1,h2,h3 {
     color: $darkblue;
     font-weight: 700;
   }
 
   input[type=checkbox],
-  input[type=radio]{
+  input[type=radio] {
     margin-right: 10px;
   }
 
   input[type=date],
-  input[type=tel]{
+  input[type=tel],
+  input[type=time] {
     width: 100%;
   }
 
-  .progress-marker{
+  .progress-marker {
     font-size: 18px;
     font-weight: 700;
     padding-top: 4px;
   }
 
-  .progress-step{
-    &::after{
+  .progress-step {
+    &::after {
       background-color: $lightgrey;
     }
 
@@ -35,7 +35,7 @@
     }
 
     &:hover .progress-marker,
-    &.is-active:hover .progress-marker{
+    &.is-active:hover .progress-marker {
       background-color: $darkblue;
     }
   }
@@ -48,11 +48,12 @@
 
   label,
   .fieldset-legend,
-  .panel-title{
+  .panel-title {
     display: inline-block;
     color: $darkblue;
+    margin-top: 1.5rem;
 
-    &.form-required{
+    &.form-required {
       position: relative;
       padding: 0 10px 0 0;
     }
@@ -65,14 +66,14 @@
       color: $blue;
     }
 
-    &.option{
+    &.option {
       color: $mine;
       font-weight: 400;
     }
   }
 
   .fieldset-legend,
-  .panel-title{
+  .panel-title {
     font-size: 2rem;
     font-weight: 700;
   }
@@ -81,7 +82,7 @@
     border: none;
   }
 
-  .panel{
+  .panel {
     margin-bottom: 0;
     box-shadow: none;
 
@@ -94,10 +95,24 @@
       padding-left: 0;
     }
   }
+
+  .form-datetime {
+    .form-group {
+      width: 50%;
+
+      &:first-child {
+        padding-right: 10px;
+      }
+
+      input{
+        width: 100%;
+      }
+    }
+  }
 }
 
 // SUBMIT CONFIRMATION
-.webform-confirmation__message{
+.webform-confirmation__message {
   width: 100%;
   text-align: center;
   font-weight: 700;
