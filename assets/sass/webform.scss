@@ -97,9 +97,15 @@
     }
   }
 
-  #edit-time-date{
+  #edit-date {
     .form-group{
       width: 50%;
+      input {
+        width: 100%;
+      }
+      label{
+        display: none;
+      }
       &:first-child{
         padding-right: 10px;
       }
