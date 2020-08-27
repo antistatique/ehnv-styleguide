@@ -95,19 +95,34 @@
       padding-left: 0;
     }
   }
+}
 
-  .form-datetime {
-    .form-group {
-      width: 50%;
 
-      &:first-child {
-        padding-right: 10px;
-      }
+// DATETIME
+.form-datetime {
+  .form-group {
+    width: 50%;
 
-      input{
-        width: 100%;
-      }
+    &:first-child {
+      padding-right: 10px;
     }
+
+    label {
+      display: none;
+    }
+
+    input {
+      width: 100%;
+    }
+  }
+}
+
+// CHECKBOX
+.webform-type-radios {
+  margin-bottom: 10px;
+  
+  .form-group{
+    margin-bottom: 0 !important;
   }
 }
 
