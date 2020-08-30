@@ -6,14 +6,14 @@ EHNV Styleguide.
 First of all, you need to have the following tools installed globally on your environment:
 
   * node
-  * npm
+  * yarn
   * gulp
 
 ## Install
 
   ````shell
-  $ npm install
-  $ gulp
+  $ yarn install
+  $ yarn build 
   ````
 
 ## Development
