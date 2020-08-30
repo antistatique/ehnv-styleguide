@@ -7,7 +7,7 @@ CURRENT_BRANCH=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 # Check if the environment is ready for publishing ===========================
 if [ "$CURRENT_BRANCH" != "dev" ]
 then
-    echo "⚠️  Please run this script from mdv branch"
+    echo "⚠️  Please run this script from mdev branch"
     exit 1;
 fi
 
