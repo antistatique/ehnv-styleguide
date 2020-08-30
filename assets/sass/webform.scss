@@ -95,6 +95,15 @@
       padding-left: 0;
     }
   }
+
+  #edit-time-date{
+    .form-group{
+      width: 50%;
+      &:first-child{
+        padding-right: 10px;
+      }
+    }
+  }
 }
 
 
@@ -120,7 +129,7 @@
 // CHECKBOX
 .webform-type-radios {
   margin-bottom: 10px;
-  
+
   .form-group{
     margin-bottom: 0 !important;
   }
