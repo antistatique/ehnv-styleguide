@@ -95,17 +95,7 @@
       padding-left: 0;
     }
   }
-
-  #edit-time-date{
-    .form-group{
-      width: 50%;
-      &:first-child{
-        padding-right: 10px;
-      }
-    }
-  }
 }
-
 
 // DATETIME
 .form-datetime {
@@ -134,6 +124,7 @@
     margin-bottom: 0 !important;
   }
 }
+
 
 // SUBMIT CONFIRMATION
 .webform-confirmation__message {
