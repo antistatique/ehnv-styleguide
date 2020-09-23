@@ -9,9 +9,28 @@
     margin-right: 10px;
   }
 
-  input[type=date],
-  input[type=tel],
+  
   input[type=time] {
+    width: 100%;
+  }
+
+  input[type=tel],
+  input[type=text],
+  input[type=email],
+  input[type=date],
+  select {
+    width: 50%;
+  }
+
+  fieldset {
+    margin-bottom: 2rem;
+  }
+
+  legend {
+    margin-bottom: 1.5rem;
+  }
+
+  label {
     width: 100%;
   }
 
@@ -116,13 +135,16 @@
   }
 }
 
-// CHECKBOX
-.webform-type-radios {
-  margin-bottom: 10px;
+// CHECKBOX + RADIOS
 
-  .form-group{
-    margin-bottom: 0 !important;
-  }
+.js-webform-radios label,
+.custom-checkbox label{
+  margin-top: 0;
+}
+
+.js-webform-radios .form-group,
+.custom-checkbox {
+  margin-bottom: 0 !important;
 }
 
 
