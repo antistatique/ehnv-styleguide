@@ -5,9 +5,19 @@ EHNV Styleguide.
 
 First of all, you need to have the following tools installed globally on your environment:
 
-  * node
+  * node v9
   * yarn
   * gulp
+
+## Typography
+The fonts `Proxima` is currently served by Typekit's Antistatique account.
+
+Don't forget to include the fonts:
+
+
+```html
+<link rel="stylesheet" href="https://use.typekit.net/xld7vod.css">
+```
 
 ## Install
 
