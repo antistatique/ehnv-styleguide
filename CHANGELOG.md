@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-## NEXT RELEASE
+## 1.1.4 (2020-09-23)
  - Fix Typekit integration
 
 ## 1.1.3 (2018-08-09)
