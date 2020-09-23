@@ -1,6 +1,9 @@
 CHANGELOG
 =========
 
+## NEXT RELEASE
+ - Fix Typekit integration
+
 ## 1.1.3 (2018-08-09)
  - Fix an issue with phantomcss
  
