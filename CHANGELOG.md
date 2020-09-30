@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+## 1.1.5 (2020-10-30)
+ - Fix Webform field
+ - Fix iframe
+
 ## 1.1.4 (2020-09-23)
  - Fix Typekit integration
 
