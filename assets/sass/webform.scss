@@ -9,7 +9,7 @@
     margin-right: 10px;
   }
 
-  
+
   input[type=time] {
     width: 100%;
   }
@@ -31,7 +31,28 @@
   }
 
   label {
-    width: 100%;
+    display: block !important;
+    width: fit-content;
+    color: $darkblue;
+    margin-top: 1.5rem;
+
+    &.form-required {
+      position: relative;
+      padding: 0 10px 0 0;
+    }
+
+    &.form-required::after {
+      content: '*';
+      position: absolute;
+      right: 0;
+      top: 0;
+      color: $blue;
+    }
+
+    &.option {
+      color: $mine;
+      font-weight: 400;
+    }
   }
 
   .progress-marker {
@@ -65,7 +86,6 @@
     font-size: 2rem;
   }
 
-  label,
   .fieldset-legend,
   .panel-title {
     display: inline-block;
@@ -156,4 +176,8 @@
   font-size: 3rem;
   margin: 5rem 0;
   color: $lightblue;
+}
+
+.form-actions button:nth-child(2) {
+  margin-left: 20px;
 }

@@ -1,7 +1,10 @@
 CHANGELOG
 =========
 
-## 1.1.5 (2020-10-30)
+## 1.1.6 (2020-10-02)
+ - Fix Webform spacings
+
+## 1.1.5 (2020-09-30)
  - Fix Webform field
  - Fix iframe
 
