@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+## 1.1.7 (2020-10-21)
+ - Fix video in content
+ - Put the inputs in webforms to 100% width
+
 ## 1.1.6 (2020-10-02)
  - Fix Webform spacings
 
