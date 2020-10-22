@@ -10,8 +10,9 @@
   }
 
 
-  input[type=time] {
-    width: 100%;
+  input[type=time],
+  input[type=tel] {
+    width: 100% !important;
   }
 
   fieldset {
