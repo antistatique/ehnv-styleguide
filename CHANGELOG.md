@@ -1,6 +1,9 @@
 CHANGELOG
 =========
 
+## 1.1.8 (2020-10-22)
+ - Fix phone input
+
 ## 1.1.7 (2020-10-21)
  - Fix video in content
  - Put the inputs in webforms to 100% width
