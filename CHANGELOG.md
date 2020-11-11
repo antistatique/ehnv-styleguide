@@ -1,6 +1,9 @@
 CHANGELOG
 =========
 
+## 1.1.9 (2020-11-11)
+ - Add class for sub titles in services page
+
 ## 1.1.8 (2020-10-22)
  - Fix phone input
 
