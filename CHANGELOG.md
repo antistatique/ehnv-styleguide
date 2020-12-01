@@ -1,6 +1,9 @@
 CHANGELOG
 =========
 
+## 1.1.10 (2020-12-01)
+ - Add maternity block
+
 ## 1.1.9 (2020-11-11)
  - Add class for sub titles in services page
 
