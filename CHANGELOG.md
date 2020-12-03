@@ -1,6 +1,9 @@
 CHANGELOG
 =========
 
+## 1.1.11 (2020-12-03)
+ - Add covid info component
+
 ## 1.1.10 (2020-12-01)
  - Add maternity block
 
