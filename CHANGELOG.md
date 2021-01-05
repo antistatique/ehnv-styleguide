@@ -1,6 +1,9 @@
 CHANGELOG
 =========
 
+## .1.12 (2021-01-05)
+ - Add JS to filter specialities from input
+
 ## 1.1.11 (2020-12-03)
  - Add covid info component
 
