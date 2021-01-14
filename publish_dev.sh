@@ -1,13 +1,13 @@
 #!/bin/bash
 
 DIRECTORY="build"
-BRANCH="dist/frontend"
+BRANCH="dist/frontend-dev"
 CURRENT_BRANCH=$(git branch | sed -n -e 's/^\* \(.*\)/\1/p')
 
 # Check if the environment is ready for publishing ===========================
-if [ "$CURRENT_BRANCH" != "master" ]
+if [ "$CURRENT_BRANCH" != "dev" ]
 then
-    echo "⚠️  Please run this script from master branch"
+    echo "⚠️  Please run this script from mdev branch"
     exit 1;
 fi
 
@@ -25,11 +25,6 @@ fi
 jq --version || { echo "⚠️  You have jq installed on your machine (brew install jq)" ; exit 1; }
 
 # Proceed =====================================================================
-echo "update package.json version to $1 and write a copy for publishing"
-npm version $1
-cp package.json $DIRECTORY/package.json
-jq -e ".dependencies = {} | .devDependencies = {}" $DIRECTORY/package.json > $DIRECTORY/package.json.tmp && cp $DIRECTORY/package.json.tmp $DIRECTORY/package.json && rm $DIRECTORY/package.json.tmp
-
 echo "backup dist content"
 mkdir "$DIRECTORY-tmp"
 cp -r $DIRECTORY/* "$DIRECTORY-tmp/"
