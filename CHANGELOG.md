@@ -1,7 +1,10 @@
 CHANGELOG
 =========
 
-## .1.12 (2021-01-05)
+## 1.1.13 (2021-01-14)
+ - Change CSS to fix titles in footer
+
+## 1.1.12 (2021-01-05)
  - Add JS to filter specialities from input
 
 ## 1.1.11 (2020-12-03)
