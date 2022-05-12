@@ -1,6 +1,9 @@
 CHANGELOG
 =========
 
+## 1.2.0 (2022-05-12)
+- Ensure specialty filter handles uppercase inputs
+
 ## 1.1.13 (2021-01-14)
  - Change CSS to fix titles in footer
 
