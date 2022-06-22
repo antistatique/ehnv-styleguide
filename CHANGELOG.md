@@ -1,7 +1,7 @@
 CHANGELOG
 =========
 
-## 1.2.1 (2022-06-22)
+## Unreleased
 - Ensure specialty filter handles inputs with accents
 
 ## 1.2.0 (2022-05-12)
