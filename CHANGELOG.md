@@ -1,6 +1,10 @@
 CHANGELOG
 =========
 
+## Unreleased
+## 1.2.1 (2022-06-22)
+- Ensure specialty filter handles inputs with accents
+
 ## 1.2.0 (2022-05-12)
 - Ensure specialty filter handles uppercase inputs
 
