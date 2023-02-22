@@ -16,7 +16,7 @@
     "start": "gulp serve"
   },
   "dependencies": {
-    "bootstrap-sass": "~3.3.5",
+    "bootstrap-sass": "~3.4.1",
     "fabricator": "fbrctr/fabricator",
     "html5shiv": "^3.7.3",
     "jquery": "^2.1.4",
