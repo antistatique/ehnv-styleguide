@@ -68,8 +68,9 @@
       background-color: transparent;
     }
 
-    .progress-step.is-active .progress-marker::before {
+    &.is-active .progress-marker::before {
       background-color: $lightblue;
+      color: $white;
     }
   }
 
@@ -127,6 +128,10 @@
       padding-left: 0;
     }
   }
+}
+
+.webform-progress-tracker .progress-step.is-complete .progress-marker::after {
+  background-color: transparent !important;
 }
 
 // DATETIME
