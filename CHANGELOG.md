@@ -2,6 +2,9 @@ CHANGELOG
 =========
 
 ## Unreleased
+## 1.2.2 (2024-01-16)
+- Improve webform design
+
 ## 1.2.1 (2022-06-22)
 - Ensure specialty filter handles inputs with accents
 
